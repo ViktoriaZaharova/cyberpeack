@@ -153,19 +153,40 @@ button, .btn
     left: 50%
     top: 50%
     transform: translate(-50%,-50%)
-    width: 78px
-    height: 54px
+    width: 94px
+    height: 100%
     z-index: -1
     background: url("../img/shield.svg") no-repeat center
       size: 100%
-
+  &.btn-sm
+    &:before
+      width: 78px
 
 .btn-border
   border: 1px solid #394664
-  height: 67px
+  height: 65px
+  color: #fff
+  &:hover
+    background: $blue
+    color: #fff
+    border-color: $blue
+
+.btn-group
+  .btn
+    margin: 0 14px 0 0
+    max-width: 278px
+    min-width: 278px
+    width: 100%
+    padding: 0 20px
+    &:last-child
+      margin: 0
+
+.btn-group>.btn-group:not(:last-child)>.btn, .btn-group>.btn:not(:last-child):not(.dropdown-toggle), .btn-group>.btn-group:not(:first-child)>.btn, .btn-group>.btn:nth-child(n+3), .btn-group>:not(.btn-check)+.btn
+  border-radius: 5px
 
 .btn-sm
   height: 54px
+
 
 .svg-icon
   display: inline-block
@@ -187,6 +208,7 @@ ul, ol
 .container
   max-width: 1200px
 
+
 .color-accent
   color: $accent
 
@@ -194,6 +216,8 @@ h1
   font-size: 46px
   font-weight: bold
   font-family: $font
+  letter-spacing: 0.015em
+  line-height: 51px
 
 h2
   font-family: $font

@@ -5,6 +5,13 @@
   src: url("../fonts/Raleway/Raleway-Medium.eot");
   src: url("../fonts/Raleway/Raleway-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway/Raleway-Medium.woff") format("woff"), url("../fonts/Raleway/Raleway-Medium.ttf") format("truetype"); }
 
+@font-face {
+  font-family: "FuturaPT";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/FuturaPT/FuturaPT-Bold.eot");
+  src: url("../fonts/FuturaPT/FuturaPT-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaPT/FuturaPT-Bold.woff") format("woff"), url("../fonts/FuturaPT/FuturaPT-Bold.ttf") format("truetype"); }
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -176,15 +183,34 @@ button, .btn {
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    width: 78px;
-    height: 54px;
+    width: 94px;
+    height: 100%;
     z-index: -1;
     background: url("../img/shield.svg") no-repeat center;
       background-size: 100%; }
+  .btn-accent.btn-sm:before {
+    width: 78px; }
 
 .btn-border {
   border: 1px solid #394664;
-  height: 67px; }
+  height: 65px;
+  color: #fff; }
+  .btn-border:hover {
+    background: #0E1D42;
+    color: #fff;
+    border-color: #0E1D42; }
+
+.btn-group .btn {
+  margin: 0 14px 0 0;
+  max-width: 278px;
+  min-width: 278px;
+  width: 100%;
+  padding: 0 20px; }
+  .btn-group .btn:last-child {
+    margin: 0; }
+
+.btn-group > .btn-group:not(:last-child) > .btn, .btn-group > .btn:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-group:not(:first-child) > .btn, .btn-group > .btn:nth-child(n+3), .btn-group > :not(.btn-check) + .btn {
+  border-radius: 5px; }
 
 .btn-sm {
   height: 54px; }
@@ -213,4 +239,12 @@ ul, ol {
 
 h1 {
   font-size: 46px;
+  font-weight: bold;
+  font-family: "FuturaPT", sans-serif;
+  letter-spacing: 0.015em;
+  line-height: 51px; }
+
+h2 {
+  font-family: "FuturaPT", sans-serif;
+  font-size: 28px;
   font-weight: bold; }

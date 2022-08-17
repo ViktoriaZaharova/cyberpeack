@@ -7,12 +7,27 @@
 
 .home
   position: relative
+  padding: 147px 0 0
+  z-index: 1
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    z-index: -1
+    width: 100%
+    height: 924px
+    background: url("../img/home-image.png") no-repeat center top
+      size: cover
+  h1
+    max-width: 413px
 
-.home-image
-  position: absolute
-  top: 0
-  left: 0
-  width: 100%
+.home-content
+  padding: 58px 0 0
+  h3
+    margin: 36px 0 48px
+    font-size: 36px
+
 
 /*==========  section home end  ==========*/
 
