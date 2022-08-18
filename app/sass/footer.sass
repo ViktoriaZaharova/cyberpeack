@@ -1,8 +1,145 @@
 @import "vars"
 
-/*==========  section  ==========*/
+/*==========  section footer ==========*/
+footer
+  padding: 54px 0
+  background: url("../img/footer-bg.png") no-repeat center
+    size: cover
+  position: relative
+  z-index: 1
+  color: #fff
+  overflow: hidden
+  &:before, &:after
+    content: ''
+    position: absolute
+    z-index: -1
+  &:before
+    width: 425px
+    height: 534px
+    background: url("../img/footer-decor1.svg") no-repeat center
+      size: 100%
+    left: 0
+    top: -53px
+  &:after
+    width: 697px
+    height: 495px
+    background: url("../img/footer-decor2.svg") no-repeat center
+      size: 100%
+    top: 38px
+    right: 0
 
-/*==========  section end  ==========*/
+.footer-bottom
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+  font-size: 14px
+  padding: 40px 0 0
+  border-top: 0.75px solid rgba(255, 255, 255, 0.27451)
+  margin: 76px 0 0
+
+.address
+  max-width: 325px
+
+.phone, .mail
+  font-size: 16px
+  color: #fff
+  &:hover
+    color: $accent
+
+.footer-company
+  max-width: 145px
+  margin-left: auto
+  .list-social
+    margin: 0 auto 0
+    justify-content: center
+
+.resident
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 62px 0 45px
+
+.resident-logo
+  min-width: 51px
+  margin: 0 18px 0 0
+
+.list-social
+  display: flex
+  align-items: flex-start
+  li
+    margin: 0 12px 0 0
+    &:last-child
+      margin: 0
+    a
+      fill: #fff
+      @include d-flex
+      width: 32px
+      height: 32px
+      border: 2px solid #fff
+        radius: 50%
+      padding: 4px
+      &:hover
+        fill: $accent
+
+.tg-icon
+  width: 14.6px
+  height: 14.5px
+
+.vk-icon
+  width: 16.48px
+  height: 9.23px
+
+.youtube-icon
+  width: 13.19px
+  height: 9.24px
+
+.footer-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+
+.footer-menu
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  padding: 0 75px 0 0
+  flex-wrap: wrap
+  font-size: 18px
+  font-weight: 600
+  margin: 0 0 30px
+  li
+    max-width: 117px
+    a
+      color: #fff
+      &:hover
+        color: $accent
+
+.footer-about
+  margin: 0 auto 0 0
+  font-size: 14px
+  max-width: 200px
+  p
+    margin: 0 0 20px
+    &:last-child
+      margin: 0
+
+.footer-submenu
+  margin: 0 32px 0 0
+  font-size: 14px
+  max-width: 161px
+  li
+    margin: 0 0 20px
+    &:last-child
+      margin: 0
+    a
+      color: #fff
+      &:hover
+        color: $accent
+/*==========  section footer end  ==========*/
 
 
 

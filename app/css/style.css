@@ -1,9 +1,23 @@
 @font-face {
   font-family: "Raleway";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Raleway/Raleway-Regular.eot");
+  src: url("../fonts/Raleway/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway/Raleway-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Raleway";
   font-weight: 500;
   font-style: normal;
   src: url("../fonts/Raleway/Raleway-Medium.eot");
   src: url("../fonts/Raleway/Raleway-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway/Raleway-Medium.woff") format("woff"), url("../fonts/Raleway/Raleway-Medium.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Raleway";
+  font-weight: 600;
+  font-style: normal;
+  src: url("../fonts/Raleway/Raleway-SemiBold.eot");
+  src: url("../fonts/Raleway/Raleway-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway/Raleway-SemiBold.woff") format("woff"), url("../fonts/Raleway/Raleway-SemiBold.ttf") format("truetype"); }
 
 @font-face {
   font-family: "FuturaPT";
@@ -94,7 +108,8 @@ input, textarea, select {
   width: 100%;
   font-size: 16px;
   font-weight: 500;
-  color: #fff; }
+  color: #fff;
+  background: transparent; }
   input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder {
     color: #fff; }
   input::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder {
@@ -112,7 +127,7 @@ input, textarea, select {
   position: relative; }
   .input-wrap:before {
     content: '';
-    bottom: 0;
+    bottom: -18.5px;
     left: 0;
     height: 1.5px;
     background: #E12651;
@@ -123,10 +138,15 @@ input, textarea, select {
   .input-wrap:hover:before {
     width: 100%; }
 
+.consent {
+  max-width: 252px;
+  font-size: 14px;
+  margin: 0 0 40px; }
+
 label {
   display: block;
   width: 100%;
-  margin: 0 0 33px; }
+  margin: 0 0 27px; }
   label:last-child {
     margin: 0; }
 
@@ -160,7 +180,7 @@ button, .btn {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  height: 65px;
+  height: 67px;
   border-radius: 5px;
   font-size: 16px;
   font-weight: 500;
@@ -200,6 +220,14 @@ button, .btn {
     color: #fff;
     border-color: #0E1D42; }
 
+.btn-border-accent {
+  border: 2px solid #F0CFDC;
+  color: #E12651; }
+  .btn-border-accent:hover {
+    background: #E12651;
+    border-color: #E12651;
+    color: #fff; }
+
 .btn-group .btn {
   margin: 0 14px 0 0;
   max-width: 278px;
@@ -232,7 +260,15 @@ ul, ol {
   padding: 0; }
 
 .container {
-  max-width: 1200px; }
+  max-width: 1185px;
+  position: relative;
+  z-index: 1;
+  padding: 0 7.5px; }
+
+.row {
+  margin: 0 -7.5px; }
+  .row > * {
+    padding: 0 7.5px; }
 
 .color-accent {
   color: #E12651; }
@@ -247,4 +283,37 @@ h1 {
 h2 {
   font-family: "FuturaPT", sans-serif;
   font-size: 28px;
-  font-weight: bold; }
+  font-weight: bold;
+  width: 100%; }
+
+.title-decor {
+  position: relative;
+  z-index: 1; }
+  .title-decor__text {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    top: -5px;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    color: rgba(255, 255, 255, 0.509804);
+    font-size: 120px;
+    line-height: 154px;
+    font-weight: 700;
+    white-space: nowrap; }
+
+.color-white {
+  color: #fff; }
+
+a.color-white:hover {
+  color: #E12651; }
+
+.mb-18 {
+  margin-bottom: 18px; }
+
+.slick-slider {
+  width: 100%; }
+
+.slick-slide {
+  outline: none; }

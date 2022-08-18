@@ -2,7 +2,7 @@
 
 /*==========  section home ==========*/
 .home-wrapper
-  background: linear-gradient(22.87deg, #0E1D42 13%, #E12651 91.31%)
+  background: linear-gradient(to right, #0E1D42 13%, #E12651 91.31%)
   color: #fff
 
 .home
@@ -21,6 +21,34 @@
       size: cover
   h1
     max-width: 413px
+  .container
+    position: relative
+
+.view-more
+  position: absolute
+  color: rgba(255, 255, 255, 0.764706)
+  font-size: 12px
+  letter-spacing: 0.045em
+  //transform: matrix(1, 0, 0, -1, 0, 0)
+  right: -30px
+  bottom: 70px
+  display: flex
+  flex-direction: column
+  align-items: center
+  &:hover
+    color: $blue
+  &:before
+    content: ''
+    height: 145px
+    width: 1.5px
+    background: rgba(255, 255, 255, 0.262745)
+    margin: 0 0 94px
+  span
+    position: relative
+    z-index: 1
+    transform: rotate(90deg)
+    display: inline-block
+
 
 .home-content
   padding: 58px 0 0
@@ -28,7 +56,65 @@
     margin: 36px 0 48px
     font-size: 36px
 
+.partners-company
+  position: relative
+  z-index: 1
+  margin: 67px 0 33px
 
+.partners-company-slider
+  margin: 0 0 18px
+  &__item
+    @include d-flex
+    height: 54px
+    img
+      max-height: 100%
+
+.progress
+  width: 100%
+  height: 0.75px
+  position: relative
+  background: rgba(255, 255, 255, 0.098039)
+  &-bg
+    position: absolute
+    left: 0
+    top: 50%
+    transform: translate(0,-50%)
+    background: #E12651
+    height: 1.5px
+
+.shield
+  position: relative
+  z-index: 1
+  padding: 79px 0 60px
+  &:before
+    content: ''
+    width: 594px
+    height: 589px
+    right: 0
+    top: -211px
+    background: url("../img/decor.svg") no-repeat center
+      size: 100%
+    position: absolute
+    z-index: -1
+  h2
+    color: #E12651
+    max-width: 442px
+  .description
+    max-width: 390px
+    font-size: 18px
+    margin-left: auto
+
+.shield-wrapper
+  position: relative
+
+.shield-image
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-50%)
+  max-width: 558px
+  width: 100%
+  z-index: -1
 /*==========  section home end  ==========*/
 
 
@@ -68,16 +154,328 @@
 /*==========  section end  ==========*/
 
 
-/*==========  section  ==========*/
+/*==========  section reviews ==========*/
+.reviews
+  padding: 70px 0 50px
+  position: relative
+  z-index: 1
+  background: url("../img/reviews-image.png") no-repeat center top
+    size: 100%
 
-/*==========  section end  ==========*/
+  h2
+    margin: 0 auto 51px
+    span
+      display: block
+  .title-decor__text
+    top: -105px
+
+.btn-all-cases
+  max-width: 278px
+  width: 100%
+  margin: 0 auto
+
+.reviews-box
+  width: 100%
+  display: flex
+  align-items: flex-start
+  margin: 0 0 55px
+  .box-text
+    width: calc(100% - 193px)
+    padding: 45px 20px 62px 0
+  &:nth-child(even)
+    flex-direction: row-reverse
+    .reviews-box-body
+      margin: 0 0 0 40px
+      &:before
+        clip-path: polygon(100% 100%, 0 0, 100% 0)
+        right: auto
+        left: -23px
+
+.reviews-box-body
+  background: #fff
+  max-width: 776px
+  width: 100%
+  position: relative
+  display: flex
+  align-items: stretch
+  min-height: 296px
+  margin: 0 20px 0 0
+  &:before
+    content: ''
+    position: absolute
+    width: 23px
+    height: 35px
+    right: -23px
+    top: 60%
+    transform: translate(0,-50%)
+    clip-path: polygon(0 0, 0% 100%, 100% 0)
+    background: #fff
+
+.reviews-box-company
+  max-width: 193px
+  width: 100%
+  border-top: 1.5px solid #E12651
+  padding: 38px 0 0
+  display: flex
+  flex-direction: column
+  &__logo
+    margin: 0 auto 11px
+    @include d-flex
+  &__icon
+    margin: auto 0 0
+
+.reviews-box-author
+  display: flex
+  align-items: center
+  margin: 40px 0 0
+  &__photo
+    border: 7px solid #fff
+      radius: 50%
+    overflow: hidden
+    width: 106px
+    height: 106px
+    min-width: 106px
+    margin: 0 15px 0 0
+    @include d-flex
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  h4
+    color: #0E1D42
+    margin: 20px 0 0
+    font-weight: 600
+/*==========  section reviews end  ==========*/
 
 
-/*==========  section  ==========*/
+/*==========  section spectrum-demonstration ==========*/
+.spectrum-demonstration
+  background: url("../img/spectrum-bg.jpg") no-repeat center
+    size: cover
+  color: #fff
+  padding: 95px 0 80px
+  position: relative
+  overflow: hidden
+  &:before, &:after
+    content: ''
+    position: absolute
+  &:before
+    left: -148px
+    bottom: -272px
+    width: 549px
+    height: 589px
+    background: url("../img/spectrum-decor1.svg") no-repeat center
+      size: 100%
+  &:after
+    width: 406px
+    height: 589px
+    right: 0
+    top: -300px
+    background: url("../img/spectrum-decor2.svg") no-repeat center
+      size: 100%
+  h2
+    color: $accent
+    font-size: 42px
+    margin: 13px 0 40px
+  .description
+    font-size: 24px
+    max-width: 340px
 
-/*==========  section end  ==========*/
+.line-decor
+  margin: 55px 0 0 113px
+  width: 203px
+  height: 1.5px
+  background: rgba(255, 255, 255, 0.262745)
+  position: relative
+  border-radius: 3px
+  &:before
+    content: ''
+    position: absolute
+    right: 0
+    top: 50%
+    transform: translate(0,-50%)
+    width: 78px
+    height: 1.5px
+    background: $accent
+    border-radius: 3px
 
 
-/*==========  section  ==========*/
+.form-callback
+  padding: 20px 0 0
+  button
+    max-width: 277px
+    width: 100%
+    padding: 0 10px
+/*==========  section spectrum-demonstration end  ==========*/
 
-/*==========  section end  ==========*/
+
+/*==========  section press-center ==========*/
+.press-center
+  padding: 55px 0 30px
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    top: 0
+    left: 50%
+    transform: translate(-50%,0)
+    height: 100%
+    width: 1173px
+    background: url("../img/lines-bg.svg") no-repeat center
+      size: cover
+  h2
+    margin: 0 auto 72px
+
+
+.decor-image
+  position: absolute
+  @include d-flex
+
+.decor-image2
+  left: 53px
+  bottom: 16px
+  max-width: 414px
+
+.decor-image1
+  right: 116px
+  top: 40px
+  max-width: 432px
+
+
+.btn-all-news
+  margin: 5px auto 0
+  max-width: 252px
+  width: 100%
+
+.news-card
+  width: 100%
+  height: 100%
+  position: relative
+  background: #FFFFFF
+  display: flex
+  align-items: stretch
+  z-index: 1
+  &__image
+    width: 50%
+    height: 100%
+    position: relative
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__date
+    position: absolute
+    right: 0
+    top: 0
+    padding: 7px 12px 15px
+    display: flex
+    align-items: flex-end
+    font-size: 20px
+    color: #0E1D42
+    background: #fff
+    z-index: 1
+    span
+      margin: 0 0 2px 5px
+      font-weight: normal
+      font-size: 12px
+  &__content
+    width: 50%
+    display: flex
+    flex-direction: column
+  &__body
+    width: 100%
+    padding: 74px 15px 10px 25px
+  &__title
+    margin: 0 0 40px
+    color: #0E1D42
+    font-size: 19px
+    &:hover
+      color: $accent
+  .box-text
+    color: #333
+    font-size: 14px
+  &__footer
+    margin: auto 0 0
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 12px 20px 15px 23px
+    border-top: 0.75px solid #E5E5E5
+    font-size: 14px
+
+.link-news
+  @include d-flex
+  width: 8px
+  height: 15px
+  fill: $accent
+
+.news-card-min
+  flex-direction: column
+  position: relative
+  border: 1.5px solid transparent
+  height: 382px
+  overflow: hidden
+  .news-card__image
+    height: 156px
+    width: 100%
+    transition: .3s ease
+    position: absolute
+  .news-card__content
+    width: 100%
+    height: 100%
+    padding: 156px 0 0
+  .news-card__body
+    padding: 23px 18px
+  .news-card__title
+    margin: 0 0 25px
+    font-size: 16px
+  .box-text
+    text-overflow: ellipsis
+    -webkit-line-clamp: 2
+    -webkit-box-orient: vertical
+    display: -webkit-box
+    overflow: hidden
+  &:hover
+    border: 1.5px solid #E12651
+    .news-card__date
+      padding: 5px 12px
+      background: transparent
+      color: #fff
+    .news-card__image
+      position: absolute
+      left: 0
+      top: 0
+      height: 100%
+      width: 100%
+      &:before
+        content: ''
+        position: absolute
+        left: 0
+        top: 0
+        width: 100%
+        height: 100%
+        background: linear-gradient(294.03deg, rgba(14, 29, 66, 0.72549) 0.59%, rgba(225, 38, 81, 0.72549) 107.31%)
+    .news-card__footer
+      border: none
+    .news-card__content
+      position: relative
+      z-index: 1
+      height: 100%
+      padding: 0
+      color: #fff
+    .news-card__body
+      padding: 77px 10px 15px 15px
+    .news-card__title
+      color: #fff
+      font-size: 19px
+    .box-text
+      color: #fff
+      overflow: visible
+      display: block
+
+    .link-news
+      fill: #fff
+    .category-news
+      color: #fff
+/*==========  section press-center end  ==========*/
