@@ -20,6 +20,13 @@
   src: url("../fonts/Raleway/Raleway-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway/Raleway-SemiBold.woff") format("woff"), url("../fonts/Raleway/Raleway-SemiBold.ttf") format("truetype"); }
 
 @font-face {
+  font-family: "Raleway";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/Raleway/Raleway-ExtraBold.eot");
+  src: url("../fonts/Raleway/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway/Raleway-ExtraBold.ttf") format("truetype"); }
+
+@font-face {
   font-family: "FuturaPT";
   font-weight: 700;
   font-style: normal;
@@ -312,8 +319,46 @@ a.color-white:hover {
 .mb-18 {
   margin-bottom: 18px; }
 
+.mb-35 {
+  margin-bottom: 35px; }
+
 .slick-slider {
   width: 100%; }
 
 .slick-slide {
   outline: none; }
+
+.slick-arrow {
+  background: transparent;
+  padding: 0;
+  fill: #E12651;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 1;
+  z-index: 1;
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 9px;
+  height: 16px; }
+  .slick-arrow:hover {
+    fill: #0E1D42; }
+
+.slider-nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .slider-nav .slick-next {
+    margin-left: 50px; }

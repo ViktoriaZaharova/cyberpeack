@@ -272,8 +272,35 @@ a.color-white
 .mb-18
   margin-bottom: 18px
 
+.mb-35
+  margin-bottom: 35px
+
 .slick-slider
   width: 100%
 
 .slick-slide
   outline: none
+
+
+.slick-arrow
+  background: transparent
+  padding: 0
+  fill: $accent
+  @include d-flex
+  opacity: 1
+  z-index: 1
+  position: relative
+  top: 0
+  right: 0
+  left: 0
+  width: 9px
+  height: 16px
+  &:hover
+    fill: $blue
+
+.slider-nav
+  width: 100%
+  display: flex
+  align-items: center
+  .slick-next
+    margin-left: 50px

@@ -19,6 +19,7 @@
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
@@ -189,22 +190,617 @@
     <div class="container">
       <div class="row">
         <div class="col-12 col-lg-4">
-          <h3>Почему важно защищать неструктурированные данные?</h3>
+          <div class="why-important-content">
+            <h3>Почему важно защищать неструктурированные данные?</h3>
+            <a href="#risks" class="view-more go_to"><span>СМОТРЕТЬ  ДАЛЕЕ</span></a>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-8">
+          <div class="why-important-wrapper">
+            <div class="why-important-box">
+              <div class="why-important-box__percent">80%</div>
+              <div class="why-important-box__text">
+                <p>всех корпоративных данных по экспертной
+                  оценке Gartner неструктурированные </p>
+              </div>
+            </div>
+            <div class="why-important-box">
+              <div class="why-important-box__percent">30%</div>
+              <div class="why-important-box__text"><p>процент, на который <br>ежегодно растет <br>объем корпоративных
+                данных</p>
+              </div>
+            </div>
+            <div class="why-important-box">
+              <div class="why-important-box__percent">65%</div>
+              <div class="why-important-box__text"><p>атак направлены <br>
+                на получение <br>конфиденциальной информации из неструктурированных данных</p></div>
+            </div>
+            <div class="why-important-box">
+              <div class="why-important-box__percent">20%</div>
+              <div class="why-important-box__text"><p>неструктурированной информации не приносит никакой пользы бизнесу
+                (копии документов, файлы без изменений и т.д.)</p></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="">
+  <div class="risks" id="risks">
+    <div class="risks-image"><img src="img/risks-image.png" alt=""></div>
     <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-4">
+          <h3>Какие риски несут неструктурированные данные?</h3>
+        </div>
 
+        <div class="col-12 col-lg-8">
+          <div class="risks-wrapper">
+            <div class="risks-box">
+              <div class="risks-box__number">1</div>
+              <div class="risks-box__icon"><img src="img/risk-icon1.svg" alt=""></div>
+              <div class="risks-box__text">
+                <p>Несоблюдение требований регуляторов</p>
+              </div>
+            </div>
+
+            <div class="risks-box">
+              <div class="risks-box__number">2</div>
+              <div class="risks-box__icon"><img src="img/risk-icon2.svg" alt=""></div>
+              <div class="risks-box__text">
+                <p>Утечка конфиденциальной информации</p>
+              </div>
+            </div>
+
+            <div class="risks-box">
+              <div class="risks-box__number">3</div>
+              <div class="risks-box__icon"><img src="img/risk-icon3.svg" alt=""></div>
+              <div class="risks-box__text">
+                <p>Риски масштабных потерь от вредоносного ПО</p>
+              </div>
+            </div>
+
+            <div class="risks-box">
+              <div class="risks-box__number">4</div>
+              <div class="risks-box__icon"><img src="img/risk-icon4.svg" alt=""></div>
+              <div class="risks-box__text">
+                <p>Репутационные риски</p>
+              </div>
+            </div>
+
+            <div class="risks-box">
+              <div class="risks-box__number">5</div>
+              <div class="risks-box__icon"><img src="img/risk-icon5.svg" alt=""></div>
+              <div class="risks-box__text">
+                <p>Замедление
+                  и остановка бизнес-процессов</p>
+              </div>
+            </div>
+
+            <div class="risks-box">
+              <div class="risks-box__number">6</div>
+              <div class="risks-box__icon"><img src="img/risk-icon6.svg" alt=""></div>
+              <div class="risks-box__text">
+                <p>Излишние траты на расширение файловых хранилищ</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
-<section class="">
+<section class="tasks">
   <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="tasks-wrapper">
+          <h2 class="title-decor">КАКИЕ ЗАДАЧИ БЕЗОПАСНОСТИ РЕШАЕТ
+            <span class="color-accent">DAG/DCAP "Спектр"</span>
+            <span class="title-decor__text">БЕЗОПАСНОСТЬ</span>
+          </h2>
 
+          <div class="row">
+            <div class="col-12">
+              <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="nav-tab1" data-bs-toggle="tab" data-bs-target="#tab1"
+                          type="button"
+                          role="tab" aria-controls="tab1" aria-selected="true">Защищайте чувствительную информацию
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="nav-tab2" data-bs-toggle="tab" data-bs-target="#tab2" type="button"
+                          role="tab" aria-controls="tab2" aria-selected="false">Оптимизируйте права
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="nav-tab3" data-bs-toggle="tab" data-bs-target="#tab3" type="button"
+                          role="tab" aria-controls="tab3" aria-selected="false">Контролируйте действия
+                    с файлами
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="nav-tab4" data-bs-toggle="tab" data-bs-target="#tab4" type="button"
+                          role="tab" aria-controls="tab4" aria-selected="false">Предотвращайте и расследуйте инциденты
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="nav-tab5" data-bs-toggle="tab" data-bs-target="#tab5" type="button"
+                          role="tab" aria-controls="tab5" aria-selected="false">Останавливайте действия вредоносного ПО
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="nav-tab6" data-bs-toggle="tab" data-bs-target="#tab6" type="button"
+                          role="tab" aria-controls="tab6" aria-selected="false">Защищайте контроллеры домена
+                  </button>
+                </li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="nav-tab1">
+                  <div class="row">
+                    <div class="col-12 col-lg-8">
+                      <div class="task-slider-image task-slider-image1">
+                        <div class="slide"><img src="img/task-image.png" alt=""></div>
+                        <div class="slide"><img src="img/task-image.png" alt=""></div>
+                        <div class="slide"><img src="img/task-image.png" alt=""></div>
+                        <div class="slide"><img src="img/task-image.png" alt=""></div>
+                        <div class="slide"><img src="img/task-image.png" alt=""></div>
+                        <div class="slide"><img src="img/task-image.png" alt=""></div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                      <div class="task-content">
+                        <div class="task-slider-content task-slider-content1">
+                          <div class="slide">
+                            <div class="task-slider__text">
+                              <p>DAG/DCAP"Спектр" классифицирует неструктурированную информацию, помогает контролировать
+                                и
+                                ограничивать к ней доступ, предотвращать утечки ценной информации и проводить полный
+                                аудит
+                                событий и состояния контроллеров домена.</p>
+                            </div>
+                          </div>
+                          <div class="slide">
+                            <div class="task-slider__text">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum enim eum fuga iusto nam
+                                nemo neque nihil, non, provident quaerat reiciendis vel voluptates voluptatibus.
+                                Aspernatur assumenda ipsam non obcaecati tempora?</p>
+                            </div>
+                          </div>
+                          <div class="slide">
+                            <div class="task-slider__text">
+                              <p>DAG/DCAP"Спектр" классифицирует неструктурированную информацию, помогает контролировать
+                                и
+                                ограничивать к ней доступ, предотвращать утечки ценной информации и проводить полный
+                                аудит
+                                событий и состояния контроллеров домена.</p>
+                            </div>
+                          </div>
+                          <div class="slide">
+                            <div class="task-slider__text">
+                              <p>DAG/DCAP"Спектр" классифицирует неструктурированную информацию, помогает контролировать
+                                и
+                                ограничивать к ней доступ, предотвращать утечки ценной информации и проводить полный
+                                аудит
+                                событий и состояния контроллеров домена.</p>
+                            </div>
+                          </div>
+                          <div class="slide">
+                            <div class="task-slider__text">
+                              <p>DAG/DCAP"Спектр" классифицирует неструктурированную информацию, помогает контролировать
+                                и
+                                ограничивать к ней доступ, предотвращать утечки ценной информации и проводить полный
+                                аудит
+                                событий и состояния контроллеров домена.</p>
+                            </div>
+                          </div>
+                          <div class="slide">
+                            <div class="task-slider__text">
+                              <p>DAG/DCAP"Спектр" классифицирует неструктурированную информацию, помогает контролировать
+                                и
+                                ограничивать к ней доступ, предотвращать утечки ценной информации и проводить полный
+                                аудит
+                                событий и состояния контроллеров домена.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <a href="#" class="btn btn-accent">Узнать больше о "Спектре" </a>
+                        <div class="slider-nav task-slider-nav task-slider-nav1">
+                          <div class="counter-slide"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="nav-tab2">
+                  <div class="row">
+                    <div class="col-12 col-lg-8">
+                      <div class="task-slider-image task-slider-image2">
+                        <div class="slide"><img src="img/task-image.png" alt=""></div>
+                        <div class="slide"><img src="img/task-image.png" alt=""></div>
+                        <div class="slide"><img src="img/task-image.png" alt=""></div>
+                        <div class="slide"><img src="img/task-image.png" alt=""></div>
+                        <div class="slide"><img src="img/task-image.png" alt=""></div>
+                        <div class="slide"><img src="img/task-image.png" alt=""></div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                      <div class="task-content">
+                        <div class="task-slider-content task-slider-content2">
+                          <div class="slide">
+                            <div class="task-slider__text">
+                              <p>DAG/DCAP"Спектр" классифицирует неструктурированную информацию, помогает контролировать
+                                и
+                                ограничивать к ней доступ, предотвращать утечки ценной информации и проводить полный
+                                аудит
+                                событий и состояния контроллеров домена.</p>
+                            </div>
+                          </div>
+                          <div class="slide">
+                            <div class="task-slider__text">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum enim eum fuga iusto nam
+                                nemo neque nihil, non, provident quaerat reiciendis vel voluptates voluptatibus.
+                                Aspernatur assumenda ipsam non obcaecati tempora?</p>
+                            </div>
+                          </div>
+                          <div class="slide">
+                            <div class="task-slider__text">
+                              <p>DAG/DCAP"Спектр" классифицирует неструктурированную информацию, помогает контролировать
+                                и
+                                ограничивать к ней доступ, предотвращать утечки ценной информации и проводить полный
+                                аудит
+                                событий и состояния контроллеров домена.</p>
+                            </div>
+                          </div>
+                          <div class="slide">
+                            <div class="task-slider__text">
+                              <p>DAG/DCAP"Спектр" классифицирует неструктурированную информацию, помогает контролировать
+                                и
+                                ограничивать к ней доступ, предотвращать утечки ценной информации и проводить полный
+                                аудит
+                                событий и состояния контроллеров домена.</p>
+                            </div>
+                          </div>
+                          <div class="slide">
+                            <div class="task-slider__text">
+                              <p>DAG/DCAP"Спектр" классифицирует неструктурированную информацию, помогает контролировать
+                                и
+                                ограничивать к ней доступ, предотвращать утечки ценной информации и проводить полный
+                                аудит
+                                событий и состояния контроллеров домена.</p>
+                            </div>
+                          </div>
+                          <div class="slide">
+                            <div class="task-slider__text">
+                              <p>DAG/DCAP"Спектр" классифицирует неструктурированную информацию, помогает контролировать
+                                и
+                                ограничивать к ней доступ, предотвращать утечки ценной информации и проводить полный
+                                аудит
+                                событий и состояния контроллеров домена.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <a href="#" class="btn btn-accent">Узнать больше о "Спектре" </a>
+                        <div class="slider-nav task-slider-nav task-slider-nav2">
+                          <div class="counter-slide"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="nav-tab3">
+                  <div class="row">
+                    <div class="col-12 col-lg-8">
+                      <div class="task-slider-image task-slider-image3">
+                        <div class="slide"><img src="img/task-image.png" alt=""></div>
+                        <div class="slide"><img src="img/task-image.png" alt=""></div>
+                        <div class="slide"><img src="img/task-image.png" alt=""></div>
+                        <div class="slide"><img src="img/task-image.png" alt=""></div>
+                        <div class="slide"><img src="img/task-image.png" alt=""></div>
+                        <div class="slide"><img src="img/task-image.png" alt=""></div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                      <div class="task-content">
+                        <div class="task-slider-content task-slider-content3">
+                          <div class="slide">
+                            <div class="task-slider__text">
+                              <p>DAG/DCAP"Спектр" классифицирует неструктурированную информацию, помогает контролировать
+                                и
+                                ограничивать к ней доступ, предотвращать утечки ценной информации и проводить полный
+                                аудит
+                                событий и состояния контроллеров домена.</p>
+                            </div>
+                          </div>
+                          <div class="slide">
+                            <div class="task-slider__text">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum enim eum fuga iusto nam
+                                nemo neque nihil, non, provident quaerat reiciendis vel voluptates voluptatibus.
+                                Aspernatur assumenda ipsam non obcaecati tempora?</p>
+                            </div>
+                          </div>
+                          <div class="slide">
+                            <div class="task-slider__text">
+                              <p>DAG/DCAP"Спектр" классифицирует неструктурированную информацию, помогает контролировать
+                                и
+                                ограничивать к ней доступ, предотвращать утечки ценной информации и проводить полный
+                                аудит
+                                событий и состояния контроллеров домена.</p>
+                            </div>
+                          </div>
+                          <div class="slide">
+                            <div class="task-slider__text">
+                              <p>DAG/DCAP"Спектр" классифицирует неструктурированную информацию, помогает контролировать
+                                и
+                                ограничивать к ней доступ, предотвращать утечки ценной информации и проводить полный
+                                аудит
+                                событий и состояния контроллеров домена.</p>
+                            </div>
+                          </div>
+                          <div class="slide">
+                            <div class="task-slider__text">
+                              <p>DAG/DCAP"Спектр" классифицирует неструктурированную информацию, помогает контролировать
+                                и
+                                ограничивать к ней доступ, предотвращать утечки ценной информации и проводить полный
+                                аудит
+                                событий и состояния контроллеров домена.</p>
+                            </div>
+                          </div>
+                          <div class="slide">
+                            <div class="task-slider__text">
+                              <p>DAG/DCAP"Спектр" классифицирует неструктурированную информацию, помогает контролировать
+                                и
+                                ограничивать к ней доступ, предотвращать утечки ценной информации и проводить полный
+                                аудит
+                                событий и состояния контроллеров домена.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <a href="#" class="btn btn-accent">Узнать больше о "Спектре" </a>
+                        <div class="slider-nav task-slider-nav task-slider-nav3">
+                          <div class="counter-slide"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="nav-tab4">
+                  <div class="row">
+                    <div class="col-12 col-lg-8">
+                      <div class="task-slider-image task-slider-image4">
+                        <div class="slide"><img src="img/task-image.png" alt=""></div>
+                        <div class="slide"><img src="img/task-image.png" alt=""></div>
+                        <div class="slide"><img src="img/task-image.png" alt=""></div>
+                        <div class="slide"><img src="img/task-image.png" alt=""></div>
+                        <div class="slide"><img src="img/task-image.png" alt=""></div>
+                        <div class="slide"><img src="img/task-image.png" alt=""></div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                      <div class="task-content">
+                        <div class="task-slider-content task-slider-content4">
+                          <div class="slide">
+                            <div class="task-slider__text">
+                              <p>DAG/DCAP"Спектр" классифицирует неструктурированную информацию, помогает контролировать
+                                и
+                                ограничивать к ней доступ, предотвращать утечки ценной информации и проводить полный
+                                аудит
+                                событий и состояния контроллеров домена.</p>
+                            </div>
+                          </div>
+                          <div class="slide">
+                            <div class="task-slider__text">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum enim eum fuga iusto nam
+                                nemo neque nihil, non, provident quaerat reiciendis vel voluptates voluptatibus.
+                                Aspernatur assumenda ipsam non obcaecati tempora?</p>
+                            </div>
+                          </div>
+                          <div class="slide">
+                            <div class="task-slider__text">
+                              <p>DAG/DCAP"Спектр" классифицирует неструктурированную информацию, помогает контролировать
+                                и
+                                ограничивать к ней доступ, предотвращать утечки ценной информации и проводить полный
+                                аудит
+                                событий и состояния контроллеров домена.</p>
+                            </div>
+                          </div>
+                          <div class="slide">
+                            <div class="task-slider__text">
+                              <p>DAG/DCAP"Спектр" классифицирует неструктурированную информацию, помогает контролировать
+                                и
+                                ограничивать к ней доступ, предотвращать утечки ценной информации и проводить полный
+                                аудит
+                                событий и состояния контроллеров домена.</p>
+                            </div>
+                          </div>
+                          <div class="slide">
+                            <div class="task-slider__text">
+                              <p>DAG/DCAP"Спектр" классифицирует неструктурированную информацию, помогает контролировать
+                                и
+                                ограничивать к ней доступ, предотвращать утечки ценной информации и проводить полный
+                                аудит
+                                событий и состояния контроллеров домена.</p>
+                            </div>
+                          </div>
+                          <div class="slide">
+                            <div class="task-slider__text">
+                              <p>DAG/DCAP"Спектр" классифицирует неструктурированную информацию, помогает контролировать
+                                и
+                                ограничивать к ней доступ, предотвращать утечки ценной информации и проводить полный
+                                аудит
+                                событий и состояния контроллеров домена.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <a href="#" class="btn btn-accent">Узнать больше о "Спектре" </a>
+                        <div class="slider-nav task-slider-nav task-slider-nav4">
+                          <div class="counter-slide"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="tab5" role="tabpanel" aria-labelledby="nav-tab5">
+                  <div class="row">
+                    <div class="col-12 col-lg-8">
+                      <div class="task-slider-image task-slider-image5">
+                        <div class="slide"><img src="img/task-image.png" alt=""></div>
+                        <div class="slide"><img src="img/task-image.png" alt=""></div>
+                        <div class="slide"><img src="img/task-image.png" alt=""></div>
+                        <div class="slide"><img src="img/task-image.png" alt=""></div>
+                        <div class="slide"><img src="img/task-image.png" alt=""></div>
+                        <div class="slide"><img src="img/task-image.png" alt=""></div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                      <div class="task-content">
+                        <div class="task-slider-content task-slider-content5">
+                          <div class="slide">
+                            <div class="task-slider__text">
+                              <p>DAG/DCAP"Спектр" классифицирует неструктурированную информацию, помогает контролировать
+                                и
+                                ограничивать к ней доступ, предотвращать утечки ценной информации и проводить полный
+                                аудит
+                                событий и состояния контроллеров домена.</p>
+                            </div>
+                          </div>
+                          <div class="slide">
+                            <div class="task-slider__text">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum enim eum fuga iusto nam
+                                nemo neque nihil, non, provident quaerat reiciendis vel voluptates voluptatibus.
+                                Aspernatur assumenda ipsam non obcaecati tempora?</p>
+                            </div>
+                          </div>
+                          <div class="slide">
+                            <div class="task-slider__text">
+                              <p>DAG/DCAP"Спектр" классифицирует неструктурированную информацию, помогает контролировать
+                                и
+                                ограничивать к ней доступ, предотвращать утечки ценной информации и проводить полный
+                                аудит
+                                событий и состояния контроллеров домена.</p>
+                            </div>
+                          </div>
+                          <div class="slide">
+                            <div class="task-slider__text">
+                              <p>DAG/DCAP"Спектр" классифицирует неструктурированную информацию, помогает контролировать
+                                и
+                                ограничивать к ней доступ, предотвращать утечки ценной информации и проводить полный
+                                аудит
+                                событий и состояния контроллеров домена.</p>
+                            </div>
+                          </div>
+                          <div class="slide">
+                            <div class="task-slider__text">
+                              <p>DAG/DCAP"Спектр" классифицирует неструктурированную информацию, помогает контролировать
+                                и
+                                ограничивать к ней доступ, предотвращать утечки ценной информации и проводить полный
+                                аудит
+                                событий и состояния контроллеров домена.</p>
+                            </div>
+                          </div>
+                          <div class="slide">
+                            <div class="task-slider__text">
+                              <p>DAG/DCAP"Спектр" классифицирует неструктурированную информацию, помогает контролировать
+                                и
+                                ограничивать к ней доступ, предотвращать утечки ценной информации и проводить полный
+                                аудит
+                                событий и состояния контроллеров домена.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <a href="#" class="btn btn-accent">Узнать больше о "Спектре" </a>
+                        <div class="slider-nav task-slider-nav task-slider-nav5">
+                          <div class="counter-slide"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="tab6" role="tabpanel" aria-labelledby="nav-tab6">
+                  <div class="row">
+                    <div class="col-12 col-lg-8">
+                      <div class="task-slider-image task-slider-image6">
+                        <div class="slide"><img src="img/task-image.png" alt=""></div>
+                        <div class="slide"><img src="img/task-image.png" alt=""></div>
+                        <div class="slide"><img src="img/task-image.png" alt=""></div>
+                        <div class="slide"><img src="img/task-image.png" alt=""></div>
+                        <div class="slide"><img src="img/task-image.png" alt=""></div>
+                        <div class="slide"><img src="img/task-image.png" alt=""></div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                      <div class="task-content">
+                        <div class="task-slider-content task-slider-content6">
+                          <div class="slide">
+                            <div class="task-slider__text">
+                              <p>DAG/DCAP"Спектр" классифицирует неструктурированную информацию, помогает контролировать
+                                и
+                                ограничивать к ней доступ, предотвращать утечки ценной информации и проводить полный
+                                аудит
+                                событий и состояния контроллеров домена.</p>
+                            </div>
+                          </div>
+                          <div class="slide">
+                            <div class="task-slider__text">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum enim eum fuga iusto nam
+                                nemo neque nihil, non, provident quaerat reiciendis vel voluptates voluptatibus.
+                                Aspernatur assumenda ipsam non obcaecati tempora?</p>
+                            </div>
+                          </div>
+                          <div class="slide">
+                            <div class="task-slider__text">
+                              <p>DAG/DCAP"Спектр" классифицирует неструктурированную информацию, помогает контролировать
+                                и
+                                ограничивать к ней доступ, предотвращать утечки ценной информации и проводить полный
+                                аудит
+                                событий и состояния контроллеров домена.</p>
+                            </div>
+                          </div>
+                          <div class="slide">
+                            <div class="task-slider__text">
+                              <p>DAG/DCAP"Спектр" классифицирует неструктурированную информацию, помогает контролировать
+                                и
+                                ограничивать к ней доступ, предотвращать утечки ценной информации и проводить полный
+                                аудит
+                                событий и состояния контроллеров домена.</p>
+                            </div>
+                          </div>
+                          <div class="slide">
+                            <div class="task-slider__text">
+                              <p>DAG/DCAP"Спектр" классифицирует неструктурированную информацию, помогает контролировать
+                                и
+                                ограничивать к ней доступ, предотвращать утечки ценной информации и проводить полный
+                                аудит
+                                событий и состояния контроллеров домена.</p>
+                            </div>
+                          </div>
+                          <div class="slide">
+                            <div class="task-slider__text">
+                              <p>DAG/DCAP"Спектр" классифицирует неструктурированную информацию, помогает контролировать
+                                и
+                                ограничивать к ней доступ, предотвращать утечки ценной информации и проводить полный
+                                аудит
+                                событий и состояния контроллеров домена.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <a href="#" class="btn btn-accent">Узнать больше о "Спектре" </a>
+                        <div class="slider-nav task-slider-nav task-slider-nav6">
+                          <div class="counter-slide"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -226,13 +822,140 @@
   </div>
 </section>
 
-<section class="">
+<section class="regulatory-requirements">
   <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="regulatory-requirements-wrapper">
+          <div class="regulatory-requirements__image"><img src="img/regulatory-image.png" alt=""></div>
+          <div class="regulatory-requirements-left">
+            <h2>ВЫПОЛНЯЙТЕ <br>
+              ТРЕБОВАНИЯ РЕГУЛЯТОРОВ</h2>
 
+            <div class="box-text">
+              <p>"Спектр" содержит более 300 пред установленных правил, категорий, отчетов для выполнения требований
+                регуляторов. Вы будет уверены, что выполняете все требования регуляторов.</p>
+            </div>
+
+            <a href="#" class="btn btn-accent">Узнать подробнее</a>
+            <a href="#reviews" class="view-more go_to"><span>СМОТРЕТЬ  ДАЛЕЕ</span></a>
+          </div>
+          <div class="regulatory-requirements-right">
+            <ul class="list-laws my-ul">
+              <li>
+                <a href="#">
+                  <span class="list-laws__icon"><img src="img/herb3.png" alt=""></span>
+                  <span class="list-laws__text">
+                    <span class="list-laws__title">152 ФЗ</span>
+                    <span class="list-laws__description">Федеральный закон <br>
+            "О персональных данных"</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="list-laws__icon"><img src="img/herb3.png" alt=""></span>
+                  <span class="list-laws__text">
+                    <span class="list-laws__title">PCI DSS</span>
+                    <span class="list-laws__description">Международный стандарт безопасности <br>
+            данных платежных систем</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="list-laws__icon"><img src="img/herb3.png" alt=""></span>
+                  <span class="list-laws__text">
+                    <span class="list-laws__title">Приказ ФСТЭК №17</span>
+                    <span class="list-laws__description">Требования к защите информации в ГИС</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="list-laws__icon"><img src="img/herb3.png" alt=""></span>
+                  <span class="list-laws__text">
+                    <span class="list-laws__title">Приказ ФСТЭК №21</span>
+                    <span class="list-laws__description">Обеспечение безопасности обработки ПДн</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="list-laws__icon"><img src="img/herb3.png" alt=""></span>
+                  <span class="list-laws__text">
+                    <span class="list-laws__title">ГОСТ Р 57580.1 - 2017</span>
+                    <span class="list-laws__description">Безопасность финансовых операций</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="list-laws__icon"><img src="img/herb3.png" alt=""></span>
+                  <span class="list-laws__text">
+                    <span class="list-laws__title">GDPR</span>
+                    <span class="list-laws__description">Европейский регламент по защите ПДн</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="list-laws__icon"><img src="img/herb3.png" alt=""></span>
+                  <span class="list-laws__text">
+                    <span class="list-laws__title">СТО БР ИББС</span>
+                    <span class="list-laws__description">Стандарт по обеспечению ИБ банков РФ</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="list-laws__icon"><img src="img/herb3.png" alt=""></span>
+                  <span class="list-laws__text">
+                    <span class="list-laws__title">Приказ ФСТЭК №239</span>
+                    <span class="list-laws__description">Меры безопасности для значимых <br>
+            объектов КИИ</span>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4 mb-35">
+        <div class="regulatory-requirements-box">
+          <div class="regulatory-requirements-box__icon"><img src="img/regulatory-icon1.png" alt=""></div>
+          <div class="regulatory-requirements-box__text">
+            <p>"Спектр" входит в Единый реестр российских программ для ЭВМ и баз данных.</p>
+            <span>Это пример текста, создан для примера описания.</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 mb-35">
+        <div class="regulatory-requirements-box">
+          <div class="regulatory-requirements-box__icon"><img src="img/herb1.png" alt=""></div>
+          <div class="regulatory-requirements-box__text">
+            <p>Имеем лицензию СЗКИ ФСТЭК России </p>
+            <span>"Сайберпик" разрабатывает решения ИБ на основе лицензией на деятельность по разработке и производству средств защиты конфиденци-альной информации.</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 mb-35">
+        <div class="regulatory-requirements-box">
+          <div class="regulatory-requirements-box__icon"><img src="img/herb2.png" alt=""></div>
+          <div class="regulatory-requirements-box__text">
+            <p>Имеем лицензию СЗКИ ФСТЭК России </p>
+            <span>"Сайберпик" разрабатывает решения ИБ на основе лицензией на деятельность по разработке и производству средств защиты конфиденци-альной информации.</span>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
-<section class="reviews">
+<section class="reviews" id="reviews">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
@@ -683,6 +1406,7 @@
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/slick.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.js"></script>
 <script src="js/common.js"></script>
 
 </body>
