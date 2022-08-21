@@ -30,11 +30,72 @@
 
 <body>
 
+<div class="mobile-menu">
+  <div class="mobile-menu__head">
+    <a href="#" class="link-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></a>
+
+    <a href="#" class="mobile-menu__close"><svg class="svg-icon"><use xlink:href="img/sprite.svg#close"></use></svg></a>
+  </div>
+  <div class="mobile-menu__body">
+    <ul class="nav nav-menu">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+           aria-expanded="false">Продукты <sup></sup></a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Menu1</a></li>
+          <li><a class="dropdown-item" href="#">Menu2</a></li>
+          <li><a class="dropdown-item" href="#">Menu3</a></li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+           aria-expanded="false">Техническая поддержка <sup></sup></a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Menu1</a></li>
+          <li><a class="dropdown-item" href="#">Menu2</a></li>
+          <li><a class="dropdown-item" href="#">Menu3</a></li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+           aria-expanded="false">Партнеры <sup></sup></a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Menu1</a></li>
+          <li><a class="dropdown-item" href="#">Menu2</a></li>
+          <li><a class="dropdown-item" href="#">Menu3</a></li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+           aria-expanded="false">Новости <sup></sup></a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Новости</a></li>
+          <li><a class="dropdown-item" href="#">Вебинары и мероприятия</a></li>
+          <li><a class="dropdown-item" href="#">Публикации в СМИ</a></li>
+          <li><a class="dropdown-item" href="#">Обзор версий решений</a></li>
+          <li><a class="dropdown-item" href="#">Блог компании</a></li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+           aria-expanded="false">О компании <sup></sup></a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Menu1</a></li>
+          <li><a class="dropdown-item" href="#">Menu2</a></li>
+          <li><a class="dropdown-item" href="#">Menu3</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+
 <div class="home-wrapper">
   <header>
     <div class="container">
       <div class="row">
         <div class="col-12 d-flex flex-wrap align-items-center">
+          <div class="btn-burger"></div>
+
           <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
 
           <ul class="nav nav-menu">
@@ -111,7 +172,7 @@
           </div>
         </div>
 
-        <div class="col-12 col-lg-4 col-md-5">
+        <div class="col-12 col-lg-4 col-md-5 d-none d-md-block">
           <div class="home-image">
             <img src="img/home-decor.svg" alt="">
           </div>
@@ -160,7 +221,7 @@
           </div>
 
           <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
-            <div class="progress-bg"></div>
+            <div class="progress-bg progress-bg1"></div>
           </div>
         </div>
       </div>
@@ -221,6 +282,10 @@
               <div class="why-important-box__text"><p>неструктурированной информации не приносит никакой пользы бизнесу
                 (копии документов, файлы без изменений и т.д.)</p></div>
             </div>
+          </div>
+
+          <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bg progress-bg2"></div>
           </div>
         </div>
       </div>

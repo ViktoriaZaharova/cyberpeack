@@ -32,28 +32,25 @@ $('.partners-company-slider').slick({
 });
 
 // прогрессбар для слайдера
-function setProgress(index) {
-    const calc = ((index + 1) / ($slider.slick('getSlick').slideCount)) * 100;
+$(document).ready(function () {
+    function setProgress(index) {
+        const calc = ((index + 1) / ($slider.slick('getSlick').slideCount)) * 100;
 
-    $progressBar
-        .css('width', calc + '%')
-        .attr('aria-valuenow', calc);
+        $progressBar
+            .css('width', calc + '%')
+            .attr('aria-valuenow', calc);
 
-}
+    }
 
-const $slider = $('.partners-company-slider');
-const $progressBar = $('.progress-bg');
-// const $progressBarLabel = $('.timeline__val');
+    const $slider = $('.partners-company-slider');
+    const $progressBar = $('.progress-bg1');
 
-$slider.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
-    setProgress(nextSlide);
+    $slider.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+        setProgress(nextSlide);
+    });
 
+    setProgress(0);
 });
-
-
-setProgress(0);
-
-
 
 
 //плавный скролл
@@ -71,9 +68,52 @@ $(document).ready(function () {
 });
 //плавный скролл end
 
-$(window).on("load",function(){
+$(window).on("load", function () {
     $(".risks-wrapper").mCustomScrollbar();
 });
+
+// $(window).on('load resize', function () {
+//     if ($(window).width() < 768) {
+//         $('.why-important-wrapper:not(.slick-initialized)').slick({
+//             // infinite: true,
+//             slidesToShow: 2,
+//             arrows: false,
+//             responsive: [
+//                 {
+//                     breakpoint: 576,
+//                     settings: {
+//                         slidesToShow: 1,
+//                     }
+//                 }
+//             ]
+//         });
+//
+//     } else {
+//         $(".why-important-wrapper.slick-initialized").slick("unslick");
+//     }
+// });
+
+// прогрессбар для слайдера
+// $(document).ready(function () {
+//     function setProgress(index) {
+//         const calc2 = ((index + 1) / ($slider.slick('getSlick').slideCount)) * 100;
+//
+//         $progressBar2
+//             .css('width', calc2 + '%')
+//             .attr('aria-valuenow', calc2);
+//
+//     }
+//
+//     const $slider = $('.why-important-wrapper');
+//     const $progressBar2 = $('.progress-bg2');
+//
+//     $slider.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+//         setProgress(nextSlide);
+//     });
+//
+//
+//     setProgress(0);
+// });
 
 
 $('.task-slider-image1').slick({
@@ -92,12 +132,12 @@ $('.task-slider-content1').slick({
     nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
     dots: true,
     appendDots: '.task-slider-nav1 .counter-slide',
-    customPaging: function(slider, i) {
+    customPaging: function (slider, i) {
         var current = i + 1;
-        current = current < 10 ? + current : current;
+        current = current < 10 ? +current : current;
 
         var total = slider.slideCount;
-        total = total < 10 ? + total : total;
+        total = total < 10 ? +total : total;
 
         return (
             '<button type="button" role="button" tabindex="0" class="slick-dots-button">\
@@ -126,12 +166,12 @@ $('.task-slider-content2').slick({
     nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
     dots: true,
     appendDots: '.task-slider-nav2 .counter-slide',
-    customPaging: function(slider, i) {
+    customPaging: function (slider, i) {
         var current = i + 1;
-        current = current < 10 ? + current : current;
+        current = current < 10 ? +current : current;
 
         var total = slider.slideCount;
-        total = total < 10 ? + total : total;
+        total = total < 10 ? +total : total;
 
         return (
             '<button type="button" role="button" tabindex="0" class="slick-dots-button">\
@@ -160,12 +200,12 @@ $('.task-slider-content3').slick({
     nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
     dots: true,
     appendDots: '.task-slider-nav3 .counter-slide',
-    customPaging: function(slider, i) {
+    customPaging: function (slider, i) {
         var current = i + 1;
-        current = current < 10 ? + current : current;
+        current = current < 10 ? +current : current;
 
         var total = slider.slideCount;
-        total = total < 10 ? + total : total;
+        total = total < 10 ? +total : total;
 
         return (
             '<button type="button" role="button" tabindex="0" class="slick-dots-button">\
@@ -193,12 +233,12 @@ $('.task-slider-content4').slick({
     nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
     dots: true,
     appendDots: '.task-slider-nav4 .counter-slide',
-    customPaging: function(slider, i) {
+    customPaging: function (slider, i) {
         var current = i + 1;
-        current = current < 10 ? + current : current;
+        current = current < 10 ? +current : current;
 
         var total = slider.slideCount;
-        total = total < 10 ? + total : total;
+        total = total < 10 ? +total : total;
 
         return (
             '<button type="button" role="button" tabindex="0" class="slick-dots-button">\
@@ -226,12 +266,12 @@ $('.task-slider-content5').slick({
     nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
     dots: true,
     appendDots: '.task-slider-nav5 .counter-slide',
-    customPaging: function(slider, i) {
+    customPaging: function (slider, i) {
         var current = i + 1;
-        current = current < 10 ? + current : current;
+        current = current < 10 ? +current : current;
 
         var total = slider.slideCount;
-        total = total < 10 ? + total : total;
+        total = total < 10 ? +total : total;
 
         return (
             '<button type="button" role="button" tabindex="0" class="slick-dots-button">\
@@ -259,12 +299,12 @@ $('.task-slider-content6').slick({
     nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
     dots: true,
     appendDots: '.task-slider-nav6 .counter-slide',
-    customPaging: function(slider, i) {
+    customPaging: function (slider, i) {
         var current = i + 1;
-        current = current < 10 ? + current : current;
+        current = current < 10 ? +current : current;
 
         var total = slider.slideCount;
-        total = total < 10 ? + total : total;
+        total = total < 10 ? +total : total;
 
         return (
             '<button type="button" role="button" tabindex="0" class="slick-dots-button">\
@@ -278,4 +318,14 @@ $('.task-slider-content6').slick({
 
 $('[data-bs-toggle="tab"]').on('shown.bs.tab', function (e) {
     $('.slick-slider').slick('setPosition');
+});
+
+
+$('.btn-burger').on('click', function () {
+    $('.mobile-menu').fadeIn();
+});
+
+$('.mobile-menu__close').on('click', function (e) {
+    e.preventDefault();
+    $('.mobile-menu').fadeOut();
 });

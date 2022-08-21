@@ -235,14 +235,17 @@ button, .btn {
     border-color: #E12651;
     color: #fff; }
 
-.btn-group .btn {
-  margin: 0 14px 0 0;
-  max-width: 278px;
-  min-width: 278px;
-  width: 100%;
-  padding: 0 20px; }
-  .btn-group .btn:last-child {
-    margin: 0; }
+.btn-group {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .btn-group .btn {
+    margin: 0 14px 0 0;
+    max-width: 278px;
+    min-width: 278px;
+    width: 100%;
+    padding: 0 20px; }
+    .btn-group .btn:last-child {
+      margin: 0; }
 
 .btn-group > .btn-group:not(:last-child) > .btn, .btn-group > .btn:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-group:not(:first-child) > .btn, .btn-group > .btn:nth-child(n+3), .btn-group > :not(.btn-check) + .btn {
   border-radius: 5px; }
@@ -362,3 +365,19 @@ a.color-white:hover {
           align-items: center; }
   .slider-nav .slick-next {
     margin-left: 50px; }
+
+.mCSB_scrollTools.mCSB_scrollTools_horizontal {
+  width: 100%;
+  position: relative;
+  margin: 30px 0 0;
+  -webkit-transform: none;
+          transform: none; }
+
+.mCSB_horizontal.mCSB_inside > .mCSB_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 0; }

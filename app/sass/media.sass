@@ -3,53 +3,192 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
-	/**/
+@media only screen and (max-width: 1200px)
+  .nav-menu .nav-item
+    margin: 0 20px 0 0
 
+  .logo
+    max-width: 138px
+
+  .shield:before
+    display: none
+
+  .home-wrapper
+    background: linear-gradient(102deg, #0E1D42 13%, #c7254f 91.31%)
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px)
-	/**/
+@media only screen and (max-width: 992px)
+  header
+    padding: 39px 0
+    .nav-menu
+      display: none
+    .logo
+      margin: 0 auto
 
+  .btn-burger
+    display: block
+
+  .view-more
+    display: none
+
+  .home-image
+    img
+      margin: 0 auto
+
+  .home
+    .btn-group
+      flex-direction: column
+      align-items: flex-start
+      width: 100%
+      .btn
+        margin: 0 0 21px
+        max-width: 300px
+        width: 100%
+        &:last-child
+          margin: 0
+
+  .shield
+    h2
+      max-width: 350px
+    .description
+      max-width: 320px
+
+  .why-important-content
+    margin: 0 0 76px
+
+  .tab-content
+    padding: 0 10px
+
+  .nav-tabs
+    flex-wrap: wrap
+    align-items: flex-start
+    .nav-item
+      width: 33.3%
+      flex: auto
+      margin: 0 0 26px
+      &:last-child
+        margin: 0
+    .nav-link
+      padding: 0 10px 10px
+      &:before
+        display: none
+
+  .title-decor__text
+    display: none
+
+  .tasks
+    h2
+      margin: 0 auto 38px
+    span.title-decor__text
+      display: none
+
+  .tasks-wrapper
+    margin: -34px 0
+    padding: 26px 16px 45px
+
+  .task-slider-image
+    max-width: none
+
+  .task-content
+    max-width: none
+    padding: 0
+    margin: 40px 0 0
+    display: flex
+    flex-direction: column
+    .btn
+      margin: 0 auto
+      order: 1
+    .slider-nav
+      margin: 0 auto 20px
+      width: 100%
+    .counter-slide
+      margin-left: auto
+
+  .task-slider-content
+    margin: 0 0 20px
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
-	/**/
+@media only screen and (max-width: 768px)
+  .home-content
+    padding: 0
 
+  .home
+    padding: 167px 0 0
+    &:before
+      display: none
+    h3
+      font-size: 24px
+      margin: 36px 0 70px
+
+  h1
+    font-size: 32px
+    line-height: 111.2%
+
+
+  .home-wrapper
+    background: url("../img/home-image.png") no-repeat 30% top
+      size: cover
+
+  .shield-image
+    display: none
+
+  .shield
+    padding: 76px 0 99px
+    h2
+      max-width: none
+      margin: 0 0 29px
+    .description
+      max-width: none
+
+  .partners-company
+    margin: 47px 0 0
+
+  h2
+    font-size: 24px
+
+  .why-important
+    padding: 0 0 290px
+    .progress
+      display: block
+
+  .why-important-wrapper
+    flex-wrap: nowrap
+
+  //.why-important-box
+    //max-width: 311px
+    //margin: 0 30px 0 0
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px)
-	/**/
+@media only screen and (max-width: 576px)
+  header
+    .btn
+      display: none
+
+  .phone-icon
+    margin: 0
+
+  h2
+    font-size: 18px
+
+  .nav-tabs
+    .nav-item
+      width: 100%
+      margin: 0 0 20px
+    .nav-link
+      padding: 0 0 10px
+
+  .tab-content
+    margin: 22px 0 0
+
+  .task-slider__text
+    font-size: 14px
+
+@media only screen and (max-width: 480px)
+  /**/
 
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
-	/**/
+@media only screen and (max-width: 320px)
+  /**/
 
-
-/*==========  Mobile First  ==========*/
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px)
-	/**/
-
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px)
-	/**/
-
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px)
-	/**/
-
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px)
-	/**/
-
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px)
-	/**/
 
