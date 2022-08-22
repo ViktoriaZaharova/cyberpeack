@@ -68,52 +68,52 @@ $(document).ready(function () {
 });
 //плавный скролл end
 
-$(window).on("load", function () {
-    $(".risks-wrapper").mCustomScrollbar();
+
+$(window).on('load resize', function () {
+    if ($(window).width() > 992) {
+        $(".risks-wrapper").mCustomScrollbar({
+            axis:"y"
+        });
+    } else {
+        $(".risks-wrapper").mCustomScrollbar({
+            axis:"x"
+        });
+    }
+
+
+    if ($(window).width() < 768) {
+        $(".why-important-wrapper").mCustomScrollbar({
+            axis:"x"
+        });
+
+        $('.reviews-slider:not(.slick-initialized)').slick({
+            dots: true,
+            slidesToShow: 1,
+            arrows: false,
+            fade: true
+        });
+
+    }
+    else {
+        $(".reviews-slider.slick-initialized").slick("unslick");
+    }
+
+    if ($(window).width() < 576) {
+
+        $('.press-center-slider:not(.slick-initialized)').slick({
+            dots: true,
+            slidesToShow: 2,
+            arrows: false,
+            variableWidth: true
+        });
+    }
+    else {
+        $(".press-center-slider.slick-initialized").slick("unslick");
+    }
 });
 
-// $(window).on('load resize', function () {
-//     if ($(window).width() < 768) {
-//         $('.why-important-wrapper:not(.slick-initialized)').slick({
-//             // infinite: true,
-//             slidesToShow: 2,
-//             arrows: false,
-//             responsive: [
-//                 {
-//                     breakpoint: 576,
-//                     settings: {
-//                         slidesToShow: 1,
-//                     }
-//                 }
-//             ]
-//         });
-//
-//     } else {
-//         $(".why-important-wrapper.slick-initialized").slick("unslick");
-//     }
-// });
 
-// прогрессбар для слайдера
-// $(document).ready(function () {
-//     function setProgress(index) {
-//         const calc2 = ((index + 1) / ($slider.slick('getSlick').slideCount)) * 100;
-//
-//         $progressBar2
-//             .css('width', calc2 + '%')
-//             .attr('aria-valuenow', calc2);
-//
-//     }
-//
-//     const $slider = $('.why-important-wrapper');
-//     const $progressBar2 = $('.progress-bg2');
-//
-//     $slider.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
-//         setProgress(nextSlide);
-//     });
-//
-//
-//     setProgress(0);
-// });
+
 
 
 $('.task-slider-image1').slick({

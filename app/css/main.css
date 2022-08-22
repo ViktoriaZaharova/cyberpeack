@@ -156,8 +156,6 @@
       color: #E12651; }
     .why-important .view-more:before {
       display: none; }
-  .why-important .progress {
-    display: none; }
 
 .why-important-wrapper {
   width: 100%;
@@ -667,6 +665,7 @@
 
 .regulatory-requirements-box {
   position: relative;
+  overflow: hidden;
   width: 100%;
   height: 100%;
   display: -webkit-box;

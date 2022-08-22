@@ -3,6 +3,28 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1400px)
+  .regulatory-requirements:after
+    width: 503px
+    height: 422px
+
+  .risks:before
+    width: 503px
+    height: 422px
+    right: 0
+    bottom: -280px
+
+  .risks-image
+    max-width: 700px
+
+  footer
+    &:before
+      width: 325px
+      height: 454px
+    &:after
+      width: 499px
+      height: 489px
+
 @media only screen and (max-width: 1200px)
   .nav-menu .nav-item
     margin: 0 20px 0 0
@@ -15,6 +37,30 @@
 
   .home-wrapper
     background: linear-gradient(102deg, #0E1D42 13%, #c7254f 91.31%)
+
+  .regulatory-requirements:after
+    display: none
+
+  .risks-box
+    max-width: 320px
+
+  .decor-image1
+    right: 0
+    max-width: 330px
+
+  .decor-image2
+    left: 0
+    max-width: 300px
+
+  .news-card__body
+    padding: 23px 17px 18px
+
+  .news-card__title
+    margin: 0 0 20px
+
+  .news-card-min
+    height: 420px
+
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px)
@@ -107,6 +153,73 @@
   .task-slider-content
     margin: 0 0 20px
 
+  .tasks-wrapper:before
+    display: none
+
+  .regulatory-requirements-right
+    padding: 64px 10px
+
+  .list-laws__icon
+    margin: 0 16px 0 0
+
+  .risks-wrapper
+    max-height: none
+    max-width: none
+    width: 100%
+    flex-direction: row
+    align-items: flex-start
+    padding: 0
+    .mCSB_container
+      display: flex
+      align-items: stretch
+
+  .risks-box
+    max-width: 420px
+    min-width: 370px
+    width: 100%
+    margin: 0 20px 0 0
+    &:last-child
+      margin: 0
+
+  .risks-image, .risks:before
+    display: none
+
+  .reviews
+    padding: 50px 0 60px
+    h2
+      margin: 0 auto 12px
+    .title-decor__text
+      display: none
+
+  .spectrum-demonstration
+    &:before, &:after
+      display: none
+
+  .decor-image
+    display: none
+
+  .press-center
+    padding: 33px 0 66px
+    &:before
+      display: none
+    h2
+      margin: 0 auto 66px
+
+  .footer-company
+    margin: 50px auto 0
+
+  .resident
+    margin: 21px auto 28px
+
+  footer
+    padding: 50px 0 58px
+
+  .address
+    max-width: 287px
+
+  .copyright-wrapper
+    max-width: 197px
+
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px)
   .home-content
@@ -148,15 +261,155 @@
 
   .why-important
     padding: 0 0 290px
-    .progress
-      display: block
+
 
   .why-important-wrapper
     flex-wrap: nowrap
 
-  //.why-important-box
-    //max-width: 311px
-    //margin: 0 30px 0 0
+  .why-important-box
+    max-width: none
+    min-width: 311px
+    width: 311px
+    margin: 0 auto 0
+    &__percent
+      margin: 0 auto
+    &__text
+      margin: 0 auto
+      max-width: 167px
+
+  .regulatory-requirements-wrapper
+    border: none
+    margin: 0 0 44px
+
+  .regulatory-requirements-left, .regulatory-requirements-right
+    width: 100%
+
+  .regulatory-requirements-left
+    padding: 93px 0 138px
+    &:after
+      display: none
+    h2
+      margin: 0 0 23px
+    .box-text
+      margin: 0 0 27px
+
+  .regulatory-requirements__image
+    left: -10px
+    top: 285px
+    transform: none
+    max-width: none
+    width: calc(100% + 20px)
+
+  .regulatory-requirements
+    background: linear-gradient(172deg, #0E1D42 0.39%, #E12651 186.53%)
+    .mb-35
+      margin-bottom: 20px
+
+  .regulatory-requirements-right
+    padding: 43px 0 64px
+    &:before
+      left: -15px
+    &:after
+      display: none
+
+  .reviews-slider
+    .reviews-box
+      display: flex
+
+  .reviews-box
+    background: #fff
+    padding: 34px 14px 30px
+    flex-wrap: wrap
+    position: relative
+    margin: 0 0 42px
+    &-body
+      margin: 0
+      width: 100%
+      order: 1
+      flex-direction: column
+      align-items: flex-start
+      position: initial
+      min-height: auto
+      &:before
+        display: none
+    &-company
+      padding: 0
+      border: none
+      max-width: 100%
+      &__icon
+        position: absolute
+        left: 0
+        bottom: 0
+      &__logo
+        margin: 0 0 13px
+        justify-content: flex-start
+    &-author
+      width: 100%
+      margin: 0 0 39px
+      br
+        display: none
+    .box-text
+      padding: 0
+      max-width: none
+      width: 100%
+
+    .link-view
+      display: flex
+      order: 1
+      margin: 65px auto 0
+
+  .reviews-box:nth-child(even) .reviews-box-body
+    margin: 0
+
+  .reviews
+    background: transparent
+    .slick-dots
+      margin: 0 auto 54px
+
+  .spectrum-demonstration
+    padding: 46px 0 63px
+    -webkit-background-size: 2497px
+    background-size: 2497px
+    background-position: 30% center
+    &__content
+      margin: 0 0 65px
+    .description
+      font-size: 20px
+    h2
+      margin: 10px 0 28px
+      font-size: 35px
+
+  .consent
+    margin: 0 auto 38px
+    text-align: center
+
+  .form-callback
+    padding: 0
+    button
+      margin: 0 auto
+
+  .line-decor
+    display: none
+
+  footer
+    &:before, &:after
+      display: none
+
+  .copyright-wrapper
+    max-width: none
+    margin: 0 0 30px
+    width: 100%
+
+  .address
+    max-width: none
+    width: 100%
+    margin: 0 0 30px
+
+  .footer-menu
+    padding: 0
+
+  .footer-submenu
+    margin: 0 0 0 30px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px)
@@ -183,12 +436,100 @@
   .task-slider__text
     font-size: 14px
 
+  .press-center-slider
+    margin: 0
+    display: block
+    flex-wrap: nowrap
+    .slick-track
+      display: flex
+      align-items: stretch
+    .slick-slide
+      flex: none
+      margin: 0 20px 0 0
+      height: auto
+      width: 252px
+    .slick-dots
+      margin: 37px auto 50px
+      li
+        width: 42px
+        margin: 0 14px 0 0
+
+  .news-card-min
+    height: 100%
+
+  .news-card__title
+    font-size: 16px
+
+  .news-card__content, .news-card__image
+    width: 100%
+
+  .news-card__image
+    height: 156px
+
+  .news-card
+    flex-direction: column
+    align-items: flex-start
+
+  .footer-menu
+    margin: 0
+    li
+      width: 100%
+      max-width: none
+      margin: 0 0 10px
+      &:last-child
+        margin: 0
+
+  .footer-submenu
+    display: none
+
+  .footer-about
+    max-width: none
+    margin: 48px 0 0
+
+  footer
+    -webkit-background-size: 3220px
+    background-size: 3220px
+    background-position: 27% center
+
+  .footer-bottom
+    border: none
+    padding: 0
+    margin: 46px 0 0
+
 @media only screen and (max-width: 480px)
   /**/
 
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width: 320px)
-  /**/
+@media only screen and (max-width: 420px)
+  .regulatory-requirements-box
+    &:before
+      width: 87px
+      height: 160px
+    &__icon
+      width: 95px
+      height: 75px
+      img
+        min-width: 78px
+    &__text
+      width: calc(100% - 95px)
+      padding: 20px 16px
+      span
+        margin: 22px 0 0
 
 
+  .risks-box
+    min-width: 302px
+    max-width: 340px
+    &__icon
+      width: 150px
+      &:before
+        width: 148px
+        height: 136px
+      img
+        max-width: 39px
+    &__text
+      width: calc(100% - 140px)
+
+  .home-wrapper
+    background-position: 29% top

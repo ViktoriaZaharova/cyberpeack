@@ -366,6 +366,35 @@ a.color-white:hover {
   .slider-nav .slick-next {
     margin-left: 50px; }
 
+.slick-dots {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  bottom: 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .slick-dots li {
+    cursor: pointer;
+    width: 59px;
+    height: 4px;
+    border-radius: 4px;
+    margin: 0 23px 0 0;
+    background: #D9D9D9; }
+    .slick-dots li:last-child {
+      margin: 0; }
+    .slick-dots li button {
+      display: none; }
+  .slick-dots .slick-active {
+    background: #E12651; }
+
 .mCSB_scrollTools.mCSB_scrollTools_horizontal {
   width: 100%;
   position: relative;
@@ -381,3 +410,19 @@ a.color-white:hover {
       -ms-flex-align: start;
           align-items: flex-start;
   margin-bottom: 0; }
+
+.link-view {
+  color: #E12651;
+  text-transform: uppercase;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .link-view .svg-icon {
+    margin: 0 0 0 15px;
+    fill: #E12651;
+    width: 8px;
+    height: 15px; }
