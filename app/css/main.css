@@ -256,8 +256,8 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  max-height: 513px;
-  padding: 0 0 20px; }
+  height: 513px;
+  width: 100%; }
 
 .risks-box {
   display: -webkit-box;

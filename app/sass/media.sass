@@ -43,6 +43,10 @@
 
   .risks-box
     max-width: 320px
+    &__icon
+      width: 170px
+    &__text
+      width: calc(100% - 170px)
 
   .decor-image1
     right: 0
@@ -170,9 +174,20 @@
     flex-direction: row
     align-items: flex-start
     padding: 0
+    height: auto
+    .mCSB_scrollTools_horizontal
+      display: block !important
+    .mCSB_scrollTools_vertical
+      display: none !important
     .mCSB_container
       display: flex
       align-items: stretch
+      padding: 0
+    .mCSB_container_wrapper
+      //display: flex
+      //align-items: stretch
+      position: relative
+
 
   .risks-box
     max-width: 420px
@@ -181,6 +196,7 @@
     margin: 0 20px 0 0
     &:last-child
       margin: 0
+
 
   .risks-image, .risks:before
     display: none
@@ -536,3 +552,18 @@
 @media only screen and (max-width: 350px)
   .why-important-box
     margin: 0 10px
+
+
+@media (min-width: 992px)
+  .risks-wrapper
+    .mCSB_container_wrapper
+      margin-right: 0
+    .mCSB_scrollTools_horizontal
+      display: none !important
+    .mCSB_container_wrapper
+      margin-bottom: 0
+    .mCSB_container
+      padding: 0
+      width: 100% !important
+    .mCSB_vertical_horizontal > .mCSB_scrollTools.mCSB_scrollTools_vertical
+      bottom: 0
