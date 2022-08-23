@@ -329,3 +329,5 @@ $('.mobile-menu__close').on('click', function (e) {
     e.preventDefault();
     $('.mobile-menu').fadeOut();
 });
+
+new WOW().init();

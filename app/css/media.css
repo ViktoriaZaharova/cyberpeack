@@ -63,9 +63,12 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%; }
     .home .btn-group .btn {
       margin: 0 0 21px;
@@ -209,7 +212,7 @@
     font-size: 32px;
     line-height: 111.2%; }
   .home-wrapper {
-    background: url("../img/home-image.png") no-repeat 30% top;
+    background: url("../img/home-bg-mobile.jpg") no-repeat center top;
       background-size: cover; }
   .shield-image {
     display: none; }
@@ -233,7 +236,7 @@
     max-width: none;
     min-width: 311px;
     width: 311px;
-    margin: 0 auto 0; }
+    margin: 0 20px 0; }
     .why-important-box__percent {
       margin: 0 auto; }
     .why-important-box__text {
@@ -446,10 +449,6 @@
     padding: 0;
     margin: 46px 0 0; } }
 
-@media only screen and (max-width: 480px) {
-  /**/ }
-
-/* Custom, iPhone Retina */
 @media only screen and (max-width: 420px) {
   .regulatory-requirements-box:before {
     width: 87px;
@@ -475,6 +474,8 @@
       .risks-box__icon img {
         max-width: 39px; }
     .risks-box__text {
-      width: calc(100% - 140px); }
-  .home-wrapper {
-    background-position: 29% top; } }
+      width: calc(100% - 140px); } }
+
+@media only screen and (max-width: 350px) {
+  .why-important-box {
+    margin: 0 10px; } }
