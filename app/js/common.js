@@ -73,11 +73,6 @@ $(".risks-wrapper").mCustomScrollbar({
 });
 
 $(window).on('load resize', function () {
-    // if ($(window).width() < 992) {
-    //     $(".risks-wrapper").mCustomScrollbar({
-    //         axis:"x"
-    //     });
-    // }
 
     if ($(window).width() < 768) {
         $(".why-important-wrapper").mCustomScrollbar({
