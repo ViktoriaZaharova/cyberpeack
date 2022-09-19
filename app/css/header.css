@@ -28,14 +28,9 @@ header {
   max-width: 195px; }
 
 .header {
-  position: relative; }
-
-.breadcrumb-nav {
-  margin: 45px 0;
-  width: 100%; }
-
-.breadcrumb {
-  margin: 0; }
+  position: relative;
+  background: url("../img/header-bg.jpg") no-repeat center bottom;
+    background-size: cover; }
 
 /*==========  section end  ==========*/
 /*==========  section mobile-menu ==========*/

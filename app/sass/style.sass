@@ -185,7 +185,17 @@ button, .btn
     border-color: $accent
     color: #fff
 
+.btn-border-red
+  color: $accent
+  border: 1px solid #E12651
+  filter: drop-shadow(0px 7px 21px rgba(225, 38, 81, 0.68))
+  &:hover
+    background: $accent
+    color: #fff
+    border-color: $accent
+
 .btn-group
+  width: 100%
   flex-wrap: wrap
   .btn
     margin: 0 14px 0 0
@@ -273,6 +283,9 @@ a.color-white
 .mb-18
   margin-bottom: 18px
 
+.mb-20
+  margin-bottom: 20px
+
 .mb-35
   margin-bottom: 35px
 
@@ -341,7 +354,6 @@ a.color-white
   align-items: flex-start
   margin-bottom: 0
 
-
 .link-view
   color: $accent
   text-transform: uppercase
@@ -353,3 +365,67 @@ a.color-white
     fill: $accent
     width: 8px
     height: 15px
+
+
+.breadcrumb-nav
+  margin: 45px 0
+  width: 100%
+
+.breadcrumb
+  margin: 0
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-wrap: wrap
+  color: #333333
+  font-size: 14px
+  li
+    a
+      padding: 0
+      display: flex
+      align-items: center
+      &:after
+        content: ''
+        display: flex
+        align-items: center
+        justify-content: center
+        margin: 0 18px
+        width: 5px
+        height: 7px
+        background: url('../img/arrow-right.svg') no-repeat center
+          size: 100%
+
+.breadcrumb-item+.breadcrumb-item
+  padding: 0
+  &:before
+    display: none
+
+.breadcrumb-item.active
+  color: #333333
+
+
+.btn-load
+  margin: 4px auto 0
+  @include d-flex
+  width: 149px
+  height: 120px
+  color: #E12651
+  font-size: 14px
+  font-weight: 500
+  text-align: center
+  background: url('../img/btn-load-bg.svg') no-repeat center
+    size: 100%
+  &:hover
+    color: $accent
+
+  span
+    max-width: 78px
+    width: 100%
+    display: block
+    margin: 10px auto 0
+
+.subtitle-text
+  font-size: 17px
+  font-weight: 500
+  color: #0E1D42
+
