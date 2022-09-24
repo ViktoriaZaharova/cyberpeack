@@ -314,6 +314,50 @@ $('.task-slider-content6').slick({
     }
 });
 
+$('.calendar-events-slider').slick({
+    slidesToShow: 1,
+    infinite: false,
+    variableWidth: true,
+    prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+});
+
+$('.events-slider').slick({
+    slidesToShow: 1,
+    variableWidth: true,
+    appendArrows: '.events-slider-nav',
+    prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+    responsive: [
+        {
+            breakpoint: 576,
+            settings: {
+                appendArrows: '.events-slider',
+                infinite: false,
+            }
+        }
+    ]
+});
+
+$('.reports-slider').slick({
+    slidesToShow: 2,
+    variableWidth: true,
+    appendArrows: '.reports-slider-nav',
+    prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+    responsive: [
+        {
+            breakpoint: 576,
+            settings: {
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 2000,
+            }
+        }
+    ]
+});
+
+
 $('[data-bs-toggle="tab"]').on('shown.bs.tab', function (e) {
     $('.slick-slider').slick('setPosition');
 });

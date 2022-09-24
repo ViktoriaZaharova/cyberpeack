@@ -1,31 +1,4 @@
-@font-face {
-  font-family: "Raleway";
-  font-weight: 400;
-  font-style: normal;
-  src: url("../fonts/Raleway/Raleway-Regular.eot");
-  src: url("../fonts/Raleway/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway/Raleway-Regular.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "Raleway";
-  font-weight: 500;
-  font-style: normal;
-  src: url("../fonts/Raleway/Raleway-Medium.eot");
-  src: url("../fonts/Raleway/Raleway-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway/Raleway-Medium.woff") format("woff"), url("../fonts/Raleway/Raleway-Medium.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "Raleway";
-  font-weight: 600;
-  font-style: normal;
-  src: url("../fonts/Raleway/Raleway-SemiBold.eot");
-  src: url("../fonts/Raleway/Raleway-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway/Raleway-SemiBold.woff") format("woff"), url("../fonts/Raleway/Raleway-SemiBold.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "Raleway";
-  font-weight: 800;
-  font-style: normal;
-  src: url("../fonts/Raleway/Raleway-ExtraBold.eot");
-  src: url("../fonts/Raleway/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway/Raleway-ExtraBold.ttf") format("truetype"); }
-
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @font-face {
   font-family: "FuturaPT";
   font-weight: 300;
@@ -313,6 +286,31 @@ h2 {
   font-size: 28px;
   font-weight: bold;
   width: 100%; }
+
+.title {
+  color: #E12651;
+  font-size: 20px;
+  font-weight: bold; }
+
+.title-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 32px; }
+  .title-wrapper h2 {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto 0 0; }
+  .title-wrapper .slider-nav {
+    margin-left: auto;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
 
 .title-decor {
   position: relative;

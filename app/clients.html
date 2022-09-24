@@ -79,7 +79,7 @@
            aria-expanded="false">Новости <sup></sup></a>
         <ul class="dropdown-menu">
           <li><a class="dropdown-item" href="#">Новости</a></li>
-          <li><a class="dropdown-item" href="#">Вебинары и мероприятия</a></li>
+          <li><a class="dropdown-item" href="webinars.html">Вебинары и мероприятия</a></li>
           <li><a class="dropdown-item" href="#">Публикации в СМИ</a></li>
           <li><a class="dropdown-item" href="#">Обзор версий решений</a></li>
           <li><a class="dropdown-item" href="#">Блог компании</a></li>
@@ -141,7 +141,7 @@
                aria-expanded="false">Новости</a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Новости</a></li>
-              <li><a class="dropdown-item" href="#">Вебинары и мероприятия</a></li>
+              <li><a class="dropdown-item" href="webinars.html">Вебинары и мероприятия</a></li>
               <li><a class="dropdown-item" href="#">Публикации в СМИ</a></li>
               <li><a class="dropdown-item" href="#">Обзор версий решений</a></li>
               <li><a class="dropdown-item" href="#">Блог компании</a></li>
@@ -189,46 +189,210 @@
           <p>Нам доверяют защиту своих файловых хранилищ десятки российских компаний.</p>
         </div>
 
-        <div class="sorting-wrapper sorting-wrapper-clients">
-          <div class="sorting-item active">Безопасность</div>
-          <div class="sorting-item">Системные интеграторы</div>
-          <div class="sorting-item">Провайдеры</div>
-          <div class="sorting-item">Безопасность</div>
-          <div class="sorting-item">Системные интеграторы</div>
-          <div class="sorting-item">Провайдеры</div>
-        </div>
+        <ul class="nav nav-tabs sorting-tabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="nav-tab1" data-bs-toggle="tab" data-bs-target="#tab1"
+                    type="button"
+                    role="tab" aria-controls="tab1" aria-selected="true">Безопасность</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="nav-tab2" data-bs-toggle="tab" data-bs-target="#tab2" type="button"
+                    role="tab" aria-controls="tab2" aria-selected="false">Системные интеграторы</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="nav-tab3" data-bs-toggle="tab" data-bs-target="#tab3" type="button"
+                    role="tab" aria-controls="tab3" aria-selected="false">Провайдеры</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="nav-tab4" data-bs-toggle="tab" data-bs-target="#tab4" type="button"
+                    role="tab" aria-controls="tab4" aria-selected="false">Безопасность</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="nav-tab5" data-bs-toggle="tab" data-bs-target="#tab5" type="button"
+                    role="tab" aria-controls="tab5" aria-selected="false">Системные интеграторы</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="nav-tab6" data-bs-toggle="tab" data-bs-target="#tab6" type="button"
+                    role="tab" aria-controls="tab6" aria-selected="false">Провайдеры</button>
+          </li>
+        </ul>
+        <div class="tab-content tab-content-clients">
+          <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="nav-tab1">
+            <div class="clients-home-wrapper">
+              <div class="clients-home-row">
+                <div class="clients-item"><img src="img/clients1.svg" alt=""></div>
+                <div class="clients-item"><img src="img/clients2.png" alt=""></div>
+                <div class="clients-item"><img src="img/clients3.jpeg" alt=""></div>
+                <div class="clients-item"><img src="img/clients4.png" alt=""></div>
+                <div class="clients-item"><img src="img/partners4.png" alt=""></div>
+                <div class="clients-item"><img src="img/partners2.png" alt=""></div>
+                <div class="clients-item"><img src="img/clients5.png" alt=""></div>
+                <div class="clients-item"><img src="img/partners3.png" alt=""></div>
+                <div class="clients-item"><img src="img/clients2.png" alt=""></div>
+                <div class="clients-item"><img src="img/clients1.svg" alt=""></div>
+                <div class="clients-item"><img src="img/clients4.png" alt=""></div>
+                <div class="clients-item"><img src="img/clients3.jpeg" alt=""></div>
+                <div class="clients-item"><img src="img/clients5.png" alt=""></div>
+                <div class="clients-item"><img src="img/partners2.png" alt=""></div>
+                <div class="clients-item"><img src="img/partners4.png" alt=""></div>
+                <div class="clients-item"><img src="img/partners3.png" alt=""></div>
+                <div class="clients-item"><img src="img/partners3.png" alt=""></div>
+                <div class="clients-item"><img src="img/clients5.png" alt=""></div>
+                <div class="clients-item"><img src="img/partners2.png" alt=""></div>
+                <div class="clients-item"><img src="img/partners4.png" alt=""></div>
+              </div>
 
-        <div class="clients-home-wrapper">
-          <div class="clients-home-row">
-            <div class="clients-item"><img src="img/clients1.svg" alt=""></div>
-            <div class="clients-item"><img src="img/clients2.png" alt=""></div>
-            <div class="clients-item"><img src="img/clients3.jpeg" alt=""></div>
-            <div class="clients-item"><img src="img/clients4.png" alt=""></div>
-            <div class="clients-item"><img src="img/partners4.png" alt=""></div>
-            <div class="clients-item"><img src="img/partners2.png" alt=""></div>
-            <div class="clients-item"><img src="img/clients5.png" alt=""></div>
-            <div class="clients-item"><img src="img/partners3.png" alt=""></div>
-            <div class="clients-item"><img src="img/clients2.png" alt=""></div>
-            <div class="clients-item"><img src="img/clients1.svg" alt=""></div>
-            <div class="clients-item"><img src="img/clients4.png" alt=""></div>
-            <div class="clients-item"><img src="img/clients3.jpeg" alt=""></div>
-            <div class="clients-item"><img src="img/clients5.png" alt=""></div>
-            <div class="clients-item"><img src="img/partners2.png" alt=""></div>
-            <div class="clients-item"><img src="img/partners4.png" alt=""></div>
-            <div class="clients-item"><img src="img/partners3.png" alt=""></div>
-            <div class="clients-item"><img src="img/partners3.png" alt=""></div>
-            <div class="clients-item"><img src="img/clients5.png" alt=""></div>
-            <div class="clients-item"><img src="img/partners2.png" alt=""></div>
-            <div class="clients-item"><img src="img/partners4.png" alt=""></div>
+              <a href="#" class="btn btn-border btn-border-red btn-toggle">Показать еще</a>
+            </div>
           </div>
+          <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="nav-tab2">
+            <div class="clients-home-wrapper">
+              <div class="clients-home-row">
+                <div class="clients-item"><img src="img/clients1.svg" alt=""></div>
+                <div class="clients-item"><img src="img/clients2.png" alt=""></div>
+                <div class="clients-item"><img src="img/clients3.jpeg" alt=""></div>
+                <div class="clients-item"><img src="img/clients4.png" alt=""></div>
+                <div class="clients-item"><img src="img/partners4.png" alt=""></div>
+                <div class="clients-item"><img src="img/partners2.png" alt=""></div>
+                <div class="clients-item"><img src="img/clients5.png" alt=""></div>
+                <div class="clients-item"><img src="img/partners3.png" alt=""></div>
+                <div class="clients-item"><img src="img/clients2.png" alt=""></div>
+                <div class="clients-item"><img src="img/clients1.svg" alt=""></div>
+                <div class="clients-item"><img src="img/clients4.png" alt=""></div>
+                <div class="clients-item"><img src="img/clients3.jpeg" alt=""></div>
+                <div class="clients-item"><img src="img/clients5.png" alt=""></div>
+                <div class="clients-item"><img src="img/partners2.png" alt=""></div>
+                <div class="clients-item"><img src="img/partners4.png" alt=""></div>
+                <div class="clients-item"><img src="img/partners3.png" alt=""></div>
+                <div class="clients-item"><img src="img/partners3.png" alt=""></div>
+                <div class="clients-item"><img src="img/clients5.png" alt=""></div>
+                <div class="clients-item"><img src="img/partners2.png" alt=""></div>
+                <div class="clients-item"><img src="img/partners4.png" alt=""></div>
+              </div>
 
-          <a href="#" class="btn btn-border btn-border-red btn-toggle">Показать еще</a>
+              <a href="#" class="btn btn-border btn-border-red btn-toggle">Показать еще</a>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="nav-tab3">
+            <div class="clients-home-wrapper">
+              <div class="clients-home-row">
+                <div class="clients-item"><img src="img/clients1.svg" alt=""></div>
+                <div class="clients-item"><img src="img/clients2.png" alt=""></div>
+                <div class="clients-item"><img src="img/clients3.jpeg" alt=""></div>
+                <div class="clients-item"><img src="img/clients4.png" alt=""></div>
+                <div class="clients-item"><img src="img/partners4.png" alt=""></div>
+                <div class="clients-item"><img src="img/partners2.png" alt=""></div>
+                <div class="clients-item"><img src="img/clients5.png" alt=""></div>
+                <div class="clients-item"><img src="img/partners3.png" alt=""></div>
+                <div class="clients-item"><img src="img/clients2.png" alt=""></div>
+                <div class="clients-item"><img src="img/clients1.svg" alt=""></div>
+                <div class="clients-item"><img src="img/clients4.png" alt=""></div>
+                <div class="clients-item"><img src="img/clients3.jpeg" alt=""></div>
+                <div class="clients-item"><img src="img/clients5.png" alt=""></div>
+                <div class="clients-item"><img src="img/partners2.png" alt=""></div>
+                <div class="clients-item"><img src="img/partners4.png" alt=""></div>
+                <div class="clients-item"><img src="img/partners3.png" alt=""></div>
+                <div class="clients-item"><img src="img/partners3.png" alt=""></div>
+                <div class="clients-item"><img src="img/clients5.png" alt=""></div>
+                <div class="clients-item"><img src="img/partners2.png" alt=""></div>
+                <div class="clients-item"><img src="img/partners4.png" alt=""></div>
+              </div>
+
+              <a href="#" class="btn btn-border btn-border-red btn-toggle">Показать еще</a>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="nav-tab4">
+            <div class="clients-home-wrapper">
+              <div class="clients-home-row">
+                <div class="clients-item"><img src="img/clients1.svg" alt=""></div>
+                <div class="clients-item"><img src="img/clients2.png" alt=""></div>
+                <div class="clients-item"><img src="img/clients3.jpeg" alt=""></div>
+                <div class="clients-item"><img src="img/clients4.png" alt=""></div>
+                <div class="clients-item"><img src="img/partners4.png" alt=""></div>
+                <div class="clients-item"><img src="img/partners2.png" alt=""></div>
+                <div class="clients-item"><img src="img/clients5.png" alt=""></div>
+                <div class="clients-item"><img src="img/partners3.png" alt=""></div>
+                <div class="clients-item"><img src="img/clients2.png" alt=""></div>
+                <div class="clients-item"><img src="img/clients1.svg" alt=""></div>
+                <div class="clients-item"><img src="img/clients4.png" alt=""></div>
+                <div class="clients-item"><img src="img/clients3.jpeg" alt=""></div>
+                <div class="clients-item"><img src="img/clients5.png" alt=""></div>
+                <div class="clients-item"><img src="img/partners2.png" alt=""></div>
+                <div class="clients-item"><img src="img/partners4.png" alt=""></div>
+                <div class="clients-item"><img src="img/partners3.png" alt=""></div>
+                <div class="clients-item"><img src="img/partners3.png" alt=""></div>
+                <div class="clients-item"><img src="img/clients5.png" alt=""></div>
+                <div class="clients-item"><img src="img/partners2.png" alt=""></div>
+                <div class="clients-item"><img src="img/partners4.png" alt=""></div>
+              </div>
+
+              <a href="#" class="btn btn-border btn-border-red btn-toggle">Показать еще</a>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="tab5" role="tabpanel" aria-labelledby="nav-tab5">
+            <div class="clients-home-wrapper">
+              <div class="clients-home-row">
+                <div class="clients-item"><img src="img/clients1.svg" alt=""></div>
+                <div class="clients-item"><img src="img/clients2.png" alt=""></div>
+                <div class="clients-item"><img src="img/clients3.jpeg" alt=""></div>
+                <div class="clients-item"><img src="img/clients4.png" alt=""></div>
+                <div class="clients-item"><img src="img/partners4.png" alt=""></div>
+                <div class="clients-item"><img src="img/partners2.png" alt=""></div>
+                <div class="clients-item"><img src="img/clients5.png" alt=""></div>
+                <div class="clients-item"><img src="img/partners3.png" alt=""></div>
+                <div class="clients-item"><img src="img/clients2.png" alt=""></div>
+                <div class="clients-item"><img src="img/clients1.svg" alt=""></div>
+                <div class="clients-item"><img src="img/clients4.png" alt=""></div>
+                <div class="clients-item"><img src="img/clients3.jpeg" alt=""></div>
+                <div class="clients-item"><img src="img/clients5.png" alt=""></div>
+                <div class="clients-item"><img src="img/partners2.png" alt=""></div>
+                <div class="clients-item"><img src="img/partners4.png" alt=""></div>
+                <div class="clients-item"><img src="img/partners3.png" alt=""></div>
+                <div class="clients-item"><img src="img/partners3.png" alt=""></div>
+                <div class="clients-item"><img src="img/clients5.png" alt=""></div>
+                <div class="clients-item"><img src="img/partners2.png" alt=""></div>
+                <div class="clients-item"><img src="img/partners4.png" alt=""></div>
+              </div>
+
+              <a href="#" class="btn btn-border btn-border-red btn-toggle">Показать еще</a>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="tab6" role="tabpanel" aria-labelledby="nav-tab6">
+            <div class="clients-home-wrapper">
+              <div class="clients-home-row">
+                <div class="clients-item"><img src="img/clients1.svg" alt=""></div>
+                <div class="clients-item"><img src="img/clients2.png" alt=""></div>
+                <div class="clients-item"><img src="img/clients3.jpeg" alt=""></div>
+                <div class="clients-item"><img src="img/clients4.png" alt=""></div>
+                <div class="clients-item"><img src="img/partners4.png" alt=""></div>
+                <div class="clients-item"><img src="img/partners2.png" alt=""></div>
+                <div class="clients-item"><img src="img/clients5.png" alt=""></div>
+                <div class="clients-item"><img src="img/partners3.png" alt=""></div>
+                <div class="clients-item"><img src="img/clients2.png" alt=""></div>
+                <div class="clients-item"><img src="img/clients1.svg" alt=""></div>
+                <div class="clients-item"><img src="img/clients4.png" alt=""></div>
+                <div class="clients-item"><img src="img/clients3.jpeg" alt=""></div>
+                <div class="clients-item"><img src="img/clients5.png" alt=""></div>
+                <div class="clients-item"><img src="img/partners2.png" alt=""></div>
+                <div class="clients-item"><img src="img/partners4.png" alt=""></div>
+                <div class="clients-item"><img src="img/partners3.png" alt=""></div>
+                <div class="clients-item"><img src="img/partners3.png" alt=""></div>
+                <div class="clients-item"><img src="img/clients5.png" alt=""></div>
+                <div class="clients-item"><img src="img/partners2.png" alt=""></div>
+                <div class="clients-item"><img src="img/partners4.png" alt=""></div>
+              </div>
+
+              <a href="#" class="btn btn-border btn-border-red btn-toggle">Показать еще</a>
+            </div>
+          </div>
         </div>
+
       </div>
 
     </div>
   </div>
 </section>
+
 
 
 <section class="projects">

@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Cyberpeak</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+
+<div class="mobile-menu">
+  <div class="mobile-menu__head">
+    <a href="#" class="link-prev">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#prev"></use>
+      </svg>
+    </a>
+
+    <a href="#" class="mobile-menu__close">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </a>
+  </div>
+  <div class="mobile-menu__body">
+    <ul class="nav nav-menu">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+           aria-expanded="false">Продукты <sup></sup></a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Menu1</a></li>
+          <li><a class="dropdown-item" href="#">Menu2</a></li>
+          <li><a class="dropdown-item" href="#">Menu3</a></li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+           aria-expanded="false">Техническая поддержка <sup></sup></a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Menu1</a></li>
+          <li><a class="dropdown-item" href="#">Menu2</a></li>
+          <li><a class="dropdown-item" href="#">Menu3</a></li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+           aria-expanded="false">Партнеры <sup></sup></a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Menu1</a></li>
+          <li><a class="dropdown-item" href="#">Menu2</a></li>
+          <li><a class="dropdown-item" href="#">Menu3</a></li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+           aria-expanded="false">Новости <sup></sup></a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Новости</a></li>
+          <li><a class="dropdown-item" href="webinars.html">Вебинары и мероприятия</a></li>
+          <li><a class="dropdown-item" href="#">Публикации в СМИ</a></li>
+          <li><a class="dropdown-item" href="#">Обзор версий решений</a></li>
+          <li><a class="dropdown-item" href="#">Блог компании</a></li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+           aria-expanded="false">О компании <sup></sup></a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Menu1</a></li>
+          <li><a class="dropdown-item" href="#">Menu2</a></li>
+          <li><a class="dropdown-item" href="#">Menu3</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+<header class="header">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-flex flex-wrap align-items-center">
+        <div class="btn-burger"></div>
+
+        <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+
+        <ul class="nav nav-menu">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+               aria-expanded="false">Продукты</a>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Menu1</a></li>
+              <li><a class="dropdown-item" href="#">Menu2</a></li>
+              <li><a class="dropdown-item" href="#">Menu3</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+               aria-expanded="false">Техническая поддержка</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Menu1</a></li>
+              <li><a class="dropdown-item" href="#">Menu2</a></li>
+              <li><a class="dropdown-item" href="#">Menu3</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+               aria-expanded="false">Партнеры</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Menu1</a></li>
+              <li><a class="dropdown-item" href="#">Menu2</a></li>
+              <li><a class="dropdown-item" href="#">Menu3</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+               aria-expanded="false">Новости</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Новости</a></li>
+              <li><a class="dropdown-item" href="webinars.html">Вебинары и мероприятия</a></li>
+              <li><a class="dropdown-item" href="#">Публикации в СМИ</a></li>
+              <li><a class="dropdown-item" href="#">Обзор версий решений</a></li>
+              <li><a class="dropdown-item" href="#">Блог компании</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+               aria-expanded="false">О компании</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Menu1</a></li>
+              <li><a class="dropdown-item" href="#">Menu2</a></li>
+              <li><a class="dropdown-item" href="#">Menu3</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <a href="tel:+78312280182" class="phone-icon"><img src="img/phone.svg" alt=""></a>
+
+        <a href="#" class="btn btn-accent btn-sm">Запросить демо</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<section class="partners-home clients-home webinars-home">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <nav aria-label="breadcrumb" class="breadcrumb-nav">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html"><img src="img/home-icon.svg" alt=""></a></li>
+            <li class="breadcrumb-item active" aria-current="page">Вебинары и мероприятия</li>
+          </ol>
+        </nav>
+      </div>
+
+      <div class="col-12">
+        <h2 class="title-decor">
+          <span class="color-accent">Вебинары и мероприятия </span>
+          <span class="title-decor__text">Вебинары и мероприятия</span>
+        </h2>
+
+        <div class="sorting-wrapper sorting-wrapper-clients">
+          <a href="#events" class="sorting-item go_to active">Мероприятия</a>
+          <a href="#reports" class="sorting-item go_to">Отчеты</a>
+          <a href="#calendar-events" class="sorting-item go_to">Календарь событий</a>
+        </div>
+
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="calendar-events" id="calendar-events">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="title mb-20">Календарь событий</h2>
+      </div>
+
+      <div class="col-12">
+        <div class="calendar-events-slider">
+          <div class="slide">
+            <div class="calendar-events-card">
+              <div class="calendar-events-card__date">
+                <div class="date-wrapper">
+                  <p>24</p>
+                  <span>июля</span>
+                </div>
+                <div class="calendar-events-card__city">Москва</div>
+              </div>
+
+              <div class="calendar-events-card__content">
+                <img src="img/news7.jpg" alt="" class="calendar-events-card__bg">
+                <a href="#" class="calendar-events-card__title">«Сайберпик» - участник бизнес-ужина Softline по вопросам
+                  противодействия киберугрозам</a>
+                <div class="box-text">
+                  <p>На встрече обсудили, как современные российские разработки помогают усилить инфраструктуру ИБ
+                    отечественных компаний. На встрече обсудили, как современные российские разработки помогают усилить
+                    инфраструктуру ИБ отечественных компаний.</p>
+                </div>
+                <div class="calendar-events-card__footer">
+                  <a href="#" class="link-news">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#next"></use>
+                    </svg>
+                  </a>
+                  <a href="#" class="color-accent category-news">Предстоящее событие</a>
+                </div>
+              </div>
+
+              <a href="#" class="btn btn-accent">Зарегистрироваться</a>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="calendar-events-card">
+              <div class="calendar-events-card__date">
+                <div class="date-wrapper">
+                  <p>25</p>
+                  <span>июля</span>
+                </div>
+                <div class="calendar-events-card__city">Владивосток</div>
+              </div>
+
+              <div class="calendar-events-card__content">
+                <img src="img/news7.jpg" alt="" class="calendar-events-card__bg">
+                <a href="#" class="calendar-events-card__title">«Сайберпик» - участник бизнес-ужина Softline по вопросам
+                  противодействия киберугрозам</a>
+                <div class="box-text">
+                  <p>На встрече обсудили, как современные российские разработки помогают усилить инфраструктуру ИБ
+                    отечественных компаний. На встрече обсудили, как современные российские разработки помогают усилить
+                    инфраструктуру ИБ отечественных компаний.</p>
+                </div>
+                <div class="calendar-events-card__footer">
+                  <a href="#" class="link-news">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#next"></use>
+                    </svg>
+                  </a>
+                  <a href="#" class="color-accent category-news">Предстоящее событие</a>
+                </div>
+              </div>
+
+              <a href="#" class="btn btn-accent">Зарегистрироваться</a>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="calendar-events-card">
+              <div class="calendar-events-card__date">
+                <div class="date-wrapper">
+                  <p>24</p>
+                  <span>июля</span>
+                </div>
+                <div class="calendar-events-card__city">Москва</div>
+              </div>
+
+              <div class="calendar-events-card__content">
+                <img src="img/news7.jpg" alt="" class="calendar-events-card__bg">
+                <a href="#" class="calendar-events-card__title">«Сайберпик» - участник бизнес-ужина Softline по вопросам
+                  противодействия киберугрозам</a>
+                <div class="box-text">
+                  <p>На встрече обсудили, как современные российские разработки помогают усилить инфраструктуру ИБ
+                    отечественных компаний. На встрече обсудили, как современные российские разработки помогают усилить
+                    инфраструктуру ИБ отечественных компаний.</p>
+                </div>
+                <div class="calendar-events-card__footer">
+                  <a href="#" class="link-news">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#next"></use>
+                    </svg>
+                  </a>
+                  <a href="#" class="color-accent category-news">Предстоящее событие</a>
+                </div>
+              </div>
+
+              <a href="#" class="btn btn-accent">Зарегистрироваться</a>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="calendar-events-card">
+              <div class="calendar-events-card__date">
+                <div class="date-wrapper">
+                  <p>25</p>
+                  <span>июля</span>
+                </div>
+                <div class="calendar-events-card__city">Владивосток</div>
+              </div>
+
+              <div class="calendar-events-card__content">
+                <img src="img/news7.jpg" alt="" class="calendar-events-card__bg">
+                <a href="#" class="calendar-events-card__title">«Сайберпик» - участник бизнес-ужина Softline по вопросам
+                  противодействия киберугрозам</a>
+                <div class="box-text">
+                  <p>На встрече обсудили, как современные российские разработки помогают усилить инфраструктуру ИБ
+                    отечественных компаний. На встрече обсудили, как современные российские разработки помогают усилить
+                    инфраструктуру ИБ отечественных компаний.</p>
+                </div>
+                <div class="calendar-events-card__footer">
+                  <a href="#" class="link-news">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#next"></use>
+                    </svg>
+                  </a>
+                  <a href="#" class="color-accent category-news">Предстоящее событие</a>
+                </div>
+              </div>
+
+              <a href="#" class="btn btn-accent">Зарегистрироваться</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 d-block d-sm-none">
+        <a href="#" class="btn btn-accent">Зарегистрироваться</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="events-section" id="events">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="title-wrapper">
+          <h2 class="title">Мероприятия</h2>
+
+          <div class="slider-nav events-slider-nav"></div>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="events-slider">
+          <div class="slide">
+            <div class="events-card">
+              <img src="img/news4.jpg" alt="" class="events-card__bg">
+              <div class="events-card__date">
+                <p>30</p>
+                <span>июля</span>
+              </div>
+              <a href="#" class="events-card__title">«Сайберпик» - участник бизнес-ужина Softline по вопросам
+                противодействия киберугрозам</a>
+              <div class="box-text">
+                <p>На встрече обсудили, как современные российские разработки помогают усилить инфраструктуру ИБ
+                  отечественных компаний. </p>
+              </div>
+              <div class="events-card__footer">
+                <a href="#" class="link-news">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#next"></use>
+                  </svg>
+                </a>
+                <a href="#" class="color-accent category-news">Предстоящее событие</a>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="events-card">
+              <img src="img/news4.jpg" alt="" class="events-card__bg">
+              <div class="events-card__date">
+                <p>30</p>
+                <span>июля</span>
+              </div>
+              <a href="#" class="events-card__title">«Сайберпик» - участник бизнес-ужина Softline по вопросам
+                противодействия киберугрозам</a>
+              <div class="box-text">
+                <p>На встрече обсудили, как современные российские разработки помогают усилить инфраструктуру ИБ
+                  отечественных компаний. </p>
+              </div>
+              <div class="events-card__footer">
+                <a href="#" class="link-news">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#next"></use>
+                  </svg>
+                </a>
+                <a href="#" class="color-accent category-news">Предстоящее событие</a>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="events-card events-card-max">
+              <img src="img/news4.jpg" alt="" class="events-card__bg">
+              <div class="events-card__date">
+                <p>30</p>
+                <span>июля</span>
+              </div>
+              <a href="#" class="events-card__title">«Сайберпик» - участник бизнес-ужина Softline по вопросам
+                противодействия киберугрозам</a>
+              <div class="box-text">
+                <p>На встрече обсудили, как современные российские разработки помогают усилить инфраструктуру ИБ
+                  отечественных компаний. На встрече обсудили, как современные российские разработки помогают усилить
+                  инфраструктуру ИБ отечественных компаний.</p>
+              </div>
+              <div class="events-card__footer">
+                <a href="#" class="link-news">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#next"></use>
+                  </svg>
+                </a>
+                <a href="#" class="color-accent category-news">Предстоящее событие</a>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="events-card">
+              <img src="img/news4.jpg" alt="" class="events-card__bg">
+              <div class="events-card__date">
+                <p>30</p>
+                <span>июля</span>
+              </div>
+              <a href="#" class="events-card__title">«Сайберпик» - участник бизнес-ужина Softline по вопросам
+                противодействия киберугрозам</a>
+              <div class="box-text">
+                <p>На встрече обсудили, как современные российские разработки помогают усилить инфраструктуру ИБ
+                  отечественных компаний. </p>
+              </div>
+              <div class="events-card__footer">
+                <a href="#" class="link-news">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#next"></use>
+                  </svg>
+                </a>
+                <a href="#" class="color-accent category-news">Предстоящее событие</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="reports" id="reports">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="title-wrapper">
+          <h2 class="title">Отчеты</h2>
+
+          <div class="slider-nav reports-slider-nav"></div>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="reports-slider">
+          <div class="slide">
+            <div class="news-card reports-card">
+              <div class="news-card__image">
+                <div class="news-card__date">14<span>июля</span></div>
+                <img src="img/news1.jpg" alt="">
+                <a href="https://youtu.be/njX2bu-_Vw4" class="btn-play" data-fancybox="video"></a>
+              </div>
+              <div class="news-card__content">
+                <a href="img/news7.jpg" class="image-gallery" data-fancybox="images">24</a>
+                <div class="news-card__body">
+                  <a href="#" class="news-card__title">«Сайберпик» представила кейс внедрения DCAP/DAG «Спектр» в Банке
+                    «Аверс» на конференции в Казани</a>
+
+                  <div class="box-text">
+                    <p>Организатором конференции "Информационная безопасность. Новый подход" выступила компания
+                      «Софтлайн». </p>
+                  </div>
+                </div>
+                <div class="news-card__footer">
+                  <a href="#" class="link-news">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#next"></use>
+                    </svg>
+                  </a>
+                  <a href="#" class="color-accent category-news">Отчет</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="news-card reports-card">
+              <div class="news-card__image">
+                <div class="news-card__date">14<span>июля</span></div>
+                <img src="img/news1.jpg" alt="">
+                <a href="https://youtu.be/njX2bu-_Vw4" class="btn-play" data-fancybox="video"></a>
+              </div>
+              <div class="news-card__content">
+                <a href="img/news3.jpg" class="image-gallery" data-fancybox="images">24</a>
+                <div class="news-card__body">
+                  <a href="#" class="news-card__title">«Сайберпик» представила кейс внедрения DCAP/DAG «Спектр» в Банке
+                    «Аверс» на конференции в Казани</a>
+
+                  <div class="box-text">
+                    <p>Организатором конференции "Информационная безопасность. Новый подход" выступила компания
+                      «Софтлайн». </p>
+                  </div>
+                </div>
+                <div class="news-card__footer">
+                  <a href="#" class="link-news">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#next"></use>
+                    </svg>
+                  </a>
+                  <a href="#" class="color-accent category-news">Отчет</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="news-card reports-card">
+              <div class="news-card__image">
+                <div class="news-card__date">14<span>июля</span></div>
+                <img src="img/news1.jpg" alt="">
+                <a href="https://youtu.be/njX2bu-_Vw4" class="btn-play" data-fancybox="video"></a>
+              </div>
+              <div class="news-card__content">
+                <a href="img/news4.jpg" class="image-gallery" data-fancybox="images">24</a>
+                <div class="news-card__body">
+                  <a href="#" class="news-card__title">«Сайберпик» представила кейс внедрения DCAP/DAG «Спектр» в Банке
+                    «Аверс» на конференции в Казани</a>
+
+                  <div class="box-text">
+                    <p>Организатором конференции "Информационная безопасность. Новый подход" выступила компания
+                      «Софтлайн». </p>
+                  </div>
+                </div>
+                <div class="news-card__footer">
+                  <a href="#" class="link-news">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#next"></use>
+                    </svg>
+                  </a>
+                  <a href="#" class="color-accent category-news">Отчет</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <a href="#" class="btn-load"><span>Загружаем еще</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-10">
+        <div class="footer-wrapper">
+          <ul class="footer-menu my-ul">
+            <li>
+              <a href="#">Продукты</a>
+            </li>
+            <li>
+              <a href="#">Техническая поддержка</a>
+            </li>
+            <li>
+              <a href="#">Партнеры</a>
+            </li>
+            <li>
+              <a href="#">Новости</a>
+            </li>
+            <li>
+              <a href="#">О компании</a>
+            </li>
+          </ul>
+
+          <div class="footer-about">
+            <p>DCAP/DAG "Спектр"</p>
+            <p>Спектр. Портал прав и разрешений</p>
+          </div>
+
+          <ul class="footer-submenu my-ul">
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Вебинары и мероприятия</a></li>
+            <li><a href="#">Публикации в СМИ</a></li>
+            <li><a href="#">Обзор версий решений</a></li>
+            <li><a href="#">Блог компании</a></li>
+          </ul>
+          <ul class="footer-submenu my-ul">
+            <li><a href="#">Наши клиенты</a></li>
+            <li><a href="#">Карьера в компании</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="d-none d-lg-block col-12 col-lg-2">
+        <div class="footer-company">
+          <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+
+          <div class="resident">
+            <div class="resident-logo"><img src="img/logo-company9.png" alt=""></div>
+            <div class="resident-name">Резидент Сколково</div>
+          </div>
+
+          <ul class="list-social my-ul">
+            <li><a href="#">
+              <svg class="svg-icon vk-icon">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon youtube-icon">
+                <use xlink:href="img/sprite.svg#youtube"></use>
+              </svg>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon tg-icon">
+                <use xlink:href="img/sprite.svg#telegram"></use>
+              </svg>
+            </a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="footer-bottom">
+          <div class="copyright-wrapper">
+            <a href="#" class="color-white" target="_blank">Политика обработки персональных данных</a>
+            <a href="#" class="color-white" target="_blank">Правила пользования сайтом</a>
+            <div class="copyright">© CyberPeak</div>
+          </div>
+
+          <div class="address">
+            <p>г. Москва, Донской 5-й проезд, д. 21Бс10</p>
+            <p>г. Нижний Новгород, Академика Сахарова, д. 4, IT-парк "Анкудиновка"</p>
+          </div>
+
+          <div class="phones">
+            <a href="tel:+78312280182" class="phone">+7 (831) 228-01-82</a>
+            <a href="tel:+74951350535" class="phone">+7 (495) 135-05-35</a>
+          </div>
+
+          <a href="mailto:info@cyberpeak.ru" class="mail">info@cyberpeak.ru</a>
+        </div>
+      </div>
+
+      <div class="d-block d-lg-none col-12 col-lg-2">
+        <div class="footer-company">
+          <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+
+          <div class="resident">
+            <div class="resident-logo"><img src="img/logo-company9.png" alt=""></div>
+            <div class="resident-name">Резидент Сколково</div>
+          </div>
+
+          <ul class="list-social my-ul">
+            <li><a href="#">
+              <svg class="svg-icon vk-icon">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon youtube-icon">
+                <use xlink:href="img/sprite.svg#youtube"></use>
+              </svg>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon tg-icon">
+                <use xlink:href="img/sprite.svg#telegram"></use>
+              </svg>
+            </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+
+</html>
