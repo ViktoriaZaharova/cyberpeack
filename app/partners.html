@@ -25,6 +25,7 @@
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/modal.css">
   <link rel="stylesheet" href="css/media.css">
 
 </head>
@@ -160,7 +161,7 @@
 
         <a href="tel:+78312280182" class="phone-icon"><img src="img/phone.svg" alt=""></a>
 
-        <a href="#" class="btn btn-accent btn-sm">Запросить демо</a>
+        <a href="#" class="btn btn-accent btn-sm" data-bs-toggle="modal" data-bs-target="#demoModal">Запросить демо</a>
       </div>
     </div>
   </div>
@@ -456,6 +457,105 @@
   </div>
 </footer>
 
+
+<!-- Modal -->
+<div class="modal fade" id="demoModal" tabindex="-1" aria-labelledby="demoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-6">
+            <div class="modal-header">
+              <div class="logo-spectrum"><img src="img/spectr-logo.png" alt=""></div>
+              <h2 class="modal-title color-accent">Получить
+                демо версию</h2>
+
+              <div class="modal-description">
+                <p>Получите бесплатную
+                  демо-версию на 30 дней</p>
+              </div>
+              <!--        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
+            </div>
+          </div>
+          <div class="col-12 col-lg-5 offset-lg-1 col-md-6">
+            <div class="modal-body">
+              <form method="post" class="form-callback form-modal">
+                <label>
+            <span class="input-wrap">
+              <input type="text" name="name" placeholder="Ваши ФИО">
+            </span>
+                </label>
+                <label>
+            <span class="input-wrap">
+              <input type="text" name="mail" placeholder="Ваш email">
+            </span>
+                </label>
+                <label>
+            <span class="input-wrap">
+              <input type="text" name="name_company" placeholder="Название компании">
+            </span>
+                </label>
+                <div class="consent">Нажимая кнопку, вы соглашаетесь
+                  с обработкой персональных данных
+                </div>
+
+                <button type="submit" class="btn btn-accent">Получить Демо-версию</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="testModal" tabindex="-1" aria-labelledby="testModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-6">
+            <div class="modal-header">
+              <div class="logo-spectrum"><img src="img/spectr-logo.png" alt=""></div>
+              <h2 class="modal-title color-accent">Получить решение в тест</h2>
+
+              <div class="modal-description-test">
+                <p>Это пример текста, создан для примера описания.</p>
+              </div>
+              <!--        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
+            </div>
+          </div>
+          <div class="col-12 col-lg-5 offset-lg-1 col-md-6">
+            <div class="modal-body">
+              <form method="post" class="form-callback form-modal">
+                <label>
+            <span class="input-wrap">
+              <input type="text" name="name" placeholder="Ваши ФИО">
+            </span>
+                </label>
+                <label>
+            <span class="input-wrap">
+              <input type="text" name="mail" placeholder="Ваш email">
+            </span>
+                </label>
+                <label>
+            <span class="input-wrap">
+              <input type="text" name="comment" placeholder="Комментарий">
+            </span>
+                </label>
+                <div class="consent">Нажимая кнопку, вы соглашаетесь
+                  с обработкой персональных данных
+                </div>
+
+                <button type="submit" class="btn btn-accent">Получить Демо-версию</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>

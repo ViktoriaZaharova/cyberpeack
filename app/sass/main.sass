@@ -937,7 +937,7 @@
 
   &__image
     width: 50%
-    height: 100%
+    //height: 100%
     position: relative
 
     img
@@ -1464,7 +1464,7 @@
       top: 0
       width: 100%
       height: 100%
-      background: linear-gradient(294.03deg, rgba(14, 29, 66, 0.72549) 0.59%, rgba(225, 38, 81, 0.72549) 107.31%)
+      background: linear-gradient(164.03deg, rgba(14, 29, 66, 0.72549) 0.59%, rgba(225, 38, 81, 0.72549) 107.31%)
       z-index: -1
   &__bg
     position: absolute
@@ -1501,10 +1501,20 @@
     fill: #fff
   .btn
     margin: 23px 0
+  &__bottom
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+    width: 100%
+    .btn
+      margin: 0 0 0 auto
 
 
 .events-section
   margin: 60px 0 70px
+  h2
+    white-space: nowrap
 
 .events-slider
   .slick-list
@@ -1535,7 +1545,7 @@
     top: 0
     width: 100%
     height: 100%
-    background: linear-gradient(294.03deg, rgba(14, 29, 66, 0.72549) 0.59%, rgba(225, 38, 81, 0.72549) 107.31%)
+    background: linear-gradient(164.03deg, rgba(14, 29, 66, 0.72549) 0.59%, rgba(225, 38, 81, 0.72549) 107.31%)
     z-index: -1
   &__bg
     position: absolute
@@ -1662,19 +1672,670 @@
   height: 68px
   background: url("../img/play.svg") no-repeat center
     size: 100%
-
-
 /*==========  section webinars end ==========*/
 
-/*==========  section  ==========*/
-/*==========  section end ==========*/
 
-/*==========  section  ==========*/
-/*==========  section end ==========*/
+/*==========  section home-module ==========*/
+.home-module
+  background: #0E1D42 url("../img/home-bg-module.png") no-repeat center
+    size: cover
+  color: #fff
+  padding: 168px 0 162px
+  h1
+    text-transform: uppercase
+    font-size: 35px
+    line-height: 45px
+    margin: 0 0 30px
+  h3
+    max-width: 250px
+    font-size: 20px
+    font-weight: bold
+    margin: 20px 0 17px
+  .box-text
+    max-width: 440px
+    strong
+      font-size: 18px
+  &:before
+    display: none
 
 
-/*==========  section  ==========*/
-/*==========  section end ==========*/
+.home-decor-title
+  padding: 0
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    left: -81px
+    top: 8px
+    width: 62px
+    height: 80px
+    background: url("../img/title-decor.svg") no-repeat center
+      size: 100%
+
+.description-module
+  position: relative
+  z-index: 2
+  h2
+    margin: 0 auto 38px
+  .list-decor
+    max-width: 405px
+    margin: 0 0 0 auto
+  &__image
+    margin: 17px 0 0
+    @include d-flex
+    max-width: 479px
+    width: 100%
+
+
+.list-decor
+  font-size: 20px
+  font-weight: 500
+  li
+    position: relative
+    padding: 0 0 0 42px
+    margin: 0 0 35px
+    &:last-child
+      margin: 0
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 0
+      width: 21px
+      height: 26px
+      background: url("../img/schield-icon-gradient.svg") no-repeat center
+        size: 100%
+
+.peculiarities-module
+  margin: 90px 0 0
+  &__title
+    width: 100%
+    position: relative
+    z-index: 1
+    text-align: center
+    margin: 0 auto 35px
+    font-size: 20px
+    font-weight: bold
+    &:before
+      content: ''
+      position: absolute
+      left: 50%
+      top: 50%
+      transform: translate(-50%,-50%)
+      width: 65px
+      height: 80px
+      background: url("../img/schield-transparent.svg") no-repeat center
+        size: 100%
+
+
+.peculiarities-module-list
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+
+.peculiarities-module-item
+  margin: 0 0 55px
+  position: relative
+  padding: 0 0 0 64px
+  width: 45%
+  &__icon
+    position: absolute
+    left: 0
+    top: 0
+  h4
+    font-size: 24px
+    font-weight: bold
+    margin: 0 0 30px
+    max-width: 290px
+  .box-text
+    font-weight: 500
+  &__body
+    max-width: 383px
+    width: 100%
+
+
+.cases
+  margin: 85px 0
+  h2
+    margin: 0 0 34px
+
+.cases-card
+  width: 100%
+  height: 100%
+  position: relative
+  z-index: 1
+  color: #fff
+  display: flex
+  flex-direction: column
+  padding: 77px 20px 21px
+  border: 1.5px solid #E12651
+  &__logo
+    position: absolute
+    left: 0
+    top: 0
+    background: #ffffff
+    width: 138px
+    height: 59px
+    padding: 14px
+    @include d-flex
+    img
+      max-height: 100%
+  &__bg
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    object-fit: cover
+    z-index: -2
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(294.03deg, rgba(14, 29, 66, 0.72549) 0.59%, rgba(225, 38, 81, 0.72549) 107.31%)
+    z-index: -1
+  &__title
+    color: #fff
+    font-size: 19px
+    font-weight: 500
+    margin: 0 0 35px
+    &:hover
+      color: $accent
+  .box-text
+    font-size: 14px
+    font-weight: 500
+    margin: 0 0 58px
+  &__footer
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+    margin: auto 0 0
+
+.link-page
+  @include d-flex
+  width: 54px
+  height: 54px
+  background: #0E1D42
+  border-radius: 6px
+  padding: 19px
+  fill: #fff
+  &:hover
+    background: $accent
+    fill: #fff
+
+.list-os
+  display: flex
+  align-items: center
+  li
+    @include d-flex
+    margin: 0 14px 0 0
+    &:last-child
+      margin: 0
+
+.regulatory-requirements-v2
+  padding: 0 0 65px
+
+.module-system
+  .wrapper-content
+    margin: -50px auto
+  h2
+    margin: 0 auto 69px
+    text-transform: uppercase
+    .title-decor__text
+      font-size: 96px
+      left: 45%
+      top: -5px
+    .color-accent
+      display: block
+
+.module-system-tab-wrapper
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  p
+    width: fit-content
+    font-size: 20px
+    font-weight: 500
+    &:after
+      content: ''
+      background: #E12651
+      width: 5px
+      height: 5px
+      border-radius: 50%
+      display: inline-block
+      margin: 0 0 10px 5px
+
+.module-tabs
+  width: fit-content
+  margin: 0 0 0 auto
+  .nav-item
+    margin: 0 10px 0 0
+    &:last-child
+      margin: 0
+  .nav-link
+    padding: 17px 30px
+    display: flex
+    align-items: center
+    background: #F3F4FA
+    border-radius: 5px
+    border: none
+    font-size: 28px
+    font-weight: 500
+    &:before, &:after
+      display: none
+    &.active
+      background: $accent
+      color: #fff
+      .module-tabs__icon
+        border-color: #fff
+      .icon-circle
+        &:before
+          border-color: #fff
+      .icon-plus
+        &:before
+          background: #fff
+        &:after
+          height: 0
+
+.module-tabs__icon
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  margin: 0 18px 0 0
+  width: 42px
+  height: 42px
+  min-width: 42px
+  border: 4px solid #0E1D42
+    radius: 50%
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    transition: .3s ease
+
+.icon-circle
+  &:before
+    border: 4px solid #0E1D42
+      radius: 50%
+    width: 20px
+    height: 20px
+
+.icon-plus
+  &:before
+    width: 21px
+    height: 4px
+    border-radius: 3px
+    background: #0E1D42
+  &:after
+    width: 4px
+    height: 21px
+    border-radius: 3px
+    background: #0E1D42
+    content: ''
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    transition: .3s ease
+
+.tab-content-module
+  padding: 0
+  margin: 69px 0 0
+
+.tab-content-module-wrapper
+  width: 100%
+  display: flex
+  align-items: stretch
+  justify-content: space-between
+  flex-wrap: wrap
+  &__content
+    max-width: 251px
+    display: flex
+    flex-direction: column
+    h3
+      font-size: 20px
+      font-weight: 500
+      &:after
+        content: ''
+        background: #E12651
+        width: 5px
+        height: 5px
+        border-radius: 50%
+        display: inline-block
+        margin: 0 0 10px 5px
+  .box-text
+    margin: auto 0 0
+    font-size: 14px
+    p
+      margin: 0 0 30px
+      &:last-child
+        margin: 0
+
+.module-system-list
+  max-width: 557px
+  width: 100%
+  li
+    margin: 0 0 20px
+    &:last-child
+      margin: 0
+  &__item
+    display: flex
+    align-items: center
+    width: 100%
+    font-size: 20px
+    font-weight: 500
+    color: #000
+    &:hover
+      color: $accent
+  &__arrow
+    @include d-flex
+    background: #E12651
+    width: 42px
+    min-width: 42px
+    height: 42px
+    border-radius: 5px
+    padding: 14px
+    fill: #fff
+    margin: 0 0 0 auto
+  &__icon
+    width: 48px
+    height: 40px
+    min-width: 48px
+    margin: 0 29px 0 0
+    @include d-flex
+  &__name
+    max-width: 397px
+/*==========  section home-module end ==========*/
+
+
+/*==========  section case-home ==========*/
+.case-home
+  margin: 0 0 62px
+  .title-decor__text
+    font-size: 96px
+  h2
+    margin: 0 auto 82px
+
+.case-logo
+  @include d-flex
+  max-width: 523px
+  width: 100%
+  img
+    width: 100%
+
+.case-content
+  max-width: 561px
+  margin: 0 0 0 auto
+  h3
+    font-size: 40px
+    font-weight: bold
+    margin: 0 0 30px
+  .box-text
+    line-height: 25px
+    font-weight: 500
+    font-size: 14px
+
+
+.case-details
+  color: #fff
+  position: relative
+  z-index: 1
+  background: linear-gradient(100.85deg, #0E1D42 14.56%, #E12651 101%)
+  padding: 104px 0 108px
+  overflow: hidden
+  &:before
+    content: ''
+    position: absolute
+    width: 100%
+    background: url("../img/why-important-image.png") no-repeat center
+      size: 100%
+    height: 519px
+    left: 0
+    bottom: -200px
+  &:after
+    content: ''
+    position: absolute
+    background: url("../img/footer-decor2.svg") no-repeat center
+      size: 100%
+    width: 687px
+    height: 587px
+    right: -96px
+    top: 391px
+
+.case-details-item
+  width: 100%
+  margin: 0 0 47px
+  position: relative
+  z-index: 1
+  &:nth-child(2)
+    padding: 176px 0 0
+    margin: 0 0 75px
+  &:first-child
+    padding: 0
+    .case-details-item__title-decor
+      top: -176px
+      right: 50px
+  &:last-child
+    margin: 0
+  h3
+    color: $accent
+    text-transform: uppercase
+    font-size: 28px
+    font-family: $font
+    font-weight: bold
+    max-width: 454px
+  .box-text
+    line-height: 28px
+    font-size: 14px
+    font-weight: 500
+    p
+      margin: 0 0 30px
+      &:last-child
+        margin: 0
+  &__image
+    margin: 70px 0 0
+    max-width: 359px
+    @include d-flex
+
+.case-details-item__title-decor
+  text-align: center
+  position: absolute
+  top: 0
+  right: -80px
+  font-size: 230px
+  line-height: 295px
+  opacity: .05
+  font-weight: bold
+  text-transform: uppercase
+  font-family: $font
+
+.solution-section
+  h3
+    margin: 0 0 54px
+
+.solution-item
+  width: 100%
+  height: 185px
+  margin: 0 0 20px
+  position: relative
+  overflow: hidden
+  background: rgba(255, 255, 255, 0.05)
+  border: 0.75px solid rgba(255, 255, 255, 0.117647)
+    radius: 10px
+  display: flex
+  align-items: stretch
+  padding: 19px 23px
+  font-size: 14px
+  font-weight: 500
+  &:before
+    content: ''
+    position: absolute
+    right: 0
+    top: 50%
+    transform: translate(0,-50%)
+    width: 87px
+    height: 160px
+    z-index: -1
+    background: url("../img/shield-icon2.svg") no-repeat center
+      size: 100%
+  &:last-child
+    margin: 0
+  &__body
+    border-left: 1px solid rgba(255, 255, 255, 0.11)
+    padding: 0 0 0 26px
+    display: flex
+    align-items: center
+    margin: 0 0 0 22px
+    p
+      max-width: 232px
+  &__icon
+    width: 41px
+    min-width: 41px
+    @include d-flex
+  &__number
+    bottom: 19px
+    right: 14px
+    position: absolute
+    background: $accent
+    color: #fff
+    border-radius: 50%
+    @include d-flex
+    width: 22px
+    height: 22px
+    font-weight: 500
+
+.solution-slider
+  position: relative
+  padding: 46px 0 0
+  .slick-next
+    right: 0
+
+  .slick-prev
+    right: 58px
+  .slick-arrow
+    position: absolute
+    fill: #fff
+    top: 0
+    left: auto
+  .slick-slide
+    padding: 0 10px
+  .slick-list
+    margin: 0 -10px
+
+.reviews-company
+  margin: 125px 0 0
+  h3
+    margin: 0 0 33px
+
+.reviews-company-box
+  background: #FFFFFF
+  position: relative
+  z-index: 1
+  color: #333333
+  flex-direction: row
+  &:before
+    content: ''
+    position: absolute
+    right: 0
+    bottom: 0
+    width: 297px
+    height: 351px
+    background: url("../img/schield-icon3.svg") no-repeat center
+      size: 100%
+    z-index: -1
+  &:nth-child(even)
+    flex-direction: row
+    .reviews-box-body
+      margin: 0
+  .reviews-box-body
+    margin: 0
+    background: transparent
+    &:before
+      display: none
+  .reviews-box-company
+    padding: 36px 20px
+  .reviews-box-company__logo
+    margin: 0 auto
+    max-width: 123px
+  .box-text
+    padding: 46px 0 41px
+    font-size: 16px
+    line-height: 19px
+  .reviews-box-author
+    max-width: 332px
+    margin: 40px auto 0
+
+/*==========  section case-home end ==========*/
+
+
+/*==========  section press-center ==========*/
+.blog
+  margin: 0 0 118px
+  .btn
+    margin: 30px auto 0
+
+.blog-slider, .news-slider, .publication-slider
+  .slick-track
+    display: flex
+    align-items: stretch
+  .slick-slide
+    margin: 0 12px 0 0
+    height: auto
+  .news-card
+    width: 584px
+  .news-card-min
+    width: 280px
+
+.events-section
+  margin: 0 0 80px
+  .events-slider
+    margin: 0 0 70px
+  .calendar-events-card__content
+    height: 100%
+    .box-text
+      margin: 0 0 32px
+  .link-news
+    fill: #fff
+  .calendar-events-card
+    max-width: none
+    h3
+      margin: 24px 0 31px
+      font-size: 19px
+      font-weight: 500
+    .box-description
+      font-size: 14px
+      font-weight: 500
+      max-width: 503px
+    .btn
+      margin: 0 0 0 auto
+      max-width: 300px
+      width: 100%
+  .calendar-events-card__bottom
+    margin: 50px 0 0
+    h4
+      font-size: 20px
+      font-weight: bold
+      color: $accent
+
+
+.publication-section
+  margin: 0 0 80px
+
+.news-section
+  margin: 0 0 80px
+
+
+/*==========  section press-center end ==========*/
 
 /*==========  section  ==========*/
 /*==========  section end ==========*/
