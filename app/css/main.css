@@ -2594,33 +2594,33 @@
 .blog-slider .news-card-min, .news-slider .news-card-min, .publication-slider .news-card-min {
   width: 280px; }
 
-.events-section {
+.events {
   margin: 0 0 80px; }
-  .events-section .events-slider {
+  .events .events-slider {
     margin: 0 0 70px; }
-  .events-section .calendar-events-card__content {
+  .events .calendar-events-card__content {
     height: 100%; }
-    .events-section .calendar-events-card__content .box-text {
+    .events .calendar-events-card__content .box-text {
       margin: 0 0 32px; }
-  .events-section .link-news {
+  .events .link-news {
     fill: #fff; }
-  .events-section .calendar-events-card {
+  .events .calendar-events-card {
     max-width: none; }
-    .events-section .calendar-events-card h3 {
+    .events .calendar-events-card h3 {
       margin: 24px 0 31px;
       font-size: 19px;
       font-weight: 500; }
-    .events-section .calendar-events-card .box-description {
+    .events .calendar-events-card .box-description {
       font-size: 14px;
       font-weight: 500;
       max-width: 503px; }
-    .events-section .calendar-events-card .btn {
+    .events .calendar-events-card .btn {
       margin: 0 0 0 auto;
       max-width: 300px;
       width: 100%; }
-  .events-section .calendar-events-card__bottom {
+  .events .calendar-events-card__bottom {
     margin: 50px 0 0; }
-    .events-section .calendar-events-card__bottom h4 {
+    .events .calendar-events-card__bottom h4 {
       font-size: 20px;
       font-weight: bold;
       color: #E12651; }
