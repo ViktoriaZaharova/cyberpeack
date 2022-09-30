@@ -102,6 +102,15 @@
   .module-system-list
     max-width: 480px
 
+  .callback-help:before
+    display: none
+
+  .form-group
+    .consent
+      margin: 0 auto 30px
+      text-align: center
+    button
+      margin: 0 auto
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px)
@@ -360,6 +369,84 @@
     margin: 0 0 70px
     &:nth-child(2)
       padding: 0
+
+  .description-module-audit-slider
+    width: calc(100% + 40px)
+    .slick-next
+      right: 20px
+
+  .description-module-audit
+    .wrapper-content:before
+      width: 597px
+      height: 333px
+
+  .peculiarities-module__image
+    margin: 44px auto 0
+
+  .information-module-wrapper
+    padding: 64px 17px 59px
+    h2
+      margin: 13px 0 25px
+
+  .information-module-item
+    min-width: auto
+    width: 100%
+
+  .information-module-slider
+    margin: 25px auto 0
+
+  .module-system-audit .wrapper-content
+    margin: 0 auto -30px
+
+  .search-example
+    &__image
+      margin: 0 auto
+
+  .search-example-gallery
+    margin: 14px auto 0
+    max-width: 415px
+    width: 100%
+
+  .search-example-content
+    max-width: none
+    margin: 36px 0 0
+
+  .home-help
+    h1
+      position: relative
+      padding: 0 62px 0 0
+      &:before
+        content: ''
+        position: absolute
+        width: 62px
+        height: 80px
+        background: url("../img/title-decor.svg") no-repeat center
+          size: 100%
+        right: 0
+        top: 0
+
+  .program-help
+    padding: 0 0 125px
+    &__image
+      margin: 0 auto 31px
+    h2
+      margin: 0 0 31px
+      max-width: 400px
+    .box-text
+      margin: 0 0 22px
+      max-width: none
+    h4
+      max-width: none
+      font-size: 16px
+
+  .pdf-box
+    margin: 0 auto 26px
+
+  .wrapper-content .title-decor__text
+    display: none
+
+  .help-question .wrapper-content
+    padding: 39px 40px 170px
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px)
@@ -747,6 +834,72 @@
       width: 100%
       max-width: none
 
+  .description-module-audit .wrapper-content:before
+    display: none
+
+  .description-module-audit-slider-item
+    max-width: 400px
+
+  .indexing-data
+    padding: 39px 20px 0
+    flex-direction: column-reverse
+    margin: 0 0 36px
+    &:before
+      display: none
+    &__image
+      width: 100%
+      margin: 25px auto 0
+      min-width: auto
+      max-width: none
+    &__text
+      width: 100%
+      padding: 0
+
+  .description-module-ms
+    h4
+      font-size: 24px
+
+  .help-question
+    h2
+      margin: 0 auto 25px
+    .box-text
+      max-width: none
+      margin: 0 0 26px
+    h4
+      max-width: 270px
+    .btn
+      margin: 33px auto 0
+    .wrapper-content
+      margin: -50px auto -20px
+      &:before
+        width: 100%
+        max-width: 300px
+        height: 144px
+        right: auto
+        left: 50%
+        transform: translate(-50%,0) matrix(-1, 0, 0, 1, 0, 0)
+
+  .tel
+    font-size: 24px
+
+  .callback-help
+    padding: 67px 0 60px
+    .spectrum-demonstration__content
+      margin: 0
+    .form-callback
+      margin: 30px 0 0
+    .description
+      font-size: 16px
+      max-width: 280px
+    h2
+      font-size: 20px
+      max-width: 260px
+      margin: 10px 0 20px
+
+  .form-group
+    flex-direction: column
+    align-items: center
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px)
   header
@@ -1003,13 +1156,11 @@
       background: transparent
       padding: 30px 15px
 
-
   .reports
     margin: 0 0 97px
 
   .events-section
     margin: 42px 0 46px
-
 
   .title-wrapper
     margin: 0 0 15px
@@ -1191,6 +1342,46 @@
     .news-card
       width: 100%
 
+  .description-module-audit-slider-item
+    max-width: 264px
+
+  .description-module
+    .list-decor
+      margin: 20px 0 0
+
+  .description-module-audit-slider
+    width: 100%
+    .slick-arrow
+      width: 30px
+      height: 30px
+      padding: 8px
+      top: 54px
+      transform: none
+    .slick-next
+      right: -15px
+    .slick-prev
+      left: -15px
+
+  .peculiarities-module
+    margin: 60px 0 0
+
+  .active-directory__image
+    margin: 0 auto
+    max-width: 274px
+
+  .description-module-ms
+    h4
+      text-align: center
+      font-size: 18px
+      margin: 0 auto 25px
+
+  .events-fix-module
+    margin: 0 0 20px
+
+  .home-help
+    padding: 146px 0 72px
+
+
 @media only screen and (max-width: 420px)
   .regulatory-requirements-box
     &:before
@@ -1271,6 +1462,9 @@
   .why-important-box
     margin: 0 10px
 
+  .home-module h1
+    br
+      display: none
 
 @media (min-width: 992px)
   .risks-wrapper

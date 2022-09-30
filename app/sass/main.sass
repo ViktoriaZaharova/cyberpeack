@@ -1766,6 +1766,12 @@
       height: 80px
       background: url("../img/schield-transparent.svg") no-repeat center
         size: 100%
+  .list-decor
+    margin: 0
+    max-width: 560px
+  &__image
+    @include d-flex
+    max-width: 405px
 
 
 .peculiarities-module-list
@@ -2337,8 +2343,557 @@
 
 /*==========  section press-center end ==========*/
 
-/*==========  section  ==========*/
-/*==========  section end ==========*/
+/*==========  section home-module-audit ==========*/
+.home-module-audit
+  background: url("../img/home-bg-module-audit.png") no-repeat center
+    size: cover
+
+.module-system-audit
+  .wrapper-content
+    margin: 0 auto -60px
+
+.description-module-audit
+  .wrapper-content
+    margin: -60px auto 0
+    //overflow: hidden
+    &:before
+      content: ''
+      position: absolute
+      right: -48px
+      top: 55px
+      width: 797px
+      height: 463px
+      background: url("../img/module-image3.png") no-repeat center
+        size: 100%
+      z-index: -1
+
+.description-module-audit-slider
+  margin: 50px 0 0
+  width: calc(100% + 100px)
+  .list-decor
+    margin: 35px 0 0
+    max-width: 435px
+  .slick-slide
+    margin: 0 29px 0 0
+  .slick-arrow
+    position: absolute
+    top: 35%
+    transform: translate(0,-50%)
+    border-radius: 50%
+    @include d-flex
+    width: 38px
+    height: 38px
+    background: $accent
+    fill: #fff
+    padding: 11px
+  .slick-next
+    right: 38px
+    left: auto
+  .slick-prev
+    left: -19px
+  .slick-disabled
+    opacity: 0
+
+
+.description-module-audit-slider-item
+  max-width: 492px
+  width: 100%
+
+.information-module
+  color: #fff
+
+.information-module-wrapper
+  background: url("../img/bg2.jpg") no-repeat center top
+    size: cover
+  padding: 82px 0 80px 102px
+  h2
+    margin: 13px 0 55px
+    text-transform: uppercase
+    max-width: 678px
+
+.information-module-content
+  max-width: 423px
+  ul
+    line-height: 21px
+    font-family: $font
+    margin: 0 0 50px
+    max-width: 300px
+    li
+      margin: 0 0 30px
+      &:last-child
+        margin: 0
+  .box-text
+    font-size: 14px
+    p
+      margin: 0 0 20px
+      &:last-child
+        margin: 0
+    strong
+      font-size: 16px
+
+.information-module-slider
+  //min-width: 610px
+  .slick-dots
+    margin: 30px 0 0
+
+.information-module-item
+  min-width: 610px
+
+/*==========  section home-module-audit end ==========*/
+
+/*==========  section home-module-search ==========*/
+.home-module-search
+  background: url("../img/home-bg-module-search.jpg") no-repeat center
+    size: cover
+  h1
+    max-width: 454px
+
+.indexing-data
+  width: 100%
+  position: relative
+  margin: 0 0 46px
+  padding: 0 10px 0 0
+  display: flex
+  align-items: center
+  z-index: 1
+  background: #F3F4FA
+  &:before
+    content: ''
+    position: absolute
+    right: 0
+    top: 0
+    width: 116px
+    height: 213px
+    background: url("../img/schield-icon.svg") no-repeat left top
+      size: cover
+    filter: brightness(0) invert(1)
+    z-index: -1
+  &__text
+    width: calc(100% - 422px)
+    font-weight: bold
+    padding: 0 0 0 27px
+  &__image
+    position: relative
+    min-width: 402px
+    max-width: 402px
+    margin: 0 0 0 -49px
+    @include d-flex
+
+.description-module-search
+  .wrapper-content
+    &:before
+      display: none
+
+.search-example
+  &__image
+    @include d-flex
+    max-width: 415px
+
+.search-example-gallery
+  display: flex
+  align-items: center
+  color: $accent
+  margin: 17px 0 0
+  padding: 0 0 0 10px
+  font-size: 14px
+  font-weight: bold
+  &__icon
+    @include d-flex
+    margin: 0 13px 0 0
+    width: 27px
+  &:hover
+    color: $blue
+
+.search-example-content
+  max-width: 450px
+  margin-left: auto
+  h3
+    font-size: 24px
+    font-weight: 500
+    margin: 0 0 20px
+    max-width: 350px
+  .box-text
+    p
+      font-weight: 500
+      margin: 0 0 20px
+      &:last-child
+        margin: 0
+    strong
+      font-weight: bold
+/*==========  section home-module-search end ==========*/
+
+/*==========  section home-module-ms ==========*/
+.home-module-ms
+  background: url("../img/home-bg-modle-ms.png") no-repeat center
+    size: cover
+
+.active-directory__image
+  max-width: 450px
+  width: 100%
+  @include d-flex
+
+.description-module-ms
+  h4
+    margin: 0 0 25px
+    font-size: 28px
+    font-weight: 500
+    color: #0E1D42
+  .list-decor
+    margin: 0
+    max-width: none
+
+.events-fix-module
+  margin: 0 0 50px
+/*==========  section home-module-ms end ==========*/
+
+/*==========  section home-help ==========*/
+.home-help
+  padding: 131px 0 137px
+  background: url("../img/help-home-bg.jpg") no-repeat center
+    size: cover
+  .box-text
+    margin: 0 0 30px
+  .home-decor-title:before
+    top: 0
+
+.callback-help
+  background: linear-gradient(116.85deg, #0E1D42 14.56%, #E12651 101%)
+  h2
+    text-transform: uppercase
+  .form-callback
+    margin: 144px 0 0
+  &:before
+    width: 697px
+    height: 586px
+    left: 144px
+    bottom: -130px
+    background: url("../img/footer-decor2.svg") no-repeat center
+      size: 100%
+
+.label-file
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+  cursor: pointer
+  border: 1.5px solid rgba(255, 255, 255, 0.262745)
+  padding: 11px
+  font-size: 20px
+  font-weight: 500
+  &__icon
+    margin: 0 16px 0 0
+    @include d-flex
+    width: 34px
+
+.input-file
+  display: none
+
+.form-group
+  margin: 30px 0 0
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  .consent
+    margin: 0
+
+.program-help
+  padding: 90px 0 103px
+  h2
+    margin: 0 0 85px
+    text-transform: uppercase
+  .title-decor__text
+    opacity: 0.05
+    font-size: 230px
+    left: 73px
+    transform: none
+    top: -85px
+  .box-text
+    max-width: 491px
+    margin: 0 0 80px
+  &__image
+    @include d-flex
+    max-width: 367px
+  h4
+    max-width: 490px
+    font-size: 24px
+    font-weight: 500
+
+.pdf-box
+  position: relative
+  display: flex
+  align-items: center
+  max-width: 311px
+  width: 100%
+  padding: 59px 33px
+  color: #fff
+  border: 0.75px solid rgba(255, 255, 255, 0.117647)
+    radius: 10px
+  background: rgba(255, 255, 255, 0.05)
+  font-size: 20px
+  font-feature-settings: 'pnum' on, 'lnum' on
+  font-family: $font
+  z-index: 1
+  line-height: 20px
+
+  &:before
+    content: ''
+    position: absolute
+    right: 0
+    top: 50%
+    transform: translate(0,-50%)
+    width: 87px
+    height: 160px
+    background: url("../img/shield-icon2.svg") no-repeat center
+      size: 100%
+    z-index: -1
+  &:after
+    content: ''
+    position: absolute
+    right: 15px
+    bottom: 19px
+    border-radius: 50%
+    background: $accent
+    width: 22px
+    height: 22px
+    z-index: -1
+  &:hover
+    color: $accent
+    .pdf-box__number
+      color: #fff
+  &__icon
+    margin: 0 21px 0 0
+    min-width: 57px
+    width: 57px
+    img
+      width: 100%
+  strong
+    display: block
+    font-size: 14px
+    line-height: 108.7%
+    margin: 10px 0 0
+
+.help-question
+  .wrapper-content
+    padding: 64px 155px 125px
+    &:before
+      content: ''
+      position: absolute
+      right: 19px
+      bottom: 0
+      width: 541px
+      height: 246px
+      background: url("../img/press-image2.png") no-repeat center
+        size: 100%
+      transform: matrix(-1, 0, 0, 1, 0, 0)
+  h2
+    text-transform: uppercase
+    margin: 0 0 30px
+    span
+      display: block
+  .box-text
+    margin: 0 0 32px
+    max-width: 497px
+  .btn
+    max-width: 240px
+    width: 100%
+
+.help-question-contacts
+  h4
+    text-transform: uppercase
+    font-weight: 500
+    margin: 0 0 15px
+
+.tel
+  color: #0E1D42
+  font-size: 32px
+  font-weight: 500
+  font-feature-settings: 'pnum' on, 'lnum' on
+  &:hover
+    color: $accent
+
+.mail-contacts
+  font-weight: 500
+  color: $accent
+  margin: 20px 0 0
+  &:hover
+    color: $blue
+
+/*==========  section home-help end ==========*/
+
+/*==========  section home-about ==========*/
+.home-about
+  background: url("../img/home-image.png") no-repeat center top
+    size: cover
+  padding: 130px 0 202px
+  .btn-group
+    margin: 25px 0 0
+  .box-text
+    max-width: 510px
+  h1
+    font-size: 64px
+    max-width: none
+    line-height: 82px
+    text-transform: uppercase
+
+.partners
+  margin: 116px 0 0
+  h2
+    margin: 0 auto 60px
+  .title-decor__text
+    top: -65px
+
+.partners-slider
+  margin: 0 auto
+  max-width: 1030px
+  padding: 0 30px
+  .slick-arrow
+    position: absolute
+    top: 50%
+    transform: translate(0,-50%)
+  .slick-prev
+    left: 0
+  .slick-next
+    left: auto
+    right: 0
+  .slick-disabled
+    opacity: 0
+
+.partners-logo
+  @include d-flex
+  margin: 0 auto 34px
+  padding: 0 20px
+  height: 69px
+  img
+    max-height: 100%
+  &:last-child
+    margin: 0 auto
+
+
+.clients
+  margin: 115px 0 10px
+  h2
+    margin: 0 auto 31px
+  .title-decor__text
+    top: -65px
+  .subtitle-text
+    font-size: 17px
+    max-width: 422px
+    font-weight: 500
+    margin: 0 auto 30px
+
+.team
+  padding: 27px 0 0
+  h2
+    margin: 0 auto 78px
+  .title-decor__text
+    top: -60px
+
+.team-slider
+  .slick-arrow
+    position: absolute
+    top: 35%
+    transform: translate(0,-50%)
+  .slick-prev
+    left: -50px
+  .slick-next
+    right: -50px
+    left: auto
+  .slick-current
+    .team-box
+      opacity: 1
+
+.team-box
+  text-align: center
+  max-width: 275px
+  width: 100%
+  opacity: .2
+  color: #0E1D42
+  font-size: 14px
+  cursor: pointer
+  transition: .3s ease
+  &:hover
+    opacity: 1
+  h4
+    font-weight: 600
+  &__tel
+    margin: 38px auto 10px
+    color: #333333
+    font-family: $font2
+    font-size: 20px
+    font-weight: 500
+    &:hover
+      color: $accent
+
+  &__info
+    max-width: 200px
+    margin: 0 auto
+  &__photo
+    display: flex
+    align-items: flex-end
+    justify-content: center
+    height: 420px
+    img
+      max-height: 100%
+
+.news-section-center
+  padding: 110px 0 70px
+  &:before
+    display: none
+  .btn-all-news
+    margin: 30px auto 0
+
+.materials
+  padding: 111px 0 49px
+  background: linear-gradient(133deg, #0E1D42 16.51%, #E12651 96.17%)
+  h2
+    max-width: 365px
+    margin: 0 0 88px
+  .title-decor__text
+    left: 116px
+    transform: none
+    font-size: 230px
+    opacity: 0.05
+
+.material-box
+  &:after
+    display: none
+
+.pdf-box__number
+  position: absolute
+  @include d-flex
+  background: $accent
+  border-color: $accent
+  bottom: 19px
+  right: 14px
+  border-radius: 50%
+  width: 22px
+  height: 22px
+  font-weight: 500
+  font-size: 16px
+
+.video-card
+  max-width: 387px
+  width: 100%
+  height: 505px
+  margin: 0 0 -95px auto
+  position: relative
+  z-index: 1
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(169deg, rgba(14, 29, 66, 0.72549) 0.59%, rgba(225, 38, 81, 0.72549) 107.31%)
+
+/*==========  section home-about end ==========*/
 
 /*==========  section  ==========*/
 /*==========  section end ==========*/
@@ -2357,3 +2912,4 @@
 
 /*==========  section  ==========*/
 /*==========  section end ==========*/
+

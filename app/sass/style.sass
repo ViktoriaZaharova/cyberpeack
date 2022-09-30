@@ -220,7 +220,7 @@ button, .btn
 
 strong, b
   font-weight: bold
-  display: inline-block
+  display: inline
 
 ul, ol
   padding: 0 0 0 20px
@@ -315,6 +315,9 @@ a.color-white
 
 .font-700
   font-weight: 700
+
+.font-800
+  font-weight: 800
 
 .slick-slider
   width: 100%
@@ -430,6 +433,17 @@ a.color-white
 .breadcrumb-item.active
   color: #333333
 
+.breadcrumb-nav-white
+  color: #fff
+  li
+    a
+      color: #fff
+      img
+        filter: brightness(0) invert(1)
+  .breadcrumb-item.active
+    color: #fff
+  .breadcrumb
+    justify-content: flex-start
 
 .btn-load
   margin: 4px auto 0
@@ -470,3 +484,24 @@ a.color-white
       font-weight: 700
       top: -108px
 
+.box-text
+  font-size: 14px
+  line-height: 21px
+  p
+    margin: 0 0 30px
+    &:last-child
+      margin: 0
+
+.text-transform
+  text-transform: uppercase
+
+.team-box-social
+  display: flex
+  align-items: center
+  justify-content: center
+  li
+    margin: 0 11px 0 0
+    &:last-child
+      margin: 0
+    a
+      @include d-flex

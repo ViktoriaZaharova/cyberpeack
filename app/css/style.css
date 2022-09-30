@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
 @font-face {
   font-family: "FuturaPT";
   font-weight: 300;
@@ -258,7 +259,7 @@ button, .btn {
 
 strong, b {
   font-weight: bold;
-  display: inline-block; }
+  display: inline; }
 
 ul, ol {
   padding: 0 0 0 20px; }
@@ -360,6 +361,9 @@ a.color-white:hover {
 
 .font-700 {
   font-weight: 700; }
+
+.font-800 {
+  font-weight: 800; }
 
 .slick-slider {
   width: 100%; }
@@ -515,6 +519,20 @@ a.color-white:hover {
 .breadcrumb-item.active {
   color: #333333; }
 
+.breadcrumb-nav-white {
+  color: #fff; }
+  .breadcrumb-nav-white li a {
+    color: #fff; }
+    .breadcrumb-nav-white li a img {
+      -webkit-filter: brightness(0) invert(1);
+              filter: brightness(0) invert(1); }
+  .breadcrumb-nav-white .breadcrumb-item.active {
+    color: #fff; }
+  .breadcrumb-nav-white .breadcrumb {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+
 .btn-load {
   margin: 4px auto 0;
   display: -webkit-box;
@@ -559,3 +577,39 @@ a.color-white:hover {
     font-size: 96px;
     font-weight: 700;
     top: -108px; }
+
+.box-text {
+  font-size: 14px;
+  line-height: 21px; }
+  .box-text p {
+    margin: 0 0 30px; }
+    .box-text p:last-child {
+      margin: 0; }
+
+.text-transform {
+  text-transform: uppercase; }
+
+.team-box-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .team-box-social li {
+    margin: 0 11px 0 0; }
+    .team-box-social li:last-child {
+      margin: 0; }
+    .team-box-social li a {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }

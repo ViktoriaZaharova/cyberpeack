@@ -134,15 +134,37 @@ $(window).on('load resize', function () {
             prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
             nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
         });
+
+        $('.partners-slider').slick({
+            slidesToShow: 4,
+            infinite: false,
+            prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+            nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+        });
     } else {
         $(".blog-slider.slick-initialized").slick("unslick");
         $(".publication-slider.slick-initialized").slick("unslick");
         $(".events-slider-v2.slick-initialized").slick("unslick");
+        $(".partners-slider.slick-initialized").slick("unslick");
     }
 });
 
+$('.description-module-audit-slider').slick({
+    slidesToShow: 1,
+    variableWidth: true,
+    infinite: false,
+    prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+});
 
-
+$('.information-module-slider').slick({
+    slidesToShow: 1,
+    fade: true,
+    arrows: false,
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+});
 
 
 $('.task-slider-image1').slick({
@@ -422,6 +444,33 @@ $('.solution-slider').slick({
             breakpoint: 576,
             settings: {
                 variableWidth: true,
+                slidesToShow: 1,
+            }
+        }
+    ]
+});
+
+$('.team-slider').slick({
+    slidesToShow: 4,
+    arrows: true,
+    prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+    responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 3,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
                 slidesToShow: 1,
             }
         }
