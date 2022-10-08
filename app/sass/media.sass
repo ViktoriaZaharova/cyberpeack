@@ -112,6 +112,24 @@
     button
       margin: 0 auto
 
+  .team-slider
+    .slick-prev
+      left: 0
+    .slick-next
+      right: 0
+    .slick-arrow
+      width: 40px
+      height: 40px
+      background: #0E1D42
+      fill: #fff
+      padding: 13px
+      border-radius: 50%
+
+  .team
+    padding: 0
+    h2
+      margin: 0 auto 30px
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px)
   header
@@ -447,6 +465,61 @@
 
   .help-question .wrapper-content
     padding: 39px 40px 170px
+
+  .partners-logo
+    padding: 0 10px
+
+  .we-offer
+    .btn
+      width: 100%
+      margin: 37px auto 0
+
+  .we-offer-item
+    margin: 0 0 45px
+
+  .info-company-video
+    margin: -50px -40px 0 auto
+    max-width: 300px
+    min-width: 300px
+
+  .info-company-content
+    width: calc(100% - 260px)
+    h2
+      margin: 0 0 22px
+
+  .info-company h3
+    margin: 0 0 22px
+
+  .demand-product-slider, .licenses-slider
+    .slick-arrow
+      width: 40px
+      height: 40px
+      padding: 13px
+    .svg-icon
+      width: 7px
+      height: 14px
+    .slick-next
+      right: -20px
+    .slick-prev
+      left: -20px
+
+  .demand-product
+    margin: 40px 0 0
+    h3
+      margin: 0 auto 37px
+
+  .module-system-v2 .wrapper-content
+    margin: 0 auto
+
+  .materials
+    margin: 0 0 30px
+    padding: 62px 0 0
+    h2
+      margin: 0 0 36px
+    .pdf-box
+      margin: 0 auto
+    .video-card
+      margin: 0 auto -23px
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px)
@@ -899,6 +972,45 @@
   .form-group
     flex-direction: column
     align-items: center
+
+  .info-company-video
+    margin: 28px auto 0
+    min-width: auto
+    .reports-card
+      width: 100%
+
+  .info-company-content
+    max-width: none
+    width: 100%
+
+  .demand-product-slider, .licenses-slider
+    .slick-next
+      right: 0
+    .slick-prev
+      left: 0
+
+  .licenses
+    padding: 0
+    background: url("../img/bg3-mobile.jpg") no-repeat center
+      size: cover
+    //.regulatory-requirements-box
+    //  background: transparent
+    //  border: none
+    //    radius: 0px
+    //  flex-direction: column
+    //  align-items: center
+    //  &:before
+    //    display: none
+    //.regulatory-requirements-box__icon
+    //  width: 213px
+    //  height: 213px
+    //  margin: 0 auto
+
+  .licenses-slider
+    padding: 30px 60px
+    margin: 0 auto
+    max-width: 500px
+
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px)
@@ -1381,6 +1493,60 @@
   .home-help
     padding: 146px 0 72px
 
+  .licenses
+    .regulatory-requirements-box
+      background: transparent
+      border: none
+        radius: 0px
+      flex-direction: column
+      align-items: center
+      &:before
+        display: none
+    .regulatory-requirements-box__icon
+      width: 213px
+      height: 213px
+      margin: 0 auto
+    .regulatory-requirements-box__text
+      width: 100%
+      padding: 20px 30px 70px
+
+  .licenses-slider
+    padding: 0
+    max-width: none
+    .slick-prev
+      left: 10px
+    .slick-next
+      right: 10px
+    .slick-arrow
+      top: 30%
+
+  .partners
+    margin: 60px 0 0
+    h2
+      margin: 0 auto 39px
+    .btn-toggle
+      margin: 39px auto 0
+
+  .partners-slider
+    padding: 0
+    display: flex
+    align-items: flex-start
+    flex-wrap: wrap
+    .slide
+      width: 50%
+      display: none
+      &:nth-child(-n+2)
+        display: block
+
+  .clients
+    margin: 60px 0 10px
+
+  .team-box
+    margin: 0 auto
+
+  .video-card
+    height: 390px
+
 
 @media only screen and (max-width: 420px)
   .regulatory-requirements-box
@@ -1454,9 +1620,28 @@
       padding: 0 0 0 24px
       margin: 0 0 0 24px
 
+  .team-box__photo
+    height: 380px
+
+  .team-box__tel
+    margin: 14px auto 13px
+
+  .team-slider .slick-arrow
+    top: 70%
+
 @media only screen and (max-width: 380px)
   .why-important-box
     margin: 0 30px
+
+  .licenses .regulatory-requirements-box__text
+    padding-top: 0
+
+  .licenses .regulatory-requirements-box__icon
+    width: 150px
+    height: 120px
+
+  .licenses-slider .slick-arrow
+    top: 20%
 
 @media only screen and (max-width: 350px)
   .why-important-box

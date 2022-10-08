@@ -670,7 +670,7 @@
   width: 100%
   height: 100%
   display: flex
-  align-items: flex-start
+  align-items: stretch
   z-index: 1
   background: rgba(255, 255, 255, 0.047059)
   border: 0.75px solid rgba(255, 255, 255, 0.117647)
@@ -689,7 +689,7 @@
 
   &__icon
     width: 170px
-    height: 100%
+    //height: 100%
     position: relative
 
     img
@@ -2895,8 +2895,131 @@
 
 /*==========  section home-about end ==========*/
 
-/*==========  section  ==========*/
-/*==========  section end ==========*/
+/*==========  section info about ==========*/
+.info-company-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+
+
+.info-company-content
+  max-width: 611px
+  width: calc(100% - 316px)
+  h2
+    margin: 0 0 38px
+    text-transform: uppercase
+  .title-decor__text
+    left: -100px
+    transform: none
+  .box-text
+    font-size: 16px
+    line-height: 168.9%
+
+
+
+.info-company-video
+  max-width: 386px
+  min-width: 386px
+  margin: -64px -100px 0 auto
+  width: 100%
+  .news-card__image
+    width: 100%
+
+.info-company
+  .wrapper-content
+    position: relative
+    margin: -60px auto 0
+  h3
+    margin: 0 0 39px
+    font-size: 20px
+    font-weight: bold
+
+.we-offer
+  margin: 40px 0 0
+
+
+.we-offer-item
+  margin: 0 0 64px
+  display: flex
+  align-items: center
+  line-height: 168.9%
+  font-size: 16px
+  font-weight: 500
+  &__icon
+    @include d-flex
+    width: 62px
+    min-width: 62px
+    margin: 0 30px 0 0
+  &:last-child
+    margin: 0
+
+.demand-product
+  margin: 70px 0 20px
+  h3
+    margin: 0 auto 19px
+    max-width: 270px
+    text-align: center
+
+.demand-product-slider, .licenses-slider
+  .slick-arrow
+    position: absolute
+    background: #0E1D42
+    width: 60px
+    height: 60px
+    padding: 19px
+    border-radius: 50%
+    @include d-flex
+    fill: #fff
+    top: 50%
+    transform: translate(0,-50%)
+  .svg-icon
+    width: 10px
+    height: 20px
+  .slick-prev
+    left: -60px
+  .slick-next
+    right: -60px
+    left: auto
+  .slick-disabled
+    opacity: 0
+
+.demand-product-item
+  text-align: center
+  font-size: 24px
+  font-weight: bold
+  &__icon
+    width: 186px
+    height: 186px
+    margin: 0 auto 2px
+    @include d-flex
+    background: linear-gradient(339.87deg, #0E1D42 -76.01%, #E12651 173.52%)
+    border: 14px solid rgb(234,211,219)
+      radius: 50%
+
+.licenses
+  background: url("../img/bg3.jpg") no-repeat center
+    size: cover
+  width: 100%
+  padding: 70px 90px
+  color: #fff
+
+.licenses-slider
+  max-width: 403px
+  width: 100%
+  margin: 0 0 0 auto
+  padding: 0 20px
+
+.module-system-v2
+  .wrapper-content
+    margin: 0
+  h2
+    text-transform: none
+  .tab-content-module
+
+    .btn
+      margin: 56px auto 0
+/*==========  section info about end ==========*/
 
 /*==========  section  ==========*/
 /*==========  section end ==========*/

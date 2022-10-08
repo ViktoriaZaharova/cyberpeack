@@ -69,14 +69,14 @@ $(document).ready(function () {
 //плавный скролл end
 
 $(".risks-wrapper").mCustomScrollbar({
-    axis:"yx",
+    axis: "yx",
 });
 
 $(window).on('load resize', function () {
 
     if ($(window).width() < 768) {
         $(".why-important-wrapper").mCustomScrollbar({
-            axis:"x"
+            axis: "x"
         });
 
         $('.reviews-slider:not(.slick-initialized)').slick({
@@ -85,8 +85,7 @@ $(window).on('load resize', function () {
             arrows: false,
             fade: true
         });
-    }
-    else {
+    } else {
         $(".reviews-slider.slick-initialized").slick("unslick");
     }
 
@@ -105,8 +104,7 @@ $(window).on('load resize', function () {
         });
 
 
-    }
-    else {
+    } else {
         $(".press-center-slider.slick-initialized").slick("unslick");
         $(".projects-slider.slick-initialized").slick("unslick");
     }
@@ -453,6 +451,7 @@ $('.solution-slider').slick({
 $('.team-slider').slick({
     slidesToShow: 4,
     arrows: true,
+    focusOnSelect: true,
     prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
     nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
     responsive: [
@@ -477,6 +476,52 @@ $('.team-slider').slick({
     ]
 });
 
+
+$('.demand-product-slider').slick({
+    slidesToShow: 4,
+    infinite: false,
+    prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+    responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 3,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1,
+                infinite: true,
+            }
+        }
+    ]
+});
+
+$('.licenses-slider').slick({
+    slidesToShow: 1,
+    infinite: false,
+    prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+    fade: true,
+    responsive: [
+
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1,
+                infinite: true,
+            }
+        }
+    ]
+});
 
 $('[data-bs-toggle="tab"]').on('shown.bs.tab', function (e) {
     $('.slick-slider').slick('setPosition');
