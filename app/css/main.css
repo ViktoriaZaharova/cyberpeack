@@ -3456,6 +3456,88 @@
   margin: 56px auto 0; }
 
 /*==========  section info about end ==========*/
+/*==========  section home-career ==========*/
+.home-career {
+  background: url("../img/career-bg.png") no-repeat center;
+    background-size: cover; }
+
+.info-company-list {
+  margin: 50px 0 0;
+  width: 100%; }
+  .info-company-list ul {
+    max-width: 400px; }
+  .info-company-list .btn {
+    margin: 40px auto 0; }
+
+/*==========  section home-career end ==========*/
+/*==========  section we-trusted ==========*/
+.we-trusted {
+  margin: 62px 0 100px; }
+  .we-trusted .partners-slider {
+    max-width: 100%;
+    padding: 0; }
+    .we-trusted .partners-slider .slick-next {
+      right: -20px; }
+    .we-trusted .partners-slider .slick-prev {
+      left: -20px; }
+
+.info-company-career .wrapper-content {
+  overflow: hidden; }
+
+.working-conditions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .working-conditions__image {
+    max-width: 407px;
+    width: 100%;
+    margin: 0 0 0 -180px; }
+    .working-conditions__image img {
+      width: 100%; }
+  .working-conditions__content {
+    padding: 0 0 0 38px;
+    width: calc(100% - 275px); }
+  .working-conditions h3 {
+    margin: 0 0 23px; }
+  .working-conditions .box-text {
+    font-size: 16px;
+    line-height: 168.9%;
+    font-weight: 500; }
+
+/*==========  section we-trusted end ==========*/
+/*==========  section  ==========*/
+/*==========  section end ==========*/
+/*==========  section  ==========*/
+/*==========  section end ==========*/
+/*==========  section  ==========*/
+/*==========  section end ==========*/
+/*==========  section  ==========*/
+/*==========  section end ==========*/
+/*==========  section  ==========*/
+/*==========  section end ==========*/
+/*==========  section  ==========*/
+/*==========  section end ==========*/
+/*==========  section  ==========*/
+/*==========  section end ==========*/
+/*==========  section  ==========*/
+/*==========  section end ==========*/
+/*==========  section  ==========*/
+/*==========  section end ==========*/
+/*==========  section  ==========*/
+/*==========  section end ==========*/
+/*==========  section  ==========*/
+/*==========  section end ==========*/
+/*==========  section  ==========*/
+/*==========  section end ==========*/
+/*==========  section  ==========*/
+/*==========  section end ==========*/
+/*==========  section  ==========*/
+/*==========  section end ==========*/
 /*==========  section  ==========*/
 /*==========  section end ==========*/
 /*==========  section  ==========*/

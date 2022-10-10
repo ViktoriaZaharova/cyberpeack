@@ -962,11 +962,71 @@
   </div>
 </div>
 
+<div class="modal fade" id="resumeModal" tabindex="-1" aria-labelledby="resumeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-5">
+            <div class="modal-header">
+              <div class="logo-spectrum"><img src="img/spectr-logo.png" alt=""></div>
+              <h2 class="modal-title">Отправить резюме</h2>
+              <!--        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-7">
+            <div class="modal-body">
+              <form method="post" class="form-callback form-modal">
+                <label>
+            <span class="input-wrap">
+              <input type="text" name="name" placeholder="ФИО">
+            </span>
+                </label>
+                <label>
+            <span class="input-wrap">
+              <input type="text" name="mail" placeholder="E - mail" required>
+            </span>
+                </label>
+                <label>
+            <span class="input-wrap">
+              <input type="text" name="phone" placeholder="+ 7 ( ___ ) - ___ - __ - __" required>
+            </span>
+                </label>
+
+                <label>
+            <span class="input-wrap">
+              <input type="text" name="comment" placeholder="Комментарий">
+            </span>
+                </label>
+                <div class="label-wrapper">
+                  <label class="label-file">
+                    <input type="file" class="input-file" name="file">
+                    <span class="label-file__icon"><img src="img/file.svg" alt=""></span>
+                    <span class="label-file__text">Прикрепить файл</span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <div class="consent">Нажимая кнопку, вы соглашаетесь
+                    с обработкой персональных данных
+                  </div>
+
+                  <button type="submit" class="btn btn-accent">Отправить заявку</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/jquery.mCustomScrollbar.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
 <script src="js/common.js"></script>
 
 </body>

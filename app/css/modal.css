@@ -45,7 +45,16 @@
   padding: 0;
   max-width: 390px;
   margin-left: auto; }
+  .modal-body .form-callback {
+    padding: 0; }
 
 #testModal .modal-content {
   background: url("../img/modal-bg2.jpg") no-repeat center;
     background-size: cover; }
+
+#resumeModal .modal-content {
+  background: url("../img/modal-bg3.jpg") no-repeat center;
+    background-size: cover; }
+
+#resumeModal .modal-body {
+  max-width: 700px; }
