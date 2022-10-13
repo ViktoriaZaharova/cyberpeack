@@ -3681,19 +3681,14 @@
         margin: 0
 
 .optimization-wrapper
-  width: 100%
-  display: flex
-  align-items: flex-start
-  flex-wrap: wrap
-  justify-content: space-between
   .solution-item
-    width: calc(50% - 8px)
     flex-wrap: wrap
     font-size: 20px
     font-family: $font
     font-weight: normal
     align-items: center
     justify-content: flex-start
+    margin-bottom: 20px
     &__body
       width: 100%
       border: none
@@ -3708,7 +3703,6 @@
       font-weight: 500
       line-height: 19px
   .solution-item.w-100
-    width: 100%
     height: auto
     .solution-item__body
       margin: 0
@@ -3752,8 +3746,157 @@
 
 /*==========  page module analytics end ==========*/
 
-/*==========  section  ==========*/
-/*==========  section end ==========*/
+/*==========  page lp  ==========*/
+.home-wrapper-dag
+  background: linear-gradient(89deg, #0E1D42 13%, #9d234c 91.31%)
+  position: relative
+  z-index: 1
+  &:before
+    content: ''
+    position: absolute
+    width: 697px
+    height: 587px
+    //opacity: 0.2
+    bottom: 544px
+    right: -122px
+    background: url("../img/footer-decor2.svg") no-repeat center
+      size: 100%
+    z-index: -1
+
+.home-dag
+  background: url("../img/home-dag.png") no-repeat center
+    size: cover
+  .home-content
+    &:before
+      display: none
+  .box-text
+    font-size: 16px
+    line-height: 24px
+    max-width: 400px
+  h1
+    font-size: 48px
+    line-height: 62px
+
+.dag-shield
+  padding: 0 0 200px
+  .solution-slider
+    margin: -20px 0 0
+  h2
+    text-transform: uppercase
+    max-width: 505px
+    margin: 0 0 33px
+  h3
+    text-transform: none
+    color: #fff
+    font-size: 24px
+    font-weight: normal
+    margin: 0
+
+.dag-about
+  position: relative
+  z-index: 1
+  padding: 0 0 240px
+  &:before
+    content: ''
+    position: absolute
+    z-index: -1
+    width: 100%
+    height: 827px
+    left: 0
+    bottom: -150px
+    background: url("../img/why-important-image.png") no-repeat center
+      size: cover
+
+.dag-about-nav
+  font-size: 17px
+  letter-spacing: 0.005em
+  font-weight: bold
+  position: relative
+  margin: 0 0 67px
+  border-bottom: 0.75px solid rgba(255, 255, 255, 0.098039)
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  .slick-slide
+    padding: 0 0 17px
+    border-bottom: 1.5px solid transparent
+    cursor: pointer
+    transition: .3s ease
+  &__item
+    text-align: center
+    position: relative
+    padding: 0 0 17px
+    border-bottom: 1.5px solid transparent
+    color: #fff
+    &:hover
+      color: #fff
+    &.active
+      border-bottom-color: $accent
+
+
+.video-item
+  position: relative
+  z-index: 1
+  max-width: 623px
+  width: 100%
+  border-radius: 14px
+  overflow: hidden
+  background: #0E1D42
+  margin: 0 0 0 auto
+  @include d-flex
+  > img
+    opacity: .3
+  .btn-play
+    width: 65px
+    height: 65px
+    @include d-flex
+    -webkit-background-size: 58px
+    background-size: 58px
+
+.dag-about-content
+  .box-text
+    line-height: 19px
+    font-size: 16px
+    max-width: 476px
+    width: 100%
+
+.dag-module
+  position: relative
+  z-index: 2
+  .btn
+    margin: 56px auto -100px
+  &:before
+    content: ''
+    position: absolute
+    bottom: 96px
+    right: 100px
+    width: 379px
+    height: 321px
+    background: url("../img/step-image2.png") no-repeat center
+      size: 100%
+  .wrapper-content
+    margin: -60px auto
+
+  h2
+    text-transform: none
+    max-width: 640px
+    .color-accent
+      display: inline
+    .title-decor__text
+      left: 18%
+      top: -13px
+
+.spectrum-protect
+  background: linear-gradient(109deg, #0E1D42 16.51%, #E12651 96.17%)
+  color: #fff
+  padding: 196px 0 75px
+  h2
+    margin: 0 0 30px
+    text-transform: uppercase
+
+/*==========  page lp end ==========*/
 
 /*==========  section  ==========*/
 /*==========  section end ==========*/

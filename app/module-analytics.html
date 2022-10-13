@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
@@ -235,7 +236,7 @@
             <div class="col-12">
               <h4>Модуль поведенческой аналитики собирает информацию:</h4>
             </div>
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-md-6">
               <div class="search-example-content">
 
                 <ul class="list-decor my-ul">
@@ -246,7 +247,7 @@
               </div>
             </div>
 
-            <div class="col-12 col-lg-5 offset-lg-1">
+            <div class="col-12 col-md-6 col-lg-5 offset-lg-1">
               <div class="module-description-text">
                 <p>На основе полученной информации модуль выстраивает профили стандартного поведения.</p>
                 <p>При возникновении отклонения от профиля поведения система оповещает и активно реагирует на
@@ -256,7 +257,7 @@
           </div>
 
           <div class="row">
-            <div class="col-12 col-lg-9">
+            <div class="col-12 col-md-8 col-lg-9">
               <div class="search-example-content">
                 <h4>Профили строятся
                   на основе информации:</h4>
@@ -270,7 +271,7 @@
               </div>
             </div>
 
-            <div class="col-12 col-lg-3">
+            <div class="col-12 d-none d-md-block col-md-4 col-lg-3">
               <div class="search-example__image"><img src="img/step-image2.png" alt=""></div>
             </div>
           </div>
@@ -295,7 +296,7 @@
 
 
           <div class="row align-items-center">
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-md-6">
               <div class="information-module-content">
                 <div class="box-text">
                   <p><strong>Контроль действий в режиме реального времени</strong></p>
@@ -307,7 +308,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-md-6">
               <div class="information-module-image"><img src="img/tablet1.png" alt=""></div>
             </div>
           </div>
@@ -342,7 +343,7 @@
                 </div>
 
                 <div class="row">
-                  <div class="col-12">
+                  <div class="col-12 d-none d-md-block">
                     <div class="scheme-wrapper">
                       <div class="scheme-box">
                         <div class="scheme-box__gradient"></div>
@@ -404,7 +405,7 @@
               <h3>Блокировка вредоносного ПО</h3>
             </div>
             <div class="row">
-              <div class="col-12 col-lg-6">
+              <div class="col-12 col-md-6">
                 <div class="information-module-image"><img src="img/tablet1.png" alt=""></div>
 
                 <a href="#" class="link-demonstration">
@@ -412,7 +413,7 @@
                   <span class="link-demonstration__text">Демонстрация активности вредоносного ПО</span>
                 </a>
               </div>
-              <div class="col-12 col-lg-6">
+              <div class="col-12 col-md-6">
                 <div class="box-text">
                   <p><strong>Останавливает действия вредоносного ПО,
                     которое пропустили другие системы ИБ.
@@ -426,7 +427,7 @@
                 </div>
               </div>
 
-              <div class="col-12">
+              <div class="col-12 d-none d-md-block">
                 <div class="scheme-wrapper">
                   <h4>Антивирус</h4>
                   <div class="scheme-row">
@@ -510,7 +511,7 @@
               <h3>Отчеты</h3>
             </div>
             <div class="row">
-              <div class="col-12 col-lg-6">
+              <div class="col-12 col-md-6">
                 <div class="box-text">
                   <p><strong>Отчеты по рискам и важным
                     метрикам ваших хранилищ</strong>
@@ -523,7 +524,7 @@
                   <p>Вы можете создавать свои отчеты на основании данных аудита доступа к хранилищам.</p>
                 </div>
               </div>
-              <div class="col-12 col-lg-6">
+              <div class="col-12 col-md-6">
                 <div class="information-module-image"><img src="img/tablet1.png" alt=""></div>
 
                 <a href="#" class="link-demonstration">
@@ -565,47 +566,57 @@
               </div>
             </div>
             <div class="col-12 col-lg-8">
-              <div class="optimization-wrapper">
-                <div class="solution-item">
-                  <div class="solution-item__icon"><img src="img/opti1.svg" alt=""></div>
-                  <div class="solution-item__body">
-                    <p>Дубликаты файлов</p>
+              <div class="optimization-wrapper row">
+                <div class="col-md-6 col-12">
+                  <div class="solution-item">
+                    <div class="solution-item__icon"><img src="img/opti1.svg" alt=""></div>
+                    <div class="solution-item__body">
+                      <p>Дубликаты файлов</p>
+                    </div>
+                    <div class="solution-item__number">1</div>
                   </div>
-                  <div class="solution-item__number">1</div>
                 </div>
-
-                <div class="solution-item">
-                  <div class="solution-item__icon"><img src="img/opti2.svg" alt=""></div>
-                  <div class="solution-item__body">
-                    <p>Файлы, к которым
-                      не было обращений</p>
+                <div class="col-md-6 col-12">
+                  <div class="solution-item">
+                    <div class="solution-item__icon"><img src="img/opti2.svg" alt=""></div>
+                    <div class="solution-item__body">
+                      <p>Файлы, к которым
+                        не было обращений</p>
+                    </div>
+                    <div class="solution-item__number">2</div>
                   </div>
-                  <div class="solution-item__number">2</div>
                 </div>
-                <div class="solution-item">
-                  <div class="solution-item__icon"><img src="img/opti3.svg" alt=""></div>
-                  <div class="solution-item__body">
-                    <p>Неиспользуемые
-                      ресурсы (без изменений)</p>
+                <div class="col-md-6 col-12">
+                  <div class="solution-item">
+                    <div class="solution-item__icon"><img src="img/opti3.svg" alt=""></div>
+                    <div class="solution-item__body">
+                      <p>Неиспользуемые
+                        ресурсы (без изменений)</p>
+                    </div>
+                    <div class="solution-item__number">3</div>
                   </div>
-                  <div class="solution-item__number">3</div>
                 </div>
-                <div class="solution-item">
-                  <div class="solution-item__icon"><img src="img/opti4.svg" alt=""></div>
-                  <div class="solution-item__body">
-                    <p>Наиболее быстро-
-                      растущие папки</p>
+                <div class="col-md-6 col-12">
+                  <div class="solution-item">
+                    <div class="solution-item__icon"><img src="img/opti4.svg" alt=""></div>
+                    <div class="solution-item__body">
+                      <p>Наиболее быстро-
+                        растущие папки</p>
+                    </div>
+                    <div class="solution-item__number">4</div>
                   </div>
-                  <div class="solution-item__number">4</div>
                 </div>
-                <div class="solution-item w-100">
-                  <div class="solution-item__icon"><img src="img/opti5.svg" alt=""></div>
-                  <div class="solution-item__body">
-                    <p>Динамику заполнения свободного места хранилищ</p>
+                <div class="col-md-6 col-12">
+                  <div class="solution-item w-100">
+                    <div class="solution-item__icon"><img src="img/opti5.svg" alt=""></div>
+                    <div class="solution-item__body">
+                      <p>Динамику заполнения свободного места хранилищ</p>
+                    </div>
+                    <div class="solution-item__number">5</div>
                   </div>
-                  <div class="solution-item__number">5</div>
                 </div>
               </div>
+              <div class="optimization-wrapper__nav slider-nav"></div>
             </div>
           </div>
 
@@ -613,25 +624,26 @@
             <div class="col-12">
               <div class="report-example">
                 <div class="row">
+                  <div class="col-12 col-lg-8 order-lg-1">
+                    <div class="information-module-image"><img src="img/tablet1.png" alt="">
+                      <div class="report-example__description">
+                        <span class="link-demonstration__icon"><img src="img/title-decor.svg" alt=""></span>
+                        <span class="link-demonstration__text">Пример отчета по заполнению</span>
+                      </div>
+
+                    </div>
+                  </div>
                   <div class="col-12 col-lg-4">
                     <div class="report-example__text information-module-content">
                       <div class="box-text">
                         <p>Система прогнозирует время и динамику заполнения хранилищ.</p>
 
-                        <p>Отчеты строятся по заданному расписанию в автоматическом режиме с возможностью отправки на e-mail
+                        <p>Отчеты строятся по заданному расписанию в автоматическом режиме с возможностью отправки на
+                          e-mail
                           и
                           сохранением на публичной папке.
                         </p>
                       </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-lg-8">
-                    <div class="information-module-image"><img src="img/tablet1.png" alt="">
-                    <div class="report-example__description">
-                      <span class="link-demonstration__icon"><img src="img/title-decor.svg" alt=""></span>
-                      <span class="link-demonstration__text">Пример отчета по заполнению</span>
-                    </div>
-
                     </div>
                   </div>
                 </div>
@@ -1358,6 +1370,7 @@
 <script src="js/slick.min.js"></script>
 <script src="js/jquery.mCustomScrollbar.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 <script src="js/jquery.maskedinput.min.js"></script>
 <script src="js/common.js"></script>
 

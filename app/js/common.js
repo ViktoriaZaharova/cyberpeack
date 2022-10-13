@@ -87,8 +87,26 @@ $(window).on('load resize', function () {
             arrows: false,
             fade: true
         });
+
+        $('.optimization-wrapper:not(.slick-initialized)').slick({
+            slidesToShow: 2,
+            arrows: true,
+            vertical: false,
+            appendArrows: '.optimization-wrapper__nav',
+            prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+            nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+            responsive: [
+                {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                }
+            ]
+        });
     } else {
         $(".reviews-slider.slick-initialized").slick("unslick");
+        $(".optimization-wrapper.slick-initialized").slick("unslick");
     }
 
     if ($(window).width() < 576) {
@@ -186,6 +204,7 @@ $('.partners-slider2').slick({
         }
     ]
 });
+
 
 
 $('.task-slider-image1').slick({
@@ -608,7 +627,6 @@ $('.btn-view-text').on('click', function (e) {
     $(this).parents('.partners-row').find('.box-text-hidden').addClass('open');
     $(this).fadeOut();
 });
-
 
 
 new WOW().init();

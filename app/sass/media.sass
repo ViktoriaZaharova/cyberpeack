@@ -142,6 +142,8 @@
       .gallery-corporate-item__img
         height: 391px
 
+  .report-example .information-module-image > img
+    max-width: 320px
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px)
@@ -555,6 +557,66 @@
 
   .vacancies
     padding: 61px 0 71px
+
+  .description-module-analytics .indexing-data__image
+    min-width: 370px
+    max-width: 370px
+    margin: auto 0 0
+
+  .controls-section
+    .information-module-wrapper
+      padding: 60px 25px
+
+  .scheme-box
+    padding: 15px
+
+  .reaction-wrapper
+    width: 100%
+    margin: 30px 0 0
+    justify-content: flex-start
+
+  .reaction-box
+    max-width: 50%
+    &:last-child
+      max-width: 50%
+
+  .blocking-wrapper
+    padding: 67px 30px
+
+  .blocking
+    .box-text
+      font-size: 16px
+      line-height: 142.4%
+
+  .scheme-box-col
+    max-width: 240px
+
+  .report-example .information-module-image > img
+    max-width: 500px
+    margin: 0 auto
+
+  .report-example__description
+    max-width: none
+    justify-content: center
+    width: 100%
+    margin: 19px 0 0
+
+  .optimization-section
+    .information-module-wrapper
+      h2
+        margin-bottom: 30px
+    .information-module-content
+      max-width: none
+      .box-text
+        max-width: none
+    .report-example__text
+      max-width: none
+      margin: 40px 0 0
+      .box-text
+        max-width: none
+
+  .optimization-wrapper
+    margin-top: 40px
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px)
@@ -1118,6 +1180,98 @@
 
   #resumeModal .modal-body
     max-width: none
+
+  .description-module-analytics
+    .indexing-data__text
+      margin: 0
+
+  .module-description-text
+    border: none
+      top: 3px solid #E12651
+    margin: 30px 0 0
+    padding: 30px 0 0
+    p
+      max-width: none
+
+  .description-module-analytics
+    h4
+      margin: 0 0 20px
+      font-size: 20px
+      max-width: none
+      text-align: left
+      line-height: 26px
+    .search-example-content
+      ul
+        margin: 0
+
+  .controls-section
+    .information-module-wrapper
+      padding: 64px 17px 60px
+
+  .controls-section
+    .information-module-content
+      max-width: none
+      .box-text
+        max-width: none
+
+    .information-module-image
+      margin: 30px auto 0
+
+  .reaction
+    margin: 56px 0 0
+    .btn
+      max-width: 263px
+      width: 100%
+      margin: 55px auto 0
+
+  .blocking-wrapper
+    padding: 67px 20px
+
+  .blocking
+    .btn
+      margin: 30px auto 0
+      max-width: 263px
+      width: 100%
+    .box-text
+      max-width: none
+      margin: 35px 0 0
+    .link-demonstration
+      margin: 15px auto 0
+      padding: 0
+    .information-module-image
+      margin: 0 auto
+
+  .blocking-item
+    margin: 0 0 70px
+    &:last-child
+      margin: 0
+      .box-text
+        margin: 0 0 35px
+
+  .optimization-wrapper
+    //display: block
+    margin: 40px 0 0
+    .slick-list
+      padding: 0
+    .solution-item.w-100
+      height: 185px
+      flex-wrap: wrap
+      .solution-item__body
+        width: 100%
+        padding: 0
+    .solution-item
+      margin: 0 auto
+    .slick-slide
+      padding: 0 10px
+    &__nav
+      justify-content: center
+      margin: 28px 0 0
+      .slick-arrow
+        fill: #fff
+
+  .report-example .information-module-image > img
+    max-width: 100%
+    margin: 0 auto
 
 @media only screen and (max-width: 576px)
   header
@@ -1693,6 +1847,44 @@
     padding: 22px
     &:after
       display: none
+
+  .description-module-analytics
+    .indexing-data__image
+      min-width: auto
+      max-width: 250px
+      margin: 20px auto 0
+    .indexing-data
+      h3
+        font-size: 20px
+    h4
+      text-align: left
+
+  .mb-50
+    margin-bottom: 40px
+
+  .reaction-wrapper
+    flex-wrap: wrap
+    
+  .reaction-box
+    max-width: none
+    padding: 0
+    border: none
+    display: flex
+    align-items: center
+    &:last-child
+      padding: 26px 0 0
+      margin: 26px 0 0
+      max-width: none
+      border: none
+        top: 1px solid $accent
+      .reaction-box__icon
+        max-width: 40px
+    &__icon
+      max-width: 68px
+      margin: 0 35px 0 0
+
+  .report-example__description
+    justify-content: flex-start
 
 @media only screen and (max-width: 420px)
   .regulatory-requirements-box
