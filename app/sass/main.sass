@@ -2174,6 +2174,7 @@
   height: 185px
   margin: 0 0 20px
   position: relative
+  z-index: 1
   overflow: hidden
   background: rgba(255, 255, 255, 0.05)
   border: 0.75px solid rgba(255, 255, 255, 0.117647)
@@ -3047,8 +3048,14 @@
       left: -20px
 
 .info-company-career
+  position: relative
+  z-index: 2
   .wrapper-content
     overflow: hidden
+    margin: -60px auto
+
+.btn-details
+  margin: 40px auto 0
 
 .working-conditions
   display: flex
@@ -3072,43 +3079,678 @@
 /*==========  section we-trusted end ==========*/
 
 
-/*==========  section  ==========*/
-/*==========  section end ==========*/
+/*==========  section summary-section ==========*/
+.summary-section
+  &:before
+    display: none
+  .form-callback
+    label
+      max-width: 387px
+      margin-left: auto
 
-/*==========  section  ==========*/
-/*==========  section end ==========*/
+/*==========  section summary-section end ==========*/
 
-/*==========  section  ==========*/
-/*==========  section end ==========*/
+/*==========  section corporate-events ==========*/
+.corporate-events
+  padding: 159px 0 246px
+  background: url("../img/project-bg.jpg") no-repeat center
+    size: cover
+  position: relative
+  z-index: 1
+  &:before
+    content: ''
+    position: absolute
+    bottom: 110px
+    right: -21px
+    width: 697px
+    height: 587px
+    background: url("../img/footer-decor2.svg") no-repeat center
+      size: 100%
+    opacity: .8
+  h2
+    text-transform: uppercase
+    max-width: 330px
+    margin: 0 0 54px
+  .title-decor__text
+    color: rgba(255, 255, 255, 0.05)
+    font-size: 230px
+    line-height: 295px
+    left: auto
+    transform: none
+    right: -275px
+    top: -170px
 
-/*==========  section  ==========*/
-/*==========  section end ==========*/
+.events-tabs
+  margin: 0 0 70px
+  .nav-link
+    color: #fff
+    font-size: 28px
+    &.active
+      color: #fff
 
-/*==========  section  ==========*/
-/*==========  section end ==========*/
+.slick-arrow-my
+  position: absolute
+  top: 50%
+  transform: translate(0,-50%)
+  width: 60px
+  height: 60px
+  background: #0E1D42
+  border-radius: 50%
+  fill: #fff
+  padding: 19px
+  &:hover
+    fill: $accent
+  &.slick-prev
+    left: -30px
+    right: auto
+  &.slick-next
+    right: -30px
+    left: auto
+  &.slick-disabled
+    opacity: 0
 
-/*==========  section  ==========*/
-/*==========  section end ==========*/
+.tab-content-events
+  padding: 0
 
-/*==========  section  ==========*/
-/*==========  section end ==========*/
+.gallery-corporate
+  margin: 76px 0 0
+  h3
+    text-transform: uppercase
+    color: $accent
+    font-size: 28px
+    font-weight: bold
+    font-family: $font
+    line-height: 36px
 
-/*==========  section  ==========*/
-/*==========  section end ==========*/
+.gallery-corporate-slider
+  color: #fff
+  margin: 30px 0 0
+  .slick-slide
+    margin: 0 20px 0 0
+  .slick-track
+    display: flex
+    align-items: center
 
-/*==========  section  ==========*/
-/*==========  section end ==========*/
+.gallery-corporate-item
+  width: 100%
+  max-width: 574px
+  font-size: 19px
+  font-weight: 500
+  line-height: 22px
+  margin: 0 auto
+  transition: .3s ease
+  &:hover
+    max-width: 584px
+    .gallery-corporate-item__img
+      height: 515px
+  &__img
+    height: 391px
+    width: 100%
+    transition: .3s ease
+    @include d-flex
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__text
+    max-width: 440px
+    margin: 19px 0 0
 
-/*==========  section  ==========*/
-/*==========  section end ==========*/
+/*==========  section corporate-events end ==========*/
 
-/*==========  section  ==========*/
-/*==========  section end ==========*/
+/*==========  section vacancies ==========*/
+.vacancies
+  padding: 104px 0 93px
+  .title-decor__text
+    font-size: 96px
+    line-height: 123px
+    top: -45px
+  h2
+    margin: 0 auto 70px
+  .btn
+    margin: 50px auto 0
 
 
+.accordion-item
+  border-radius: 0
+  background: transparent
+  outline: none
+  border: none
+    bottom: 1px solid #BCBCBC
+  &:first-of-type
+    border:
+      top: 1px solid #BCBCBC
+      radius: 0
+  &:last-of-type
+    border-radius: 0
 
-/*==========  section  ==========*/
-/*==========  section end ==========*/
+.accordion-header
+  background: transparent
+
+.accordion-button
+  outline: none
+  box-shadow: none
+  background: transparent
+  border: none
+  color: #0E1D42
+  font-size: 20px
+  font-weight: 700
+  padding: 30px 22px
+  &:focus
+    outline: none
+    box-shadow: none
+    background: transparent
+    border: none
+    color: #0E1D42
+  &:not(.collapsed)
+    color: #0E1D42
+    outline: none
+    box-shadow: none
+    background: transparent
+    border: none
+    &:after
+      background: url("../img/arrow-bottom.svg") no-repeat center
+
+.accordion-item:last-of-type .accordion-button.collapsed
+  border-radius: 0
+
+.accordion-button::after
+  background: url("../img/arrow-bottom.svg") no-repeat center
+    size: 100%
+  width: 16px
+  height: 9px
+
+.accordion-body
+  padding: 0 22px 35px
+  font-size: 16px
+  font-weight: 500
+  line-height: 19px
+  ul
+    li
+      margin: 0 0 20px
+      &:last-child
+        margin: 0
+
+.vacancies-info
+  margin: 0 0 37px
+  line-height: 169.9%
+
+.list-vacancies-description
+  width: 100%
+  &__text
+    width: 65%
+
+.list-vacancies-description-item
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  margin: 0 0 50px
+  &:last-child
+    margin: 0
+  h4
+    text-transform: uppercase
+    color: $accent
+    font-size: 24px
+    font-weight: 300
+    line-height: normal
+    width: 35%
+
+/*==========  section vacancies end ==========*/
+
+/*==========  page module analytics ==========*/
+.home-module-analytics
+  background: url("../img/home-bg-mobule-analytics.jpg") no-repeat center
+    size: cover
+  h1
+    max-width: 520px
+
+.description-module-analytics
+  .title-decor__text
+    left: -80px
+    transform: none
+  .indexing-data__image
+    max-width: 472px
+    width: 100%
+    margin: 0
+  .indexing-data
+    margin: 0 0 30px
+    h3
+      font-size: 24px
+      font-weight: bold
+      margin: 0 0 20px
+
+  .indexing-data__text
+    padding: 0
+    margin: 0 0 0 -40px
+    ul
+      font-size: 16px
+      line-height: 143.4%
+      font-weight: 600
+      li
+        padding: 0 0 0 30px
+      span
+        margin: 10px 0 0
+        display: block
+        font-size: 14px
+        line-height: 16px
+        font-weight: 500
+      sup
+        top: 0
+  .search-example-content
+    margin: 0
+    max-width: none
+    ul
+      font-weight: normal
+      color: #000000
+  .search-example__image
+    min-width: 317px
+    margin: 0 -10px 0 10px
+  h4
+    line-height: 36px
+    max-width: 476px
+
+.module-description-text
+  padding: 0 0 0 34px
+  color: #333333
+  line-height: 19px
+  font-size: 16px
+  font-weight: 500
+  border-left: 3px solid #E12651
+  p
+    margin: 0 0 20px
+    max-width: 328px
+    &:last-child
+      margin: 0
+
+.controls-section
+  .information-module-wrapper
+    padding: 82px 102px 77px
+    .box-text
+      max-width: 423px
+    h2
+      max-width: 370px
+      margin: 13px 0 20px
+    .reaction
+      .box-text
+        max-width: 360px
+
+.reaction
+  margin: 65px 0 0
+
+  .box-text
+    font-family: $font
+    max-width: 360px
+    font-size: 16px
+
+.reaction-wrapper
+  display: flex
+  align-items: flex-start
+  justify-content: flex-end
+
+.reaction-box
+  padding: 0 30px 0 0
+  border-right: 1px solid #E62752
+  max-width: 190px
+  font-size: 16px
+  line-height: 21px
+  font-family: $font
+  font-weight: normal
+  &:last-child
+    border: none
+    padding: 0 0 0 26px
+    max-width: 260px
+  &__icon
+    margin: 0 0 12px
+
+.scheme-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: center
+  margin: 34px 0 0
+
+.scheme-box
+  box-shadow: 0 11px 35px rgba(0, 0, 0, 0.2)
+  position: relative
+  z-index: 1
+  background: linear-gradient(298.57deg, #0E1D42 -66.61%, #E12651 172.3%)
+  border: 1px solid rgba(90, 90, 90, .7)
+    radius: 14px
+  width: 270px
+  min-height: 99px
+  padding: 22px 32px
+  font-size: 16px
+  font-weight: normal
+  font-family: $font
+  line-height: 18px
+  font-feature-settings: 'pnum' on, 'lnum' on
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-wrap: wrap
+  color: #fff
+  &:nth-child(2), &:nth-child(4)
+    width: 141px
+    text-align: center
+    margin: 28px 0 0
+    &:before
+      content: ''
+      position: absolute
+      width: 56px
+      height: 65px
+      top: 46px
+      left: -56px
+      background: url("../img/line-1.svg") no-repeat center
+        size: 100%
+      z-index: -2
+  &:nth-child(4)
+    &:before
+      left: auto
+      right: -58px
+      background: url("../img/line-4.svg") no-repeat center
+        size: 100%
+      width: 57px
+      height: 69px
+  &:first-child
+    margin: 140px -80px 0 0
+  &:last-child
+    margin: 140px 0 0 -80px
+  &__gradient
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    overflow: hidden
+    border-radius: 14px
+    z-index: -1
+    &:before
+      content: ''
+      position: absolute
+      z-index: -1
+      right: -43px
+      top: 0
+      filter: blur(25px)
+      opacity: .4
+      height: 106px
+      width: 106px
+      background: #5476B7
+      border-radius: 50%
+  p
+    margin: 0 0 20px
+    &:last-child
+      margin: 0
+
+.scheme-box-center
+  text-align: center
+  background: linear-gradient(0deg, #0E1D42, #0E1D42), #FFFFFF
+  width: 150px
+  height: 213px
+  padding: 39px 10px 10px
+  font-weight: bold
+  margin: 0 41px
+  border-radius: 19px
+  align-items: flex-start
+  .scheme-box__icon
+    @include d-flex
+    margin: 0 auto 14px
+    width: 100%
+  .scheme-box__gradient
+    border-radius: 19px
+    &:before
+      width: 132px
+      height: 132px
+      background: #5476B7
+      filter: blur(25px)
+      opacity: .32
+      border-radius: 50%
+      top: -30px
+      left: 0
+  &:before, &:after
+    content: ''
+    position: absolute
+    bottom: 55px
+    width: 42px
+    height: 88px
+    z-index: -1
+  &:before
+    left: -42px
+    background: url("../img/line-2.svg") no-repeat center
+      size: 100%
+  &:after
+    right: -42px
+    background: url("../img/line-3.svg") no-repeat center
+      size: 100%
+
+.link-demonstration
+  color: $accent
+  display: flex
+  align-items: center
+  margin: 17px 0 0
+  padding: 0 0 0 15px
+  font-size: 14px
+  font-weight: bold
+  &:hover
+    color: $accent
+  &__icon
+    @include d-flex
+    width: 27px
+    margin: 0 13px 0 0
+  &__text
+    max-width: 235px
+
+.blocking
+
+  .box-text
+    font-size: 20px
+    line-height: 142.4%
+    max-width: 514px
+  .information-module-image
+    max-width: 415px
+  h3
+    margin: 0 auto 57px
+
+.blocking-item
+  width: 100%
+  margin: 0 0 104px
+  &:last-child
+    margin: 0
+
+.blocking-wrapper
+  width: 100%
+  background: #fff
+  padding: 82px 100px 70px
+  .scheme-wrapper
+    flex-wrap: wrap
+    h4
+      margin: 0 0 5px 172px
+      font-size: 20px
+      font-weight: bold
+      width: 100%
+    .list-decor
+      li
+        padding: 0 0 0 19px
+        &:before
+          width: 9px
+          height: 12px
+          filter: brightness(0) invert(1)
+          top: 4px
+
+.scheme-row
+  width: 100%
+  display: flex
+  align-items: center
+  margin: 0 0 112px
+  &:last-child
+    margin: 0
+  .scheme-box
+    margin: 0 47px 0 0
+    font-size: 14px
+    font-family: $default-font
+    text-align: left
+    width: 334px
+  .scheme-box1
+    &:before
+      width: 47px
+      height: 122px
+      right: -48px
+      left: auto
+      background: url("../img/line-7.svg") no-repeat center
+        size: 100%
+      top: 50%
+      transform: translate(0,-50%)
+
+.scheme-col
+  margin: 55px auto -55px 0
+  .scheme-box
+    width: 211px
+    font-size: 14px
+    font-weight: 500
+    text-align: left
+    font-family: $default-font
+    &:before, &:after
+      content: ''
+      position: absolute
+      left: 50%
+      transform: translate(-50%,0)
+      width: 80px
+      height: 62px
+    &:before
+      top: -62px
+      background: url("../img/line-5.svg") no-repeat center
+        size: 100%
+      left: 142px
+
+    &:after
+      bottom: -62px
+      background: url("../img/line-6.svg") no-repeat center
+        size: 100%
+      left: 65px
+  .logo-company
+    margin: 65px 0 0 10px
+    max-width: 169px
+
+.scheme-box-col
+  max-width: 327px
+  width: 100%
+  .scheme-box
+    width: 100%
+    margin: 0 0 22px
+    &:before, &:after
+      display: none
+    &:last-child
+      margin: 0
+
+.scheme-row2
+  align-items: flex-start
+  .scheme-box
+    width: 211px
+    &:first-child
+      &:before
+        content: ''
+        position: absolute
+        width: 47px
+        height: 54px
+        background: url("../img/line-8.svg") no-repeat center
+          size: 100%
+        right: -48px
+        top: 45px
+    &:last-child
+      margin: 0
+      width: 327px
+      min-height: 208px
+    &:nth-child(2)
+      min-height: 208px
+      width: 332px
+      &:before
+        left: auto
+        right: -48px
+        width: 47px
+        height: 1px
+        background: #E12651
+        top: 50%
+        transform: translate(0,-50%)
+  ul
+    font-size: 14px
+    font-weight: normal
+    font-family: $default-font
+    li
+      margin: 0 0 10px
+      &:last-child
+        margin: 0
+
+.optimization-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+  .solution-item
+    width: calc(50% - 8px)
+    flex-wrap: wrap
+    font-size: 20px
+    font-family: $font
+    font-weight: normal
+    align-items: center
+    justify-content: flex-start
+    &__body
+      width: 100%
+      border: none
+      padding: 0
+      margin: 0
+    &__icon
+      min-width: 35px
+      max-width: 35px
+    &__number
+      font-family: $default-font
+      font-size: 15px
+      font-weight: 500
+      line-height: 19px
+  .solution-item.w-100
+    width: 100%
+    height: auto
+    .solution-item__body
+      margin: 0
+      padding: 0 0 0 23px
+      max-width: none
+      width: calc(100% - 40px)
+      p
+        max-width: none
+
+.optimization-section
+  .information-module-wrapper
+    h2
+      margin: 13px 0 35px
+
+.report-example
+  margin: 46px 0 0
+  .box-text
+    max-width: 303px
+    font-weight: 500
+  .information-module-image
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    max-width: none
+    img
+      max-width: 415px
+  &__description
+    margin: 0 0 0 25px
+    display: flex
+    align-items: center
+    font-size: 14px
+    font-weight: bold
+    .link-demonstration__icon
+      width: 27px
+      margin: 0 13px 0 0
+      filter: brightness(0) invert(1)
+      img
+        max-width: 100%
+    .link-demonstration__text
+      max-width: 120px
+
+/*==========  page module analytics end ==========*/
 
 /*==========  section  ==========*/
 /*==========  section end ==========*/

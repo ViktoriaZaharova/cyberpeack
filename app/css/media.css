@@ -92,7 +92,15 @@
   .team {
     padding: 0; }
     .team h2 {
-      margin: 0 auto 30px; } }
+      margin: 0 auto 30px; }
+  .slick-arrow-my.slick-next {
+    right: 0; }
+  .slick-arrow-my.slick-prev {
+    left: 0; }
+  .gallery-corporate-item:hover {
+    max-width: none; }
+    .gallery-corporate-item:hover .gallery-corporate-item__img {
+      height: 391px; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
@@ -440,7 +448,34 @@
     .materials .pdf-box {
       margin: 0 auto; }
     .materials .video-card {
-      margin: 0 auto -23px; } }
+      margin: 0 auto -23px; }
+  .home-career .btn-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse; }
+    .home-career .btn-group .btn {
+      margin: 0; }
+      .home-career .btn-group .btn:last-child {
+        margin: 0 0 24px; }
+  .events-tabs {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+    .events-tabs .nav-item {
+      margin: 0 20px 12px 0;
+      -webkit-box-flex: 0;
+          -ms-flex: none;
+              flex: none;
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content; }
+      .events-tabs .nav-item:last-child {
+        margin-bottom: 0; }
+    .events-tabs .nav-link {
+      margin: 0; }
+  .vacancies {
+    padding: 61px 0 71px; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -873,9 +908,79 @@
   .licenses-slider {
     padding: 30px 60px;
     margin: 0 auto;
-    max-width: 500px; } }
+    max-width: 500px; }
+  .info-company-list {
+    margin: 32px 0 0; }
+  .info-company-video {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1; }
+  .btn-details {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin: 30px auto 0; }
+  .info-company-career .info-company-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .info-company-career .info-company-list ul {
+    max-width: none; }
+  .we-trusted {
+    margin: 59px 0 50px; }
+    .we-trusted .partners-slider {
+      padding: 0 30px; }
+      .we-trusted .partners-slider .slick-next {
+        right: 0; }
+      .we-trusted .partners-slider .slick-prev {
+        left: 0; }
+    .we-trusted h3 {
+      text-align: center; }
+  .working-conditions__content {
+    width: 100%;
+    padding: 0; }
+  .working-conditions__image {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin: 19px 0 0 -90px; }
+  .working-conditions h3 {
+    text-align: center; }
+  .peculiarities-module {
+    margin: 70px 0 0; }
+  .corporate-events h2 {
+    font-size: 28px; }
+  .corporate-events:before {
+    display: none; }
+  .gallery-corporate-item {
+    max-width: 300px;
+    font-size: 19px; }
+    .gallery-corporate-item__img {
+      height: 270px; }
+    .gallery-corporate-item:hover .gallery-corporate-item__img {
+      height: 270px; }
+  .vacancies h2 {
+    margin: 0 auto 25px; }
+  .vacancies .btn {
+    margin: 31px auto 0; }
+  .list-vacancies-description-item h4 {
+    margin: 0 0 21px;
+    font-size: 20px; }
+  .accordion-button {
+    font-size: 16px; }
+  .summary-section {
+    background-size: cover; }
+    .summary-section .form-callback label {
+      max-width: none; }
+    .summary-section .spectrum-demonstration__content {
+      margin: 0 0 50px; }
+  #resumeModal .modal-body {
+    max-width: none; } }
 
-/* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px) {
   header .btn {
     display: none; }
@@ -1370,7 +1475,38 @@
   .team-box {
     margin: 0 auto; }
   .video-card {
-    height: 390px; } }
+    height: 390px; }
+  .home-career {
+    background: url("../img/career-bg-mobile.jpg") no-repeat center;
+      background-size: cover; }
+  .corporate-events {
+    padding: 90px 0 168px; }
+    .corporate-events h2 {
+      margin: 0 0 20px;
+      font-size: 28px; }
+  .gallery-corporate-item {
+    max-width: 280px; }
+    .gallery-corporate-item__img {
+      height: 195px; }
+    .gallery-corporate-item:hover .gallery-corporate-item__img {
+      height: 195px; }
+  .gallery-corporate-slider .slick-slide {
+    margin: 0 10px 0 0; }
+  .list-vacancies-description-item {
+    margin: 0 0 40px; }
+    .list-vacancies-description-item:last-child {
+      margin: 0; }
+    .list-vacancies-description-item h4 {
+      width: 100%; }
+  .list-vacancies-description__text {
+    font-size: 16px;
+    width: 100%; }
+  .vacancies-info {
+    margin: 0 0 50px; }
+  .accordion-button {
+    padding: 22px; }
+    .accordion-button:after {
+      display: none; } }
 
 @media only screen and (max-width: 420px) {
   .regulatory-requirements-box:before {
@@ -1444,7 +1580,10 @@
   .team-box__tel {
     margin: 14px auto 13px; }
   .team-slider .slick-arrow {
-    top: 70%; } }
+    top: 70%; }
+  .working-conditions__image {
+    max-width: 290px;
+    margin: 19px 0 0 -60px; } }
 
 @media only screen and (max-width: 380px) {
   .why-important-box {

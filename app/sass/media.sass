@@ -130,6 +130,19 @@
     h2
       margin: 0 auto 30px
 
+  .slick-arrow-my
+    &.slick-next
+      right: 0
+    &.slick-prev
+      left: 0
+
+  .gallery-corporate-item
+    &:hover
+      max-width: none
+      .gallery-corporate-item__img
+        height: 391px
+
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px)
   header
@@ -520,6 +533,28 @@
       margin: 0 auto
     .video-card
       margin: 0 auto -23px
+
+  .home-career
+    .btn-group
+      flex-direction: column-reverse
+      .btn
+        margin: 0
+        &:last-child
+          margin: 0 0 24px
+
+  .events-tabs
+    justify-content: flex-start
+    .nav-item
+      margin: 0 20px 12px 0
+      flex: none
+      width: fit-content
+      &:last-child
+        margin-bottom: 0
+    .nav-link
+      margin: 0
+
+  .vacancies
+    padding: 61px 0 71px
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px)
@@ -993,26 +1028,97 @@
     padding: 0
     background: url("../img/bg3-mobile.jpg") no-repeat center
       size: cover
-    //.regulatory-requirements-box
-    //  background: transparent
-    //  border: none
-    //    radius: 0px
-    //  flex-direction: column
-    //  align-items: center
-    //  &:before
-    //    display: none
-    //.regulatory-requirements-box__icon
-    //  width: 213px
-    //  height: 213px
-    //  margin: 0 auto
+
 
   .licenses-slider
     padding: 30px 60px
     margin: 0 auto
     max-width: 500px
 
+  .info-company-list
+    margin: 32px 0 0
 
-/* Extra Small Devices, Phones */
+  .info-company-video
+    order: 1
+
+  .btn-details
+    order: 1
+    margin: 30px auto 0
+
+  .info-company-career
+    .info-company-wrapper
+      flex-direction: column
+      align-items: center
+    .info-company-list ul
+      max-width: none
+
+  .we-trusted
+    margin: 59px 0 50px
+    .partners-slider
+      padding: 0 30px
+      .slick-next
+        right: 0
+      .slick-prev
+        left: 0
+    h3
+      text-align: center
+
+  .working-conditions__content
+    width: 100%
+    padding: 0
+
+  .working-conditions__image
+    order: 1
+    margin: 19px 0 0 -90px
+
+  .working-conditions
+    h3
+      text-align: center
+
+  .peculiarities-module
+    margin: 70px 0 0
+
+  .corporate-events
+    h2
+      font-size: 28px
+    &:before
+      display: none
+
+  .gallery-corporate-item
+    max-width: 300px
+    font-size: 19px
+    &__img
+      height: 270px
+    &:hover
+      .gallery-corporate-item__img
+        height: 270px
+
+  .vacancies
+    h2
+      margin: 0 auto 25px
+    .btn
+      margin: 31px auto 0
+
+  .list-vacancies-description-item
+    h4
+      margin: 0 0 21px
+      font-size: 20px
+
+  .accordion-button
+    font-size: 16px
+
+  .summary-section
+    -webkit-background-size: cover
+    background-size: cover
+    .form-callback
+      label
+        max-width: none
+    .spectrum-demonstration__content
+      margin: 0 0 50px
+
+  #resumeModal .modal-body
+    max-width: none
+
 @media only screen and (max-width: 576px)
   header
     .btn
@@ -1547,6 +1653,46 @@
   .video-card
     height: 390px
 
+  .home-career
+    background: url("../img/career-bg-mobile.jpg") no-repeat center
+      size: cover
+
+  .corporate-events
+    padding: 90px 0 168px
+    h2
+      margin: 0 0 20px
+      font-size: 28px
+
+  .gallery-corporate-item
+    max-width: 280px
+    &__img
+      height: 195px
+    &:hover
+      .gallery-corporate-item__img
+        height: 195px
+
+  .gallery-corporate-slider .slick-slide
+    margin: 0 10px 0 0
+
+  .list-vacancies-description-item
+    margin: 0 0 40px
+    &:last-child
+      margin: 0
+    h4
+      width: 100%
+
+  .list-vacancies-description
+    &__text
+      font-size: 16px
+      width: 100%
+
+  .vacancies-info
+    margin: 0 0 50px
+
+  .accordion-button
+    padding: 22px
+    &:after
+      display: none
 
 @media only screen and (max-width: 420px)
   .regulatory-requirements-box
@@ -1628,6 +1774,10 @@
 
   .team-slider .slick-arrow
     top: 70%
+
+  .working-conditions__image
+    max-width: 290px
+    margin: 19px 0 0 -60px
 
 @media only screen and (max-width: 380px)
   .why-important-box

@@ -414,7 +414,7 @@ $('.events-slider-v1').slick({
 });
 
 
-$('.news-slider').slick({
+$('.news-slider1').slick({
     slidesToShow: 1,
     variableWidth: true,
     appendArrows: '.news-slider-nav',
@@ -426,6 +426,42 @@ $('.news-slider').slick({
             settings: {
                 arrows: false,
                 dots: true
+            }
+        }
+    ]
+});
+
+
+$('.news-slider2').slick({
+    slidesToShow: 1,
+    variableWidth: true,
+    infinite: false,
+    prevArrow: '<button type="button" class="slick-prev slick-arrow-my"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next slick-arrow-my"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+    responsive: [
+        {
+            breakpoint: 576,
+            settings: {
+                dots: true
+            }
+        }
+    ]
+});
+
+$('.gallery-corporate-slider').slick({
+    slidesToShow: 1,
+    variableWidth: true,
+    infinite: false,
+    prevArrow: '<button type="button" class="slick-prev slick-arrow-my"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next slick-arrow-my"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+    responsive: [
+        {
+            breakpoint: 576,
+            settings: {
+                dots: false,
+                arrows: false,
+                autoplay: true,
+                infinite: true,
             }
         }
     ]
