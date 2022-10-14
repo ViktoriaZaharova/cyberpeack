@@ -3791,6 +3791,7 @@
     font-size: 24px
     font-weight: normal
     margin: 0
+    font-family: 'Inter', sans-serif
 
 .dag-about
   position: relative
@@ -3892,17 +3893,467 @@
   background: linear-gradient(109deg, #0E1D42 16.51%, #E12651 96.17%)
   color: #fff
   padding: 196px 0 75px
+  position: relative
+  z-index: 1
+  overflow: hidden
+  .box-text
+    font-size: 18px
+    line-height: 136.02%
+    font-family: 'Inter', sans-serif
+  &:before, &:after
+    content: ''
+    position: absolute
+    z-index: -1
+  &:before
+    width: 635px
+    height: 534px
+    background: url("../img/footer-decor1.svg") no-repeat center
+      size: 100%
+    left: -318px
+    bottom: -80px
+  &:after
+    width: 697px
+    height: 586px
+    top: 104px
+    right: -358px
+    background: url("../img/footer-decor2.svg") no-repeat center
+      size: 100%
   h2
     margin: 0 0 30px
     text-transform: uppercase
 
+.spectrum-protect-nav
+  overflow-x: auto
+  margin: 90px 0 53px
+  border-bottom: 0.75px solid rgba(255, 255, 255, 0.098039)
+  .nav-item
+    flex: none
+    width: 25%
+  .nav-link
+    color: #fff
+    max-width: 257px
+    padding: 0 0 24px 0
+    &:before
+      display: none
+
+.spectrum-protect-slider
+  position: relative
+  overflow: hidden
+  &:before
+    content: ''
+    position: absolute
+    top: 0
+    right: -133px
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(187,37,79,1) 50%)
+    height: 100%
+    width: 290px
+    z-index: 2
+  .slide
+    margin: 0 20px 0 0
+    width: 311px
+  .solution-item
+    font-size: 16px
+    line-height: 21px
+    font-family: $font
+    &__icon
+      min-width: 44px
+      img
+        width: 100%
+    &__number
+      font-family: $default-font
+
+
+  .solution-item-linux
+    .solution-item__body
+      font-size: 36px
+      line-height: 46px
+
+.architecture
+  color: #fff
+  position: relative
+  padding: 105px 0 150px
+  z-index: 1
+  background: url("../img/bg2.jpg") no-repeat center
+    size: cover
+  overflow: hidden
+  &:before
+    content: ''
+    position: absolute
+    z-index: -1
+    width: 697px
+    height: 586px
+    background: url("../img/footer-decor2.svg") no-repeat center
+      size: 100%
+    right: -182px
+    bottom: -230px
+
+  h4
+    margin: 58px 0 0
+    font-size: 20px
+    font-weight: 500
+    line-height: 136.02%
+    max-width: 450px
+
+.architecture-wrapper
+  display: flex
+  align-items: center
+  h5
+    margin: -90px 0 26px
+    font-size: 24px
+    font-weight: 500
+    max-width: 265px
+
+.architecture-col
+  &:first-child
+    margin: 0 150px 0 0
+  &:nth-child(2)
+    margin: 0 203px 0 0
+
+.architecture-box
+  text-align: center
+  font-size: 16px
+  font-weight: bold
+  line-height: 21px
+  text-transform: uppercase
+  font-family: $font
+  position: relative
+  z-index: 1
+  margin: 0 0 52px
+  &:last-child
+    margin: 0
+  &__icon
+    @include d-flex
+    background: linear-gradient(297.98deg, #0E1D42 -40.66%, #E12651 104.52%)
+    box-shadow: 0px 15px 39px rgba(67, 88, 139, 0.4)
+    border-radius: 6px
+    width: 94px
+    height: 96px
+    padding: 24px
+    margin: 0 auto
+  &__text
+    width: 100%
+    margin: 18px auto 0
+
+.architecture-box-max
+  &:before, &:after
+    content: ''
+    position: absolute
+    right: -160px
+    width: 165px
+    height: 97px
+  &:before
+    bottom: 70px
+    background: url("../img/line1.svg") no-repeat center
+      size: 100%
+  &:after
+    bottom: -40px
+    background: url("../img/line2.svg") no-repeat center
+      size: 100%
+  .architecture-box__icon
+    width: 283px
+    height: 122px
+    padding: 35px
+    margin: 0
+    img
+      filter: brightness(0) invert(1)
+
+.architecture-box-min
+  display: flex
+  align-items: center
+  margin: 0 0 10px
+  &:before
+    content: ''
+    position: absolute
+  &:first-child
+    &:before
+      background: url("../img/line3.svg") no-repeat center
+        size: 100%
+      width: 261px
+      height: 96px
+      left: -261px
+      top: 30px
+  &:nth-child(2)
+    &:before
+      background: url("../img/line4.svg") no-repeat center
+        size: 100%
+      width: 261px
+      height: 26px
+      left: -260px
+      top: 31px
+  &:nth-child(3)
+    &:before
+      width: 214px
+      height: 8px
+      left: -214px
+      background: url("../img/line5.svg") no-repeat center
+        size: 100%
+
+  .architecture-box__text
+    margin: 0 0 0 27px
+    text-align: left
+  .architecture-box__icon
+    width: 59px
+    min-width: 59px
+    height: 59px
+    padding: 13px
+
+.architecture-col-top
+  margin: -40px 0 67px
+
+.architecture-col-bottom
+  .architecture-box-min
+    &:first-child
+      &:before
+        background: url("../img/line4.svg") no-repeat center
+          size: 100%
+        left: -251px
+        top: 25px
+        width: 251px
+        height: 26px
+    &:nth-child(2)
+      &:before
+        width: 214px
+        height: 8px
+        background: url("../img/line5.svg") no-repeat center
+          size: 100%
+        left: -214px
+        top: 24px
+    &:nth-child(3)
+      &:before
+        width: 214px
+        height: 76px
+        background: url("../img/line6.svg") no-repeat center
+          size: 100%
+        left: -212px
+        top: -42px
+    &:nth-child(4)
+      &:before
+        width: 214px
+        height: 146px
+        background: url("../img/line7.svg") no-repeat center
+          size: 100%
+        left: -212px
+        top: -111px
+
+.integration
+  position: relative
+  z-index: 2
+  h2
+    margin: 0 auto 46px
+    max-width: 640px
+    text-transform: uppercase
+    text-align: center
+  .title-decor__text
+    top: -5px
+    font-size: 128px
+    line-height: 164px
+    left: -85px
+    transform: none
+
+.integration-content
+  width: 100%
+  position: relative
+  padding: 27px 0 0 432px
+  color: #000
+  .box-text
+    font-size: 20px
+    line-height: 142.4%
+
+.list-integration
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  justify-content: space-between
+  margin: 40px 0 0
+  li
+    height: 39px
+    img
+      max-height: 100%
+
+.integration-image
+  position: absolute
+  left: 0
+  top: 0
+  @include d-flex
+  max-width: 363px
+  width: 100%
+
+.success-stories
+  margin: 70px 0 50px
+  h2
+    text-align: center
+    margin: 0 auto 26px
+  .title-decor__text
+    top: -105px
+    color: #FFFFFF
+
+.box-subtext
+  margin: 0 0 40px
+  font-size: 20px
+  font-weight: 500
+  line-height: 23px
+  max-width: 563px
+
 /*==========  page lp end ==========*/
 
-/*==========  section  ==========*/
-/*==========  section end ==========*/
+/*==========  section about-spectr ==========*/
+.about-spectr
+  .logo-company
+    max-width: 494px
+    width: 100%
+    @include d-flex
+  &__content
+    padding: 107px 0 20px
+    background: #F3F4FA
+  .box-text
+    margin: 47px 0 37px
+    font-size: 20px
+    font-family: 'Inter', sans-serif
+    line-height: 142.4%
+    font-weight: normal
+    strong
+      font-weight: bold
+      font-size: 24px
+  &__image
+    min-width: 912px
+    @include d-flex
+    position: relative
+    overflow: hidden
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
 
-/*==========  section  ==========*/
-/*==========  section end ==========*/
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%
+      mix-blend-mode: screen
+      opacity: .34
+      background: #E12651
+
+.file-analysis
+  background: #FEFEFE
+  padding: 70px 0 100px
+  h2
+    max-width: 410px
+    margin: 0 auto 46px
+  .title-decor__text
+    left: -210px
+    top: 5px
+    transform: none
+    color: #E3E6F2
+    font-size: 96px
+    line-height: 123px
+  .box-text
+    text-align: center
+    width: 100%
+    font-size: 18px
+    margin: 0 auto 28px
+  h3
+    margin: 0 auto 58px
+    font-size: 18px
+    font-weight: 600
+    text-align: center
+    color: #000
+
+.file-analysis-wrapper
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  color: #000000
+
+.file-analysis-image
+  max-width: 456px
+  width: 100%
+  @include d-flex
+  margin: 0 auto
+  img
+    width: 100%
+
+.file-analysis-item
+  position: absolute
+  max-width: 303px
+  line-height: 142.4%
+  font-size: 18px
+  span
+    display: inline-block
+    margin: 0 5px 0 0
+  &:first-child
+    left: 38px
+    top: 30px
+  &:nth-child(2)
+    top: 50%
+    transform: translate(0,-50%)
+    max-width: 257px
+    left: 38px
+  &:nth-child(3)
+    bottom: 6px
+    left: 85px
+    max-width: none
+  &:nth-child(4), &:nth-child(5)
+    right: 0
+    max-width: 332px
+  &:nth-child(4)
+    top: 30px
+  &:nth-child(5)
+    bottom: 6px
+
+.cases-v2
+  margin: 0
+  padding: 85px 0
+  background: #FEFEFE
+  .container
+    position: relative
+    z-index: 1
+    &:before
+      content: 'КЕЙСЫ'
+      transform: rotate(90deg)
+      font-size: 200px
+      line-height: 256px
+      font-weight: bold
+      font-family: $font
+      opacity: 0.34
+      color: #E3E6F2
+      right: -373px
+      top: 180px
+      z-index: -1
+      position: absolute
+
+
+/*==========  section about-spectr end ==========*/
+
+/*==========  section question ==========*/
+.question
+  background: url("../img/question-bg.jpg") no-repeat center
+    size: cover
+  padding: 148px 0 133px
+  h2
+    margin: 0 0 45px
+  .accordion-button
+    padding: 27px 15px 27px 0
+  .accordion-body
+    padding: 0 15px 35px 43px
+
+.question-icon
+  @include d-flex
+  background: #E12651
+  width: 30px
+  height: 30px
+  min-width: 30px
+  color: #fff
+  margin: 0 13px 0 0
+  line-height: 205.4%
+  font-size: 20px
+  font-weight: bold
+  border-radius: 50%
+
+/*==========  section question end ==========*/
 
 /*==========  section  ==========*/
 /*==========  section end ==========*/
