@@ -58,3 +58,50 @@
 
 #resumeModal .modal-body {
   max-width: 700px; }
+
+#fileModal .modal-content {
+  background: url("../img/file-bg.jpg") no-repeat center;
+    background-size: cover; }
+
+.download-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  margin: 8px 0 38px;
+  font-size: 20px;
+  font-family: "FuturaPT", sans-serif;
+  line-height: 16px;
+  -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+  font-weight: normal; }
+  .download-box:hover {
+    color: #E12651; }
+  .download-box .pdf-box__icon {
+    width: 57px;
+    min-width: 57px;
+    height: 67px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .download-box .pdf-box__text {
+    max-width: 167px; }
+  .download-box strong {
+    margin: 13px 0 0;
+    font-size: 14px;
+    display: block; }
+
+.btn-download {
+  max-width: 295px;
+  width: 100%; }
+  .btn-download .btn-icon {
+    margin: 0 11px 0; }

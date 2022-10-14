@@ -1303,8 +1303,7 @@
         </h4>
       </div>
 
-      <div class="col-12">
-
+      <div class="col-12 d-none d-lg-block">
         <div class="architecture-wrapper">
           <div class="architecture-col">
             <h5>ЦЕНТР УПРАВЛЕНИЯ СИСТЕМЫ «СПЕКТР»</h5>
@@ -1376,6 +1375,9 @@
           </div>
 
         </div>
+      </div>
+      <div class="col-12 d-block d-lg-none">
+        <a href="img/scheme3.png" class="btn btn-accent" data-fancybox="scheme">Открыть схему</a>
       </div>
     </div>
   </div>
@@ -1727,15 +1729,15 @@
         <div class="col-12">
           <h3>Лицензирование «Спектра</h3>
         </div>
-        <div class="col-12 col-lg-4 col-md-6">
+        <div class="col-12 col-lg-4 col-md-5">
           <div class="box-text">
             <p>Система лицензируется по модульному принципу. Модуль аудита и анализа прав доступа (ссылка на модуль)
               является базовым.</p>
           </div>
         </div>
 
-        <div class="col-12 col-lg-4 col-md-6 offset-lg-4">
-          <div class="box-text">
+        <div class="col-12 col-lg-4 col-md-5 offset-md-2 offset-lg-4">
+          <div class="box-text licensing-text">
             <p>Мы предлагаем срочную и бессрочную лицензию «Спектра». Приобрести решение вы можете у наших Партнеров</p>
           </div>
         </div>
@@ -1989,7 +1991,7 @@
   </div>
 </footer>
 
-
+<a href="#" class="btn btn-accent" data-bs-toggle="modal" data-bs-target="#fileModal">Скачать файл</a>
 <!-- Modal -->
 <div class="modal fade" id="demoModal" tabindex="-1" aria-labelledby="demoModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
@@ -2140,6 +2142,36 @@
                   <button type="submit" class="btn btn-accent">Отправить заявку</button>
                 </div>
               </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="fileModal" tabindex="-1" aria-labelledby="fileModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-6">
+            <div class="modal-header">
+              <div class="logo-spectrum"><img src="img/spectr-logo.png" alt=""></div>
+              <h2 class="modal-title color-accent">Скачать Кейс</h2>
+
+              <a href="#" target="_blank" download="#" class="download-box">
+                <span class="pdf-box__icon"><img src="img/file.svg" alt=""></span>
+                <span class="pdf-box__text">
+              Название кейса
+может быть длинным
+            <strong>PDF - 712.63 КB</strong></span>
+              </a>
+
+              <a href="#" class="btn btn-accent btn-download">
+                <span class="btn-icon"><img src="img/file.svg" alt=""></span>
+                <span class="btn-text">Скачать кейс</span>
+              </a>
             </div>
           </div>
         </div>

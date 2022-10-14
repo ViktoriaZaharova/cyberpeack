@@ -4452,16 +4452,16 @@
     z-index: -1; }
   .spectrum-protect:before {
     width: 635px;
-    height: 534px;
+    height: 800px;
     background: url("../img/footer-decor1.svg") no-repeat center;
       background-size: 100%;
-    left: -318px;
-    bottom: -80px; }
+    left: -188px;
+    bottom: -160px; }
   .spectrum-protect:after {
     width: 697px;
     height: 586px;
     top: 104px;
-    right: -358px;
+    right: -258px;
     background: url("../img/footer-decor2.svg") no-repeat center;
       background-size: 100%; }
   .spectrum-protect h2 {
@@ -4783,7 +4783,7 @@
 .success-stories-slider__nav {
   position: absolute;
   margin: 0;
-  max-width: 250px;
+  max-width: 240px;
   right: 0;
   bottom: 25px;
   left: auto; }
@@ -4923,7 +4923,8 @@
     font-size: 28px;
     font-weight: bold;
     line-height: 40px;
-    font-family: "FuturaPT", sans-serif; }
+    font-family: "FuturaPT", sans-serif;
+    max-width: 325px; }
   .licensing .btn {
     margin: 50px auto 0; }
   .licensing .box-text {
@@ -4937,7 +4938,7 @@
     z-index: -1;
     width: 697px;
     height: 586px;
-    background: url("../img/footer-decor1.svg") no-repeat center;
+    background: url("../img/footer-decor3.svg") no-repeat center;
       background-size: 100%;
     bottom: -189px;
     left: -64px; }
@@ -5142,11 +5143,3 @@
   border-radius: 50%; }
 
 /*==========  section question end ==========*/
-/*==========  section  ==========*/
-/*==========  section end ==========*/
-/*==========  section  ==========*/
-/*==========  section end ==========*/
-/*==========  section  ==========*/
-/*==========  section end ==========*/
-/*==========  section  ==========*/
-/*==========  section end ==========*/

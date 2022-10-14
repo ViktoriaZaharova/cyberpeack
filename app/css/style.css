@@ -10,6 +10,13 @@
 
 @font-face {
   font-family: "FuturaPT";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/FuturaPT/FuturaPT-Book.eot");
+  src: url("../fonts/FuturaPT/FuturaPT-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaPT/FuturaPT-Book.woff") format("woff"), url("../fonts/FuturaPT/FuturaPT-Book.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "FuturaPT";
   font-weight: 500;
   font-style: normal;
   src: url("../fonts/FuturaPT/FuturaPT-Medium.eot");

@@ -3,7 +3,7 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width: 1400px)
+@media only screen and (max-width: 1440px)
   .regulatory-requirements:after
     width: 503px
     height: 422px
@@ -25,8 +25,18 @@
       width: 499px
       height: 489px
 
+  .licensing:before
+    left: -250px
+    width: 597px
+    height: 506px
+
+  .home-wrapper-dag:before
+    width: 570px
+    height: 487px
+    bottom: 650px
+
 @media only screen and (max-width: 1250px)
-  .home-decor-title:before
+  .home-decor-title:before, .spectrum-protect:before, .spectrum-protect:after
     display: none
 
 @media only screen and (max-width: 1200px)
@@ -144,6 +154,30 @@
 
   .report-example .information-module-image > img
     max-width: 320px
+
+  .flexible-solution-wrapper
+    padding: 50px 60px
+
+  .flexible-solution-image
+    max-width: 350px
+
+  .success-stories-slider__nav
+    position: relative
+    bottom: 0
+    margin: 0 auto
+    max-width: none
+    justify-content: center
+
+  .success-stories-wrapper
+    margin: 0 0 68px
+    .reviews-box-author
+      padding: 0
+
+  .file-analysis-image
+    max-width: 350px
+
+  .dag-module:before, .home-wrapper-dag:before
+    display: none
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px)
@@ -617,6 +651,143 @@
 
   .optimization-wrapper
     margin-top: 40px
+
+  .about-spectr__content
+    padding: 63px 0 59px
+
+  .about-spectr
+    .logo-company
+      max-width: 282px
+    .box-text
+      margin: 27px 0 34px
+    .btn
+      margin: 0 auto
+      max-width: 300px
+      width: 100%
+    &__image
+      min-width: auto
+      width: 100%
+
+  .licensing
+    &:before
+      display: none
+
+  .flexible-solution
+    background: transparent
+    padding: 0
+    margin: 60px 0 0
+    &:before
+      display: none
+
+  .flexible-solution-image
+    position: relative
+    top: 0
+    right: 0
+    margin: 40px auto 30px
+
+  .flexible-solution-content
+    .box-text
+      max-width: none
+
+  .flexible-solution-variable__item
+    max-width: 50%
+    padding: 0 40px 0 0
+    &:last-child
+      padding: 0 0 0 40px
+
+  .success-stories
+    margin: 44px 0 0
+
+  .integration-image
+    max-width: 250px
+
+  .integration-content
+    padding: 0 0 0 270px
+    .box-text
+      font-size: 18px
+
+  .architecture
+    padding: 54px 0 104px
+    .box-text
+      max-width: none
+    h4
+      margin: 29px 0 30px
+      max-width: none
+      width: 100%
+    &:before
+      display: none
+    .btn
+      max-width: 300px
+      width: 100%
+      margin: 0 auto
+    h2
+      text-align: center
+      max-width: 300px
+      margin: 0 auto
+
+  .file-analysis-item
+    position: relative
+    top: 0
+    bottom: 0
+    right: 0
+    left: 0
+    max-width: none
+    width: 100%
+    margin: 0 0 30px
+    &:first-child, &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5)
+      left: 0
+      top: 0
+      right: 0
+      bottom: 0
+      max-width: none
+    &:nth-child(5)
+      margin: 0
+
+  .file-analysis-wrapper
+    flex-wrap: wrap
+
+  .file-analysis
+    padding: 70px 0 0
+    h3
+      margin: 0 auto 30px
+    .box-text
+      margin: 0 auto 53px
+    h2
+      margin: 0 auto 16px
+
+
+  .file-analysis-image
+    margin: 15px auto 0
+
+  .spectrum-protect
+    padding: 102px 0 182px
+    &:before
+      display: block
+      width: 334px
+      height: 140px
+      background: url("../img/module-image1.png") no-repeat center
+        size: 100%
+      left: 50%
+      transform: translate(-50%,0)
+      bottom: 0
+
+  .spectrum-protect-nav
+    overflow-x: visible
+    margin: 50px 0 60px
+    .nav-item
+      flex: none
+
+  .dag-about-nav
+    overflow-x: auto
+    flex-wrap: nowrap
+    margin: 0 0 40px
+    &__item
+      padding: 0 0 17px
+      margin: 0 30px 0 0
+      white-space: nowrap
+
+  .dag-shield
+    padding: 0 0 150px
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px)
@@ -1273,6 +1444,119 @@
     max-width: 100%
     margin: 0 auto
 
+  .question
+    padding: 100px 0
+    h2
+      margin: 0 auto 42px
+      text-align: center
+
+  .licensing
+    padding: 65px 0 27px
+    margin: 0
+    h3
+      margin: 0 0 14px
+      font-size: 20px
+      max-width: 214px
+      line-height: 142.2%
+    .box-text
+      font-size: 16px
+      line-height: 136.02%
+    .btn
+      margin: 30px auto 0
+      max-width: 300px
+      width: 100%
+
+  .licensing-text
+    margin: 400px 0 0
+
+  .flexible-solution-wrapper
+    margin: 0 auto -20px
+    padding: 37px 10px 95px
+
+  .flexible-solution
+    .title-decor__text
+      display: none
+    h2
+      margin: 0 auto 24px
+
+  .flexible-solution-content
+    padding: 0
+    h4
+      font-size: 16px
+      line-height: 19px
+    .box-text
+      font-size: 16px
+      line-height: 19px
+      margin: 0
+
+  .success-stories-cases .cases-card
+    padding: 99px 20px 22px
+
+  .success-stories-wrapper .reviews-box-author .btn
+    display: none
+
+  .success-stories-slider
+    .slick-dots
+      margin: 42px auto 0
+
+  .success-stories
+    h2
+      margin: 0 auto 19px
+
+  .integration
+    .wrapper-content
+      margin: -30px auto -20px
+      padding: 44px 27px 27px
+    h2
+      margin: 0 auto 39px
+      max-width: 260px
+
+  .integration-image
+    position: relative
+    top: 0
+    right: 0
+    margin: 30px auto 12px
+
+  .integration-content
+    padding: 0
+    .box-text
+      font-size: 16px
+
+  .list-integration
+    margin: 0
+    flex-wrap: wrap
+
+
+  .cases-v2
+    margin: 0
+    padding: 53px 0 64px
+
+  .file-analysis
+    padding: 44px 0 0
+
+  .spectrum-protect-slider:before
+    display: none
+
+  .home-dag
+    background: transparent
+
+  .dag-about-content
+    .box-text
+      max-width: none
+
+  .video-item
+    margin: 26px auto 0
+
+  .dag-about
+    padding: 0 0 217px
+    &:before
+      height: 647px
+      bottom: 0
+      top: 170px
+
+  .dag-shield .solution-slider
+    margin: -40px 0 0
+
 @media only screen and (max-width: 576px)
   header
     .btn
@@ -1886,6 +2170,107 @@
   .report-example__description
     justify-content: flex-start
 
+  .question
+    padding: 52px 0 49px
+    h2
+      max-width: 270px
+    .accordion-button
+      &:after
+        display: block
+
+  .question-icon
+    margin: 0 11px 0 0
+
+  .flexible-solution-variable__item
+    max-width: none
+    padding: 0 0 23px
+    margin: 0 0 23px
+    border: none
+    position: relative
+    &:last-child
+      padding: 0
+      margin: 0
+      &:before
+        display: none
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      bottom: 0
+      width: 126px
+      height: 1px
+      background: $accent
+    h4
+      font-size: 20px
+      line-height: 23px
+
+  .success-stories-cases
+    .slick-dots
+      margin: 34px auto 0
+
+  .spectrum-protect
+    .box-text
+      font-size: 16px
+      line-height: 136.02%
+    h2
+      margin: 0 0 20px
+
+  .spectrum-protect-nav
+    border: none
+      left: 0.75px solid rgba(255, 255, 255, 0.517647)
+    .nav-link
+      max-width: none
+      padding: 0 0 0 23px
+      &:after
+        bottom: 0
+        left: -1px
+        width: 2px
+        height: 0
+      &.active
+        font-weight: bold
+        color: #fff
+        &:after
+          height: 100%
+          width: 2px
+
+  .spectrum-protect-slider
+    padding: 0 0 43px
+    width: calc(100% + 15px)
+    .slick-arrow
+      position: absolute
+      bottom: 0
+      transform: none
+      top: auto
+      fill: #fff
+    .slick-prev
+      left: calc(50% - 25px)
+    .slick-next
+      left: calc(50% + 25px)
+
+  .video-item
+    .btn-play
+      width: 30px
+      height: 30px
+      -webkit-background-size: 30px
+      background-size: 30px
+
+  .dag-shield
+    padding: 0 0 75px
+    .solution-slider
+      margin: 34px 0 0
+    h3
+      font-size: 16px
+      margin: 0
+    h2
+      max-width: 300px
+      span
+        display: block
+
+  #fileModal
+    .modal-content
+      background: linear-gradient(110deg, #0E1D42 11.89%, #E12651 95.41%)
+      padding: 40px 20px
+
 @media only screen and (max-width: 420px)
   .regulatory-requirements-box
     &:before
@@ -1970,6 +2355,18 @@
   .working-conditions__image
     max-width: 290px
     margin: 19px 0 0 -60px
+
+  .licensing
+    background: url("../img/licensing-bg-mobile.jpg") no-repeat center
+      size: cover
+
+  .list-integration
+    justify-content: space-around
+    li
+      margin: 0 0 10px
+
+  .spectrum-protect-slider .slide
+    max-width: 269px
 
 @media only screen and (max-width: 380px)
   .why-important-box

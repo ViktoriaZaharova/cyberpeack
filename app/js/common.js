@@ -180,6 +180,17 @@ $('.spectrum-protect-slider').slick({
     slidesToShow: 1,
     variableWidth: true,
     arrows: false,
+    responsive: [
+
+        {
+            breakpoint: 576,
+            settings: {
+                arrows: true,
+                prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+                nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+            }
+        }
+    ]
 });
 
 
@@ -219,7 +230,17 @@ $('.success-stories-slider').slick({
     arrows: true,
     prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
     nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
-    appendArrows: '.success-stories-slider__nav'
+    appendArrows: '.success-stories-slider__nav',
+    responsive: [
+
+        {
+            breakpoint: 768,
+            settings: {
+                dots: true,
+                arrows: false
+            }
+        }
+    ]
 });
 
 $('.success-stories-cases').slick({
@@ -227,8 +248,24 @@ $('.success-stories-cases').slick({
     arrows: true,
     prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
     nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
-    appendArrows: '.success-stories-cases__nav'
-})
+    appendArrows: '.success-stories-cases__nav',
+    responsive: [
+        {
+            breakpoint: 900,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1,
+                dots: true,
+                arrows: false
+            }
+        }
+    ]
+});
 
 
 $('.task-slider-image1').slick({
