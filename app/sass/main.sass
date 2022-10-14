@@ -794,6 +794,7 @@
 .reviews-box-author
   display: flex
   align-items: center
+  flex-wrap: wrap
   margin: 40px 0 0
 
   &__photo
@@ -803,14 +804,15 @@
     width: 106px
     height: 106px
     min-width: 106px
-    margin: 0 15px 0 0
     @include d-flex
 
     img
       width: 100%
       height: 100%
       object-fit: cover
-
+  &__name
+    width: calc(100% - 106px)
+    padding: 0 0 0 15px
   h4
     color: #0E1D42
     margin: 20px 0 0
@@ -4179,7 +4181,7 @@
   width: 100%
 
 .success-stories
-  margin: 70px 0 50px
+  margin: 70px 0 0
   h2
     text-align: center
     margin: 0 auto 26px
@@ -4193,6 +4195,165 @@
   font-weight: 500
   line-height: 23px
   max-width: 563px
+
+.success-stories-wrapper
+  position: relative
+  margin: 0 0 57px
+  .reviews-box-author
+    padding: 0 0 40px
+    .btn
+      width: 100%
+      max-width: 300px
+      margin: 18px auto 0
+  .reviews-box
+    margin: 0
+
+.success-stories-slider__nav
+  position: absolute
+  margin: 0
+  max-width: 250px
+  right: 0
+  bottom: 25px
+  left: auto
+
+.success-stories-cases
+  .slide
+    padding: 0 17px
+  .slick-list
+    margin: 0 -17px
+  .link-page
+    margin-left: auto
+  .cases-card
+    border: none
+    padding: 105px 20px 21px
+    &__logo
+      width: 71px
+      height: 72px
+      padding: 0
+      left: auto
+      right: 0
+      top: 0
+
+
+.success-stories-cases__nav
+  justify-content: flex-end
+  margin: 30px 0 0
+
+.flexible-solution
+  overflow: hidden
+  position: relative
+  padding: 84px 0 0
+  background: linear-gradient(115deg, #0E1D42 16.51%, #E12651 96.17%)
+  z-index: 2
+  >.container
+    position: relative
+    z-index: 2
+  &:before
+    content: ''
+    position: absolute
+    width: 100%
+    height: 773px
+    background: url("../img/why-important-image.png") no-repeat center
+      size: 100%
+    left: 0
+    top: 196px
+    z-index: 1
+  h2
+    margin: 0 auto 40px
+    span
+      display: block
+  .title-decor__text
+    color: rgba(88, 105, 131, 0.062745)
+    font-size: 128px
+    line-height: 164px
+    top: -10px
+
+.flexible-solution-content
+  position: relative
+  width: 100%
+  padding: 42px 0 0
+  h4
+    font-weight: 800
+    font-size: 20px
+    line-height: 23px
+    margin: 0 0 20px
+  .box-text
+    max-width: 480px
+    font-size: 16px
+    font-weight: 500
+    line-height: 19px
+    margin: 0 0 59px
+
+.flexible-solution-image
+  position: absolute
+  max-width: 430px
+  width: 100%
+  right: 0
+  top: 0
+  @include d-flex
+  img
+    width: 100%
+
+.flexible-solution-variable
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  font-size: 15px
+  font-weight: 500
+  line-height: 18px
+  &__item
+    max-width: 320px
+    width: 100%
+    padding: 0 50px 0 0
+    border-right: 1px solid #E12651
+    &:last-child
+      border: none
+      padding: 0 0 0 80px
+  h4
+    font-size: 20px
+    font-weight: bold
+    line-height: 23px
+    margin: 0 0 20px
+
+.flexible-solution-wrapper
+  background: #fff
+  width: 100%
+  padding: 49px 47px 65px 115px
+
+
+.licensing
+  position: relative
+  z-index: 1
+  background: url("../img/spectrum-bg.jpg") no-repeat center
+    size: cover
+  color: #fff
+  padding: 169px 0 77px
+  margin: -30px 0 0
+  h3
+    color: $accent
+    text-transform: uppercase
+    margin: 0 0 49px
+    font-size: 28px
+    font-weight: bold
+    line-height: 40px
+    font-family: $font
+  .btn
+    margin: 50px auto 0
+  .box-text
+    font-size: 20px
+    line-height: 136.02%
+    font-weight: 450
+    font-family: $font
+  &:before
+    content: ''
+    position: absolute
+    z-index: -1
+    width: 697px
+    height: 586px
+    background: url("../img/footer-decor1.svg") no-repeat center
+      size: 100%
+    bottom: -189px
+    left: -64px
 
 /*==========  page lp end ==========*/
 

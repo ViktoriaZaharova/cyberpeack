@@ -213,6 +213,22 @@ $('.partners-slider2').slick({
     ]
 });
 
+$('.success-stories-slider').slick({
+    slidesToShow: 1,
+    fade: true,
+    arrows: true,
+    prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+    appendArrows: '.success-stories-slider__nav'
+});
+
+$('.success-stories-cases').slick({
+    slidesToShow: 3,
+    arrows: true,
+    prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+    appendArrows: '.success-stories-cases__nav'
+})
 
 
 $('.task-slider-image1').slick({
